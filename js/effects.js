@@ -44,7 +44,7 @@
     cardTilt:         true,
     chipGlow:         true,
     tabPill:          true,
-    scrollProgress:   true,
+    scrollProgress:   false,
     stickyHeaderShrink: true,
     haptic:           true,
     insetGlow:        true,
