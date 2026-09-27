@@ -1,0 +1,182 @@
+/* ============================================
+   PLANNER
+   ============================================ */
+
+.planner-help{
+  color:var(--muted);
+  font-size:14px;
+  margin:8px 0 16px;
+}
+
+.planner-empty{
+  color:var(--muted);
+  font-style:italic;
+  padding:18px;
+  border:1px dashed var(--line-2);
+  border-radius:12px;
+  text-align:center;
+}
+
+.planner-item{
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:rgba(0,0,0,.14);
+  padding:14px 16px;
+  margin-bottom:12px;
+  position:relative;
+}
+
+html[data-theme="light"] .planner-item{
+  background:rgba(0,0,0,.03);
+}
+
+.planner-item.ready{
+  border-color:var(--mint);
+  box-shadow:0 0 30px -12px rgba(56,224,176,.7);
+  background:rgba(56,224,176,.06);
+}
+
+.planner-item-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  margin-bottom:10px;
+}
+
+.planner-item-head b{
+  font-size:15px;
+  font-family:var(--serif);
+  letter-spacing:.01em;
+}
+
+.planner-item-head .remove{
+  background:transparent;
+  border:1px solid var(--line-2);
+  color:var(--muted);
+  width:28px;
+  height:28px;
+  padding:0;
+  border-radius:8px;
+  font-size:14px;
+}
+
+.planner-item-head .remove:hover{
+  color:var(--rose);
+  border-color:var(--rose);
+}
+
+.planner-ready-badge{
+  margin-left:auto;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.08em;
+  padding:3px 10px;
+  border-radius:999px;
+  color:#04140f;
+  background:linear-gradient(135deg, #5df3c6, #38e0b0);
+  box-shadow:0 0 20px -6px rgba(56,224,176,.9);
+}
+
+.planner-mats{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.planner-mats li{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:6px 10px;
+  border-radius:8px;
+  background:rgba(255,255,255,.03);
+  transition:background .15s;
+}
+
+.planner-mats li:hover{
+  background:rgba(255,255,255,.06);
+}
+
+.planner-mats input[type=checkbox]{
+  width:18px;
+  height:18px;
+  accent-color:var(--mint);
+  cursor:pointer;
+  flex:0 0 auto;
+}
+
+.planner-mats label{
+  cursor:pointer;
+  flex:1;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:var(--body);
+  user-select:none;
+}
+
+.planner-mats input:checked + label{
+  color:var(--muted);
+  text-decoration:line-through;
+  text-decoration-color:var(--mint);
+}
+
+.planner-mat-qty{
+  font-family:var(--mono);
+  font-size:11.5px;
+  color:var(--gold);
+  font-weight:700;
+  padding:1px 7px;
+  border-radius:6px;
+  background:rgba(255,200,97,.10);
+  border:1px solid rgba(255,200,97,.28);
+  font-variant-numeric:tabular-nums;
+}
+
+.planner-progress{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-top:12px;
+  font-size:12px;
+  color:var(--muted);
+}
+
+.planner-bar{
+  flex:1;
+  height:6px;
+  border-radius:3px;
+  background:rgba(255,255,255,.08);
+  overflow:hidden;
+}
+
+.planner-bar > span{
+  display:block;
+  height:100%;
+  border-radius:3px;
+  background:linear-gradient(90deg, var(--mint), var(--violet));
+  transition:width .25s;
+}
+
+/* Used-in section inside planner */
+.planner-used{
+  margin-top:12px;
+  padding-top:10px;
+  border-top:1px dashed var(--line-2);
+}
+
+.planner-used > summary{
+  font-size:11px;
+  padding:4px 9px;
+}
+
+.planner-used .used-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin-top:8px;
+}
