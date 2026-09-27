@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sacred Tree · Equipment Drop Guide</title>
@@ -101,6 +102,16 @@ html[data-theme="light"] .planner-item{background:rgba(0,0,0,.03)}
 .planner-progress{display:flex;align-items:center;gap:10px;margin-top:12px;font-size:12px;color:var(--muted)}
 .planner-bar{flex:1;height:6px;border-radius:3px;background:rgba(255,255,255,.08);overflow:hidden}
 .planner-bar > span{display:block;height:100%;border-radius:3px;background:linear-gradient(90deg,var(--mint),var(--violet));transition:width .25s}
+
+/* Used-in (next craft) section inside planner */
+.planner-used{margin-top:12px;padding-top:10px;border-top:1px dashed var(--line-2)}
+.planner-used > summary{font-size:11px;padding:4px 9px}
+.planner-used .used-list{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.used-item{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;letter-spacing:.02em;padding:5px 10px;border-radius:8px;background:rgba(255,255,255,.04);border:1px solid var(--line-2);color:var(--body);box-shadow:none;transition:all .15s;text-align:left;cursor:pointer}
+.used-item:hover{color:var(--mint);border-color:var(--mint);transform:none;filter:none;background:rgba(56,224,176,.06)}
+.used-item .used-tag{font-family:var(--mono);font-size:10.5px;color:var(--gold);padding:1px 6px;border-radius:5px;background:rgba(255,200,97,.10);border:1px solid rgba(255,200,97,.28)}
+.used-item.planned{color:var(--gold);border-color:var(--gold);background:rgba(255,200,97,.08)}
+.used-none{color:var(--muted);font-style:italic;font-size:12px;margin-top:6px}
 
 .controls-box{padding:18px 22px}
 .controls{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
@@ -218,8 +229,14 @@ details small{display:block;font-family:var(--mono);font-size:11.5px;line-height
 .action-btn.plan:hover{color:var(--gold);border-color:var(--gold)}
 .action-btn.planned{color:var(--gold);border-color:var(--gold);background:rgba(255,200,97,.08)}
 
-/* item name hover */
-.item-name{cursor:help;border-bottom:1px dashed rgba(56,224,176,.3);padding-bottom:1px}
+/* item name + material hover */
+.item-name{cursor:help;font-weight:700;letter-spacing:.01em}
+.item-name:hover{filter:brightness(1.25)}
+.mat-link{color:inherit;border-bottom:1px dotted rgba(56,224,176,.45);cursor:help;padding-bottom:1px}
+.mat-link:hover{color:var(--mint)}
+.mat-link.mat-unknown{border-bottom-style:dashed;opacity:.85}
+
+/* WC3 tooltip */
 .wc3-tip{position:fixed;z-index:9000;max-width:480px;padding:0;border-radius:10px;background:linear-gradient(180deg,rgba(6,10,18,.99),rgba(3,6,12,.99));border:1px solid rgba(255,200,97,.55);box-shadow:0 24px 60px -18px #000,0 0 0 1px rgba(0,0,0,.6) inset;color:#e6eef8;font:14px/1.5 var(--sans);pointer-events:none;display:none;overflow:hidden}
 .wc3-tip.show{display:block}
 .wc3-tip-header{padding:11px 15px 9px;border-bottom:1px solid rgba(255,200,97,.30);background:linear-gradient(180deg,rgba(255,200,97,.07),transparent);display:flex;justify-content:space-between;align-items:baseline;gap:10px}
@@ -231,9 +248,24 @@ details small{display:block;font-family:var(--mono);font-size:11.5px;line-height
 .wc3-tip-body{padding:11px 15px 13px;text-shadow:0 1px 2px rgba(0,0,0,.9);font-size:13.5px;line-height:1.65}
 .wc3-tip-body p{margin:0 0 8px}
 .wc3-tip-body p:last-child{margin-bottom:0}
+.wc3-tip-stats{margin:0 0 10px;padding:8px 12px;background:linear-gradient(180deg,rgba(56,224,176,.10),rgba(56,224,176,.04));border-left:3px solid #7cff9d;border-radius:6px}
+.wc3-stat-line{color:#9fffbf;font-weight:600;font-size:13px;line-height:1.7;font-family:var(--mono);letter-spacing:.02em}
+.wc3-stat-line::before{content:"▲ ";color:#7cff9d;font-size:10px;margin-right:4px}
+.wc3-stat-line.wc3-stat-missing{color:#8ba0b8;font-style:italic;font-weight:500;opacity:.8}
+.wc3-stat-line.wc3-stat-missing::before{content:""}
 .wc3-tip-body .flavor{color:#a0b2c8;font-style:italic;font-size:12.5px;margin-top:8px;padding-top:8px;border-top:1px dashed rgba(122,162,205,.22)}
 .wc3-tip-body .flavor::before{content:"“";color:var(--gold);font-weight:700}
 .wc3-tip-body .flavor::after{content:"”";color:var(--gold);font-weight:700}
+
+/* Drop-rate tip sections */
+.wc3-drop-section{margin:0 0 10px;padding:8px 12px;background:linear-gradient(180deg,rgba(111,198,255,.08),rgba(111,198,255,.03));border-left:3px solid #6fc6ff;border-radius:6px}
+.wc3-drop-best{font-family:var(--mono);font-weight:800;font-size:14px;color:#a9dcff;margin-bottom:6px}
+.wc3-drop-row{display:flex;justify-content:space-between;gap:10px;font-family:var(--mono);font-size:12px;line-height:1.7;color:#cfe4ff}
+.wc3-drop-row .rn{color:#9fc6e8}
+.wc3-drop-row .rv{color:#7cff9d;font-weight:700}
+.wc3-drop-row .rv.low{color:#ff9fb6}
+.wc3-drop-row .rv.mid{color:#ffd894}
+.wc3-drop-note{color:#8ba0b8;font-style:italic;font-size:12px;margin-top:6px}
 
 #dungeons td:first-child{color:var(--gold);font-weight:700;letter-spacing:.01em}
 html[data-theme="light"] #dungeons td:first-child{color:#a86a08}
@@ -261,7 +293,6 @@ html[data-theme="light"] .spell{background:rgba(0,0,0,.03)}
 .spell-head{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px}
 .spell-name{color:var(--text);font-weight:700}
 .spell-key{font-family:var(--mono);font-size:10.5px;padding:2px 7px;border-radius:6px;background:rgba(56,224,176,.12);border:1px solid rgba(56,224,176,.28);color:var(--mint);font-weight:700;letter-spacing:.08em}
-.spell-lvl{font-size:10.5px;color:var(--muted);font-family:var(--mono)}
 .spell-body{display:none;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line-2);font-size:13px;line-height:1.6;color:var(--body)}
 .spell.open .spell-body{display:block}
 .spell-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;font-size:11px;font-family:var(--mono);color:var(--muted)}
@@ -305,6 +336,8 @@ html[data-theme="light"] .spell{background:rgba(0,0,0,.03)}
   [data-tab-content]{display:block !important}
 }
 </style>
+</head>
+<body>
 <main>
 <header class="page-header">
   <div>
@@ -319,6 +352,7 @@ html[data-theme="light"] .spell{background:rgba(0,0,0,.03)}
 <nav class="tabs" role="tablist">
   <button class="tab" role="tab" data-tab="equipment" aria-selected="true">Equipment</button>
   <button class="tab" role="tab" data-tab="heroes" aria-selected="false">Heroes &amp; Information</button>
+  <button class="tab" role="tab" data-tab="items" aria-selected="false">Items</button>
 </nav>
 
 <section data-tab-content="equipment" class="active">
@@ -331,8 +365,9 @@ html[data-theme="light"] .spell{background:rgba(0,0,0,.03)}
     <li><b>Filters</b> — toggle multiple categories or source types with the chips. Narrow by level range.</li>
     <li><b>Sortable columns</b> — click any header to sort. Click again to reverse.</li>
     <li><b>Drop rates</b> — every row shows the best per-kill roll chance. Expand <b>Breakdown</b> for the full per-boss table.</li>
-    <li><b>Hover any item name</b> for a full in-game style tooltip.</li>
-    <li><b>Gear Planner</b> — click <b>+ Plan</b> on any craftable item. Its recipe appears in the planner above, with a checkbox per material. When every material is ticked, the recipe shows <b>Ready to be crafted!</b></li>
+    <li><b>Hover any item name or material</b> for a full in-game style tooltip. Materials show their own drop source on hover.</li>
+    <li><b>Gear Planner</b> — click <b>+ Plan</b> on any craftable item. Its recipe appears in the planner above, with a checkbox per material. The planner is saved to your browser and reloads with the page. When every material is ticked, the recipe shows <b>Ready to be crafted!</b></li>
+    <li><b>Next craft</b> — inside each planner entry, expand <b>Used in N recipes</b> to add the higher-tier item that consumes it with one click.</li>
     <li><b>Shareable links</b> — filters and search sync to the URL.</li>
   </ul>
   <details class="glossary">
@@ -351,7 +386,7 @@ html[data-theme="light"] .spell{background:rgba(0,0,0,.03)}
 
 <section class="box planner" id="planner-box">
   <h2>Gear Planner <span class="h2-actions"><button class="ghost" id="planner-clear">Clear all</button></span></h2>
-  <p class="planner-help">Click <b>+ Plan</b> on any craftable item in the table below. Its recipe materials show up here, and you can tick them off as you collect them.</p>
+  <p class="planner-help">Click <b>+ Plan</b> on any craftable item in the table below. Its recipe materials show up here, and you can tick them off as you collect them. Your planner is saved automatically.</p>
   <div id="planner-content"></div>
 </section>
 
@@ -419,6 +454,38 @@ html[data-theme="light"] .spell{background:rgba(0,0,0,.03)}
   <p>All playable heroes and their full spell kits, sorted by primary attribute (AGI → INT → STR). Click a spell to expand its in-game tooltip.</p>
   <div class="hero-grid" id="hero-grid"></div>
 </section>
+
+<!-- ============================================================
+     NEW: ITEMS TAB
+     ============================================================ -->
+<section data-tab-content="items">
+  <h2>All Items</h2>
+  <p>Every item in the codex — equipment, consumables, materials, runes, Divine Cards, event items, and more. Hover a name for its full in-game tooltip.</p>
+
+  <div class="box controls-box">
+    <div class="controls">
+      <input type="search" id="item-q" aria-label="Search items" placeholder="Search name, ID, description, or recipe…">
+      <select id="item-cat" aria-label="Filter by category">
+        <option value="">All categories</option>
+        <option value="Weapon">Weapon</option>
+        <option value="Armor">Armor</option>
+        <option value="Helmet">Helmet</option>
+        <option value="Accessory">Accessory</option>
+        <option value="Collectibles">Collectibles</option>
+        <option value="Divine Card">Divine Card</option>
+        <option value="Runes">Runes</option>
+        <option value="Consumable">Consumable</option>
+        <option value="Material">Material</option>
+        <option value="Other">Other</option>
+      </select>
+      <button class="ghost" id="item-clear">Clear</button>
+    </div>
+    <p id="item-count" role="status" aria-live="polite">Loading…</p>
+  </div>
+
+  <div class="hero-grid" id="item-grid"></div>
+</section>
+
 </main>
 
 <button id="scroll-top" aria-label="Back to top">↑</button>
@@ -427,8 +494,24 @@ html[data-theme="light"] .spell{background:rgba(0,0,0,.03)}
 
 <script>
 /* =====================================================================
+   Sacred Tree Equipment Drop Guide — v3
+   Part 2a: CSV data placeholders + ITEM_TOOLTIPS
+   ===================================================================== */
+
+/* ---------------------------------------------------------------------
+   RAW CSV DATA
+   Paste the raw text of each file between the backticks below.
+   Keep every character exactly as-is (|cff… colour codes, |n, quotes,
+   commas, newlines). Do NOT escape anything — template literals preserve
+   it all. Only backticks and ${ would need escaping, and these files
+   contain neither.
+   --------------------------------------------------------------------- */
+const CSV_FULL = `__PASTE_Sacred_Tree_ORPG_all_item_descriptions_TRIGSTR_resolved.csv_HERE__`;
+const CSV_MINI = `__PASTE_Sacred_Tree_ORPG_custom_items_names_ids_descriptions_TRIGSTR_resolved.csv_HERE__`;
+
+/* =====================================================================
    ITEM TOOLTIPS — keyed by item ID.
-   Format: [effectsBlock, flavorBlock] (flavor optional)
+   Merged from the original guide + the two new CSVs.
    ===================================================================== */
 const ITEM_TOOLTIPS = {
 "wtlg":{effects:"",flavor:"An ancient accessory. No one knows the true power sealed inside"},
@@ -617,7 +700,6 @@ const ITEM_TOOLTIPS = {
 "I056":{effects:"Passive — Unstable Chant: Automatically triggers one elemental secret technique. (Internal CD: 10s)",flavor:"A robe from the ancient Sacred Tree hall, prepared for the graduates of the highest Elementalist class."},
 "I055":{effects:"Active — Divine Power Ice Cube: Gain your memories of days past, redistributing your Attribute points. (Unequip all gear first!)",flavor:""},
 "I054":{effects:"Passive — Divine Blessing: Increases the Divine Flask's restoration cap by 2000.\nPassive — Godhood of Hell: After the Divine Flask restores, increases All Damage by 3% for 3s.",flavor:"The Divine Card of Zodiark, God of Hell, bringing the Warrior's blessing"},
-"I053":{effects:"Active — Warrior's Dignity: Intimidates nearby enemies, reducing their Attack Power by 30%. (CD: 70s)",flavor:"A true warrior always strikes first!"},
 "I052":{effects:"",flavor:"Thick armor that effectively resists enemy attacks; heavy but practical"},
 "I051":{effects:"Active — Alliance: Choose an allied hero; for the next 8 seconds, 40% of the damage the target takes is transferred to you. (CD: 90s)",flavor:"Only warriors with team spirit can become core members of the Empire"},
 "I050":{effects:"Active — Explosive Barrel: Leaves a barrel that explodes after a delay, dealing Main Attribute ×19 damage and slowing. (CD: 75s)",flavor:"Do not ask where exactly the barrel came from!"},
@@ -710,12 +792,10 @@ const ITEM_TOOLTIPS = {
 "I06F":{effects:"Passive — Frost Light Feather: Every 8 seconds, your next attack deals Main Attribute ×7.5 non-elemental damage and deals Main Attribute ×3 non-elemental damage to enemies in range.",flavor:"A longbow embodying the ice elemental power of the World Tree God; every shot brings an ice storm."},
 "I06E":{effects:"Passive — Light of Redemption: Creates a light of causality dealing Intelligence ×7.5 non-elemental damage to enemies and restoring Health equal to Intelligence ×2.5 to allies in range. (CD: 15s)",flavor:"Merciful Snow God, please protect the heroes who fight for the world."},
 "I06D":{effects:"Passive — Shadow Fang: Every 8 seconds, your next attack deals Main Attribute ×6 non-elemental damage to the target.",flavor:"Salvation or destruction? Only the end of the Styx holds the answer."},
-"I06C":{effects:"Passive — Hunting Arrow: Attacks carry a killing strike dealing Main Attribute ×4.5 extra damage. (Internal CD: 8s)",flavor:"A strange crossbow that can play music with its bowstring."},
 "I069":{effects:"",flavor:"A crossbow made from instrument strings. It is said a musician made it as a birthday gift for his daughter"},
 "I068":{effects:"Active — Overload Hunt: Movement Speed, Attack Speed and All Attributes are raised for 10s; when it ends you are Stunned for 5s. (CD: 100s)",flavor:"After a burst you always need a rest"},
 "I067":{effects:"Passive — Word of Life: Casting restores your own Health.",flavor:"A magic bow holding the life force of an ancient tree, able to bring blessings to its bearer"},
 "I066":{effects:"Passive — Snowfield Magic Arrow: Attacks carry extra Spell Damage based on Intelligence. (Internal CD: 3s)",flavor:"The trolls' favorite hunting crossbow, now drowned in endless resentment"},
-"I065":{effects:"Active — Hero's Resolve: Raises All Attributes by 80 for 15s. (CD: 30s)",flavor:"Even if it is only a moment of brilliance......."},
 "I064":{effects:"Passive — Earthquake Strike: Casting has a chance to summon a seismic wave dealing Intelligence ×3.5 Spell Damage to enemies around you. (CD: 5s)",flavor:"Feel the wrath of the earth"},
 "I063":{effects:"Active — Noble Holy Healing: Grants allied units in range 15% Movement Speed and 750/s Health Regeneration for 5s. (CD: 60s)",flavor:"Healing and destruction are sometimes only a thought apart"},
 "I062":{effects:"Active — Light of Life: Cast on an allied unit to restore a total of 7500 Health over 10 seconds. (CD: 45s)",flavor:"The sprouting of new life will bring a new cycle to the World Tree."},
@@ -735,6 +815,70 @@ const ITEM_TOOLTIPS = {
 "I03Q":{effects:"Active — Gentle Wind Barrier: Summons a 600 range field; allied units inside gain 15% Attack Speed, and it deals Main Attribute ×0.75 non-elemental damage per second to enemies inside, lasting 15 seconds. (CD: 90s)",flavor:"Even when kept within a controllable range, the overflowing hurricane power still carries an extremely violent aura"},
 "I03P":{effects:"Passive — Thunder Energy: Each cast grants a charge, each stack lasts 10s, increasing All Damage by 3% but increasing damage taken by 5%, up to three stacks.\nActive — Wild Thunder: Consumes stacks to unleash Thunder Punishment. (Internal CD: 75s)",flavor:"Clothing once worn by Zeus, the Thunder God, carrying the divine might of lightning"},
 "__stats_missing__":{effects:"Stat bonuses for this item are not present in the extracted source data.",flavor:"Only drop source and recipe information was available for extraction."}
+};
+
+/* =====================================================================
+   STAT BONUSES — item-specific values.
+   ===================================================================== */
+const ITEM_STATS = {
+  I0A3: ["+150 Strength","+150 Agility","+1,125 Attack Power (Wild Hunt proc)"],
+  I044: ["+300 Strength","+300 Agility","+300 Intelligence"],
+  I058: ["+150 Strength","+150 Agility","+150 Intelligence"],
+  I065: ["+80 Strength","+80 Agility","+80 Intelligence"],
+  I09V: ["+250 Agility (Ready for Action trigger)","+35% Maximum Health"],
+  I022: ["+155 Agility","+25% Maximum Health"],
+  I035: ["+150 Intelligence (Forbidden Power)"],
+  I034: ["+120 Intelligence (Bloody Vision)"],
+  I02V: ["+65 Intelligence (Mental Decay)"],
+  I02U: ["+100 Intelligence (Surge of Wisdom)"],
+  I00V: ["+45 Intelligence (Mad Blood)"],
+  I00G: ["+75 Agility","+350 Attack Power (Wild Hunt proc)"],
+  I0BD: ["+70 Strength","+70 Intelligence","+500 Attack Power (Shadow Ritual)"],
+  I0BF: ["+100 Agility (Intelligence heroes only)"],
+  I0BH: ["+170 Agility","+170 Intelligence"],
+  I019: ["+150 Intelligence (Bloody Faith)"],
+  I03A: ["+40% Maximum Health"],
+  I05B: ["+40% Maximum Health"],
+  I05R: ["+45% Maximum Health"],
+  I032: ["+7.5% Health Regeneration"],
+  I0A5: ["+10% Health Regeneration"],
+  I089: ["+40% Attack Speed","+15% Final Damage","+40% Movement Speed while active"],
+  I07A: ["+15% Maximum Health","+30 HP/s Regeneration"],
+  I079: ["+10% Maximum Health","+75 HP/s Regeneration"],
+  I07C: ["+20 HP/s Regeneration"],
+  I03V: ["+15% Maximum Health"],
+  I04N: ["+8% Maximum Health"],
+  I04P: ["+35% Maximum Health (Holy Blessing)"],
+  I06H: ["+8% Maximum Health"],
+  I05V: ["+25% Maximum Health (Night Stride)"],
+  I05W: ["+30% Maximum Health (Demon's Counter)"],
+  I08A: ["+250 Intelligence (Evil to the Bone)"],
+  I0B1: ["+30 Strength","+30 Agility","+30 Intelligence","+15 HP/s","+20 Movement Speed"],
+  wshs: ["When used: +50% Attack Speed for 5 min"],
+  wneg: ["When used: +1,000 Attack Power for 5 min"],
+  wild: ["When used: +10% Damage Reduction for 10 min"],
+  whwd: ["When used: Immune to Debuffs for 6s"],
+  ssan: ["When used: +100 Intelligence for 5 min"],
+  srrc: ["When used: +100 Strength for 5 min"],
+  sneg: ["When used: +6% All Damage for 5 min"],
+  pres: ["When used: +100 Agility for 5 min"],
+  hlst: ["When used: +10% Critical Chance for 5 min"],
+  stwp: ["When used: +7% Attack Power for 10 min"],
+  sreg: ["When used: +7% All Attributes for 10 min"],
+  pnvl: ["When used: +35% Attack Speed for 10 min"],
+  mcri: ["When used: +1,800 Maximum Health for 10 min"],
+  pclr: ["When used: +15% Critical Damage for 10 min"],
+  fgfh: ["When used: +10% Damage Reduction for 5 min"],
+  fgrg: ["When used: Restores 100% Mana"],
+  pnvu: ["When eaten: Restores 5,000 Health"],
+  totw: ["When used: +1,050 Divine Flask capacity"],
+  wlsd: ["When used: +2,500 Divine Flask capacity"]
+};
+
+/* Per-item name-color overrides (WC3 `|cAARRGGBB` codes from JASS).
+   Leave empty to fall back to the tier-based heuristic in itemNameColor(). */
+const ITEM_NAME_COLORS = {
+  /* "I0A3": "ff8000", */
 };
 
 /* =====================================================================
@@ -1449,7 +1593,9 @@ const EQUIPMENT = [
 ["Legendary Rune Stone: Void Forge","tsct","Runes",95,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Trial</span>"]
 ];
 
-/* Drop rate CSV */
+/* =====================================================================
+   DROP DATA
+   ===================================================================== */
 const DROP_CSV = `normal,n00D,hcun,1700,1201,1300,5.882353,30.000000,1.764706,<=3000/10000,182471
 normal,n00D,I053,1700,701,800,5.882353,30.000000,1.764706,<=3000/10000,182471
 normal,n00D,I050,1700,801,900,5.882353,30.000000,1.764706,<=3000/10000,182471
@@ -1661,8 +1807,21 @@ const DUNGEONS = [
    ===================================================================== */
 const state={q:"",cats:new Set(),statuses:new Set(),lvlMin:0,lvlMax:100,preset:""};
 const SORT={key:null,dir:1};
-let PLANNER = JSON.parse(localStorage.getItem("st:planner3")||"[]");
+const PLANNER_KEY = "st:planner4";
+let PLANNER = [];
+try {
+  const raw = localStorage.getItem(PLANNER_KEY) || localStorage.getItem("st:planner3") || "[]";
+  PLANNER = JSON.parse(raw);
+  if (!Array.isArray(PLANNER)) PLANNER = [];
+} catch(_) { PLANNER = []; }
+
 const DROPS = {};
+const NAME_TO_ITEM = {};
+const USED_IN = {};
+
+function savePlanner(){
+  try { localStorage.setItem(PLANNER_KEY, JSON.stringify(PLANNER)); } catch(_) {}
+}
 
 function parseDrops(){
   for (const line of DROP_CSV.trim().split("\n")){
@@ -1673,6 +1832,20 @@ function parseDrops(){
       mode:f[0], unit:f[1], maxr:+f[3], rmin:+f[4], rmax:+f[5],
       inner:+f[6], outer:+f[7], eff:+f[8], cond:f[9], line:f[10]
     });
+  }
+}
+
+function buildIndexes(){
+  for (const entry of EQUIPMENT){
+    const [name,id,cat,lvl,status,sources] = entry;
+    NAME_TO_ITEM[name.toLowerCase()] = {name,id,cat,lvl,status,sources};
+    const recipe = parseRecipe(sources);
+    if (recipe){
+      for (const mat of recipe){
+        const key = mat.name.toLowerCase();
+        (USED_IN[key] = USED_IN[key] || []).push({id, name});
+      }
+    }
   }
 }
 
@@ -1707,7 +1880,6 @@ function extractBosses(html){
 
 function escapeHtml(s){ return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
 
-/* WC3 colour code → HTML */
 function wc3ToHtml(str){
   if (!str) return "";
   let out = String(str);
@@ -1717,34 +1889,125 @@ function wc3ToHtml(str){
   return `<span>${out}</span>`;
 }
 
-/* Tooltip */
+/* In-game style item name color — heuristic by tier. */
+function itemNameColor(id, lvl, cat, status){
+  const override = ITEM_NAME_COLORS[id];
+  if (override) return "#" + override.slice(-6);
+  if (cat === "Divine Card") return "#c9baff";
+  if (cat === "Runes") return "#5df3c6";
+  if (status === "Unresolved") return "#93a4b8";
+  if (status === "Special") return "#ffc861";
+  if (lvl >= 95) return "#ff7aa8";
+  if (lvl >= 75) return "#ffc861";
+  if (lvl >= 55) return "#b79bff";
+  if (lvl >= 35) return "#6fc6ff";
+  if (lvl >= 15) return "#7ee0a0";
+  return "#c9d1d9";
+}
+
+/* =====================================================================
+   TOOLTIPS
+   ===================================================================== */
 const tipEl = document.getElementById("wc3-tip");
+
+function renderStatBlock(stats){
+  let html = `<div class="wc3-tip-stats">`;
+  if (stats && stats.length){
+    html += stats.map(s=>`<div class="wc3-stat-line">${escapeHtml(s)}</div>`).join("");
+  } else {
+    html += `<div class="wc3-stat-line wc3-stat-missing">No stat bonuses recorded for this item.</div>`;
+  }
+  html += `</div>`;
+  return html;
+}
+
+function renderDropBlock(id){
+  const rows = DROPS[id];
+  if (!rows || !rows.length){
+    return `<div class="wc3-drop-section"><div class="wc3-drop-note">No drop data in the extraction for this item.</div></div>`;
+  }
+  const perUnit = {};
+  for (const r of rows){
+    if (r.eff <= 0) continue;
+    if (!perUnit[r.unit] || perUnit[r.unit].eff < r.eff) perUnit[r.unit] = r;
+  }
+  const list = Object.values(perUnit).sort((a,b)=>b.eff-a.eff);
+  if (!list.length){
+    return `<div class="wc3-drop-section"><div class="wc3-drop-note">Only second-tier rolls — no direct per-kill chance.</div></div>`;
+  }
+  const best = list[0];
+  let html = `<div class="wc3-drop-section">`;
+  html += `<div class="wc3-drop-best">Best: ${best.eff.toFixed(3)}% / kill</div>`;
+  for (const r of list.slice(0, 6)){
+    const bname = UNIT_NAMES[r.unit] || ("Unit " + r.unit);
+    const cls = r.eff < 1 ? "low" : r.eff < 10 ? "mid" : "";
+    html += `<div class="wc3-drop-row"><span class="rn">${escapeHtml(bname)}</span><span class="rv ${cls}">${r.eff.toFixed(3)}%</span></div>`;
+  }
+  if (list.length > 6) html += `<div class="wc3-drop-note">+${list.length-6} more sources (see table for full breakdown)</div>`;
+  html += `</div>`;
+  return html;
+}
+
 function showItemTip(e, data){
-  const {name, id, cat, lvl, tooltip} = data;
+  const {name, id, cat, lvl, status, tooltip} = data;
   const tip = tooltip || {};
-  let html = `<div class="wc3-tip-header">
-    <div class="wc3-tip-title">${escapeHtml(name)}</div>
-    <div class="wc3-tip-id">${escapeHtml(id)}</div>
-  </div>
-  <div class="wc3-tip-meta">
-    <span class="m">${escapeHtml(cat)}</span>
-    <span class="m">Level <b>${lvl}</b></span>
-  </div>`;
-  let body = "";
-  if (tip.effects){
-    body += `<p>${wc3ToHtml(tip.effects)}</p>`;
-  }
-  if (tip.flavor){
-    body += `<p class="flavor">${wc3ToHtml(tip.flavor)}</p>`;
-  }
-  if (!tip.effects && !tip.flavor){
-    body += `<p class="flavor">No description available in the extracted source data.</p>`;
-  }
-  html += `<div class="wc3-tip-body">${body}</div>`;
-  tipEl.innerHTML = html;
+  const stats = ITEM_STATS[id] || null;
+  const nameColor = itemNameColor(id, lvl, cat, status);
+
+  const headerHtml = `<div class="wc3-tip-header">
+      <div class="wc3-tip-title" style="color:${nameColor}">${escapeHtml(name)}</div>
+      <div class="wc3-tip-id">${escapeHtml(id)}</div>
+    </div>
+    <div class="wc3-tip-meta">
+      <span class="m">${escapeHtml(cat)}</span>
+      <span class="m">Level <b>${lvl}</b></span>
+      <span class="m">${escapeHtml(status)}</span>
+    </div>`;
+
+  let body = renderStatBlock(stats);
+  if (tip.effects) body += `<p>${wc3ToHtml(tip.effects)}</p>`;
+  if (tip.flavor)  body += `<p class="flavor">${wc3ToHtml(tip.flavor)}</p>`;
+  if (!tip.effects && !tip.flavor) body += `<p class="flavor">No description available in the extracted source data.</p>`;
+
+  tipEl.innerHTML = headerHtml + `<div class="wc3-tip-body">${body}</div>`;
   tipEl.classList.add("show");
   positionTip(e);
 }
+
+function showMaterialTip(e, matName){
+  const item = NAME_TO_ITEM[matName.toLowerCase()];
+  let headerHtml, body = "";
+
+  if (item){
+    const nameColor = itemNameColor(item.id, item.lvl, item.cat, item.status);
+    headerHtml = `<div class="wc3-tip-header">
+        <div class="wc3-tip-title" style="color:${nameColor}">${escapeHtml(item.name)}</div>
+        <div class="wc3-tip-id">${escapeHtml(item.id)}</div>
+      </div>
+      <div class="wc3-tip-meta">
+        <span class="m">${escapeHtml(item.cat)}</span>
+        <span class="m">Level <b>${item.lvl}</b></span>
+        <span class="m">${escapeHtml(item.status)}</span>
+      </div>`;
+    body += renderDropBlock(item.id);
+    const usedIn = USED_IN[item.name.toLowerCase()] || [];
+    if (usedIn.length){
+      body += `<p style="color:#8ba0b8;font-size:12.5px;margin-top:6px">Used in ${usedIn.length} higher-tier recipe${usedIn.length>1?"s":""}.</p>`;
+    }
+  } else {
+    headerHtml = `<div class="wc3-tip-header">
+        <div class="wc3-tip-title">${escapeHtml(matName)}</div>
+        <div class="wc3-tip-id">material</div>
+      </div>
+      <div class="wc3-tip-meta"><span class="m">Crafting material</span></div>`;
+    body += `<div class="wc3-drop-section"><div class="wc3-drop-note">This material is not a codex equipment entry — no drop source available in the extraction.</div></div>`;
+  }
+
+  tipEl.innerHTML = headerHtml + `<div class="wc3-tip-body">${body}</div>`;
+  tipEl.classList.add("show");
+  positionTip(e);
+}
+
 function positionTip(e){
   const pad = 16;
   const w = tipEl.offsetWidth, h = tipEl.offsetHeight;
@@ -1755,8 +2018,14 @@ function positionTip(e){
   tipEl.style.left = Math.max(pad,x) + "px";
   tipEl.style.top = Math.max(pad,y) + "px";
 }
+
 function attachItemTip(el, data){
   el.addEventListener("mouseenter", e=>showItemTip(e, data));
+  el.addEventListener("mousemove", positionTip);
+  el.addEventListener("mouseleave", ()=>tipEl.classList.remove("show"));
+}
+function attachMaterialTip(el, matName){
+  el.addEventListener("mouseenter", e=>showMaterialTip(e, matName));
   el.addEventListener("mousemove", positionTip);
   el.addEventListener("mouseleave", ()=>tipEl.classList.remove("show"));
 }
@@ -1771,8 +2040,95 @@ function attachSpellTip(el, text){
 }
 
 /* =====================================================================
-   Table
+   Planner helpers
    ===================================================================== */
+function isPlanned(id){ return PLANNER.some(p=>p.id===id); }
+
+function planItem(id){
+  if (isPlanned(id)) return false;
+  const equip = EQUIPMENT.find(e=>e[1]===id);
+  if (!equip) return false;
+  const recipe = parseRecipe(equip[5]);
+  if (!recipe) return false;
+  PLANNER.push({
+    id, name: equip[0],
+    materials: recipe.map(m=>({qty:m.qty, name:m.name, have:false}))
+  });
+  savePlanner(); renderPlanner(); syncPlanButtons();
+  return true;
+}
+function unplanItem(id){
+  if (!isPlanned(id)) return false;
+  PLANNER = PLANNER.filter(p=>p.id!==id);
+  savePlanner(); renderPlanner(); syncPlanButtons();
+  return true;
+}
+function syncPlanButtons(){
+  document.querySelectorAll("#gear tbody tr[data-id]").forEach(tr=>{
+    const id = tr.dataset.id;
+    const btn = tr.querySelector(".action-btn.plan");
+    if (!btn) return;
+    if (isPlanned(id)){ btn.textContent = "✓ Planned"; btn.classList.add("planned"); }
+    else { btn.textContent = "+ Plan"; btn.classList.remove("planned"); }
+  });
+}
+
+/* =====================================================================
+   Equipment table
+   ===================================================================== */
+function renderSources(sources, id){
+  const recipe = parseRecipe(sources);
+  if (!recipe) return sources;
+  const idx = sources.indexOf("Craft:");
+  const prefix = idx >= 0 ? sources.slice(0, idx) : "";
+  const warnMatch = sources.match(/\[WARNING[\s\S]*/);
+  const warning = warnMatch ? " " + warnMatch[0] : "";
+  const parts = recipe.map(m=>{
+    const known = !!NAME_TO_ITEM[m.name.toLowerCase()];
+    const cls = known ? "mat-link" : "mat-link mat-unknown";
+    return `${m.qty} × <span class="${cls}" data-mat="${escapeHtml(m.name)}">${escapeHtml(m.name)}</span>`;
+  });
+  return prefix + "<b>Craft:</b> " + parts.join(" + ") + warning;
+}
+
+function renderStatus(status){
+  if (status === "Unresolved") return `<span class="pill pill-unknown">Unresolved</span>`;
+  if (status === "Special") return `<span class="pill">Special</span>`;
+  if (status === "Shop") return `<span class="pill">Shop</span>`;
+  return `<span class="pill">${status}</span>`;
+}
+
+function buildDropCell(id){
+  const td = document.createElement("td");
+  td.className = "drop-cell";
+  const rows = DROPS[id];
+  if (!rows || !rows.length){ td.innerHTML = `<span class="drop-none">No data</span>`; return td; }
+  const perUnit = {};
+  for (const r of rows){
+    if (r.eff <= 0) continue;
+    if (!perUnit[r.unit] || perUnit[r.unit].eff < r.eff) perUnit[r.unit] = r;
+  }
+  const list = Object.values(perUnit).sort((a,b)=>b.eff-a.eff);
+  if (!list.length){ td.innerHTML = `<span class="drop-none">Only second-tier rolls</span>`; return td; }
+  const best = list[0];
+  td.innerHTML = `<span class="drop-best">${best.eff.toFixed(3)}% <span class="sources">×${list.length} source${list.length>1?"s":""}</span></span>`;
+  const det = document.createElement("details");
+  det.innerHTML = `<summary>Breakdown</summary>`;
+  const listEl = document.createElement("div");
+  listEl.className = "drop-list";
+  for (const r of list){
+    const bname = UNIT_NAMES[r.unit] || "Unknown unit";
+    const row = document.createElement("div");
+    row.className = "drop-row";
+    row.innerHTML = `<span class="bname">${escapeHtml(bname)}<span class="bunit">${r.unit}</span></span>` +
+      `<span class="pct ${r.eff<1?'low':r.eff<10?'mid':''}">${r.eff.toFixed(3)}%</span>` +
+      `<span class="cond">${r.cond?escapeHtml(r.cond)+" · ":""}mode: ${r.mode} · inner ${r.inner.toFixed(2)}% × outer ${r.outer.toFixed(2)}%</span>`;
+    listEl.appendChild(row);
+  }
+  det.appendChild(listEl); td.appendChild(det);
+  return td;
+}
+
 function buildTable(){
   const tbody = document.querySelector("#gear tbody");
   const frag = document.createDocumentFragment();
@@ -1783,11 +2139,12 @@ function buildTable(){
     tr.dataset.bosses = extractBosses(sources).join("|");
     tr.dataset.recipe = JSON.stringify(parseRecipe(sources)||null);
 
+    const color = itemNameColor(id, lvl, cat, status);
+
     const nameTd = document.createElement("td");
-    nameTd.innerHTML = `<b class="item-name">${escapeHtml(name)}</b><br><small class="id">${id}</small>`;
+    nameTd.innerHTML = `<b class="item-name" style="color:${color}">${escapeHtml(name)}</b><br><small class="id">${id}</small>`;
     const nameEl = nameTd.querySelector(".item-name");
-    const tooltip = ITEM_TOOLTIPS[id] || null;
-    attachItemTip(nameEl, {name, id, cat, lvl, tooltip});
+    attachItemTip(nameEl, {name, id, cat, lvl, status, tooltip: ITEM_TOOLTIPS[id] || null});
 
     const catTd = document.createElement("td"); catTd.textContent = cat;
     const lvlTd = document.createElement("td"); lvlTd.textContent = lvl;
@@ -1795,27 +2152,23 @@ function buildTable(){
     lvlTd.className = "lvl lvl-" + tier;
     const dropTd = buildDropCell(id);
     const statTd = document.createElement("td"); statTd.innerHTML = renderStatus(status);
-    const srcTd = document.createElement("td"); srcTd.innerHTML = sources;
+    const srcTd = document.createElement("td");
+    srcTd.innerHTML = renderSources(sources, id);
+    srcTd.querySelectorAll(".mat-link").forEach(el=>{
+      attachMaterialTip(el, el.dataset.mat);
+    });
 
     const actTd = document.createElement("td"); actTd.className = "actions-cell";
     const recipe = parseRecipe(sources);
     if (recipe){
       const b = document.createElement("button");
-      b.className = "action-btn plan"; b.textContent = PLANNER.find(p=>p.id===id) ? "✓ Planned" : "+ Plan";
-      if (PLANNER.find(p=>p.id===id)) b.classList.add("planned");
+      b.className = "action-btn plan";
+      b.textContent = isPlanned(id) ? "✓ Planned" : "+ Plan";
+      if (isPlanned(id)) b.classList.add("planned");
       b.onclick = (e)=>{
         e.stopPropagation();
-        const planned = PLANNER.find(p=>p.id===id);
-        if (planned){
-          PLANNER = PLANNER.filter(p=>p.id!==id);
-          b.textContent = "+ Plan"; b.classList.remove("planned");
-          toast("Removed from planner");
-        } else {
-          PLANNER.push({id,name,materials:recipe.map(m=>({qty:m.qty,name:m.name,have:false}))});
-          b.textContent = "✓ Planned"; b.classList.add("planned");
-          toast("Added to planner");
-        }
-        savePlanner(); renderPlanner();
+        if (isPlanned(id)){ unplanItem(id); toast("Removed from planner"); }
+        else { planItem(id); toast("Added to planner"); }
       };
       actTd.appendChild(b);
     }
@@ -1894,44 +2247,205 @@ function buildTable(){
   }
 }
 
-function renderStatus(status){
-  if (status === "Unresolved") return `<span class="pill pill-unknown">Unresolved</span>`;
-  if (status === "Special") return `<span class="pill">Special</span>`;
-  if (status === "Shop") return `<span class="pill">Shop</span>`;
-  return `<span class="pill">${status}</span>`;
+/* =====================================================================
+   NEW: ITEMS TAB — merges EQUIPMENT with the two new CSVs
+   ===================================================================== */
+
+/* --- derive a category for CSV-only items (not in EQUIPMENT) --- */
+function deriveCategory(id, name){
+  const n = (name||"").toLowerCase();
+  if (/\bcard\b/.test(n)) return "Divine Card";
+  if (/rune stone/.test(n)) return "Runes";
+  if (/(elixir|potion|nectar|cake|cheese|croissant|meal|pumpkin|sausage|bread|combo|lunch|tea|sparkling water|radish|liquor|chocolate|food|gift pack|holy elixir|drop)/.test(n)) return "Consumable";
+  if (/(- materials -|shard|crystal|ore|fragment|whetstone|rag|ember|bone|fossil|crest|atlas|tablet|slab|jade|core|lantern|mushroom|scale|claw|blood|tear|seed|orb|gem|insignia|seal|soul|paper|blaze|rune\b|dried heart|hollow claw|echo)/.test(n)) return "Material";
+  const eq = EQUIPMENT.find(e=>e[1]===id);
+  if (eq) return eq[2];
+  return "Other";
 }
 
-function buildDropCell(id){
-  const td = document.createElement("td");
-  td.className = "drop-cell";
-  const rows = DROPS[id];
-  if (!rows || !rows.length){ td.innerHTML = `<span class="drop-none">No data</span>`; return td; }
-  const perUnit = {};
-  for (const r of rows){
-    if (r.eff <= 0) continue;
-    if (!perUnit[r.unit] || perUnit[r.unit].eff < r.eff) perUnit[r.unit] = r;
-  }
-  const list = Object.values(perUnit).sort((a,b)=>b.eff-a.eff);
-  if (!list.length){ td.innerHTML = `<span class="drop-none">Only second-tier rolls</span>`; return td; }
-  const best = list[0];
-  td.innerHTML = `<span class="drop-best">${best.eff.toFixed(3)}% <span class="sources">×${list.length} source${list.length>1?"s":""}</span></span>`;
-  const det = document.createElement("details");
-  det.innerHTML = `<summary>Breakdown</summary>`;
-  const listEl = document.createElement("div");
-  listEl.className = "drop-list";
-  for (const r of list){
-    const bname = UNIT_NAMES[r.unit] || "Unknown unit";
-    const row = document.createElement("div");
-    row.className = "drop-row";
-    row.innerHTML = `<span class="bname">${escapeHtml(bname)}<span class="bunit">${r.unit}</span></span>` +
-      `<span class="pct ${r.eff<1?'low':r.eff<10?'mid':''}">${r.eff.toFixed(3)}%</span>` +
-      `<span class="cond">${r.cond?escapeHtml(r.cond)+" · ":""}mode: ${r.mode} · inner ${r.inner.toFixed(2)}% × outer ${r.outer.toFixed(2)}%</span>`;
-    listEl.appendChild(row);
-  }
-  det.appendChild(listEl); td.appendChild(det);
-  return td;
+/* --- strip WC3 colour codes from a name --- */
+function cleanWc3Name(s){
+  if (!s) return "";
+  return String(s)
+    .replace(/\|c[0-9a-fA-F]{8}/g, "")
+    .replace(/\|c[0-9a-fA-F]{6}/g, "")
+    .replace(/\|r/g, "")
+    .replace(/\|n/g, " ")
+    .trim();
 }
 
+/* --- minimal CSV line parser (handles quoted fields) --- */
+function parseCsvLine(line){
+  const out = []; let cur = ""; let q = false;
+  for (let i=0;i<line.length;i++){
+    const ch = line[i];
+    if (q){
+      if (ch === '"' && line[i+1] === '"'){ cur += '"'; i++; }
+      else if (ch === '"'){ q = false; }
+      else cur += ch;
+    } else {
+      if (ch === '"'){ q = true; }
+      else if (ch === ','){ out.push(cur); cur = ""; }
+      else cur += ch;
+    }
+  }
+  out.push(cur);
+  return out;
+}
+
+/* --- parse one of the CSV text blobs into EXTRA_ITEMS --- */
+const EXTRA_ITEMS = {};
+
+function ingestCsv(text){
+  if (!text || text.indexOf("__PASTE_") === 0) return; // placeholder untouched
+  const lines = text.replace(/\r/g,"").split("\n").filter(Boolean);
+  if (!lines.length) return;
+  const header = parseCsvLine(lines[0]).map(h=>h.trim().toLowerCase());
+  const iId   = header.indexOf("item id");
+  const iName = header.findIndex(h => h === "item name" || h === "name");
+  const iDesc = header.findIndex(h => h === "description");
+  const iTool = header.findIndex(h => h === "tooltip");
+  const iExt  = header.findIndex(h => h === "extended tooltip");
+  if (iId < 0) return;
+  for (let i=1;i<lines.length;i++){
+    const f = parseCsvLine(lines[i]);
+    const id = (f[iId]||"").trim();
+    if (!id) continue;
+    const rawName = iName>=0 ? (f[iName]||"").trim() : "";
+    const tooltip  = iTool>=0 ? (f[iTool]||"").trim() : "";
+    const extTool  = iExt>=0  ? (f[iExt]||"").trim()  : "";
+    const desc     = iDesc>=0 ? (f[iDesc]||"").trim() : "";
+    const plainName = cleanWc3Name(rawName) || id;
+    EXTRA_ITEMS[id] = {
+      id,
+      name: plainName,
+      rawName: rawName,
+      tooltip: tooltip || extTool || desc,
+      description: desc,
+      cat: deriveCategory(id, plainName)
+    };
+  }
+}
+
+ingestCsv(CSV_FULL);
+ingestCsv(CSV_MINI);
+
+/* --- unified item list: EQUIPMENT + CSV extras --- */
+function buildUnifiedItems(){
+  const map = new Map();
+  for (const [name,id,cat,lvl,status,sources] of EQUIPMENT){
+    map.set(id, {
+      id, name, cat, lvl, status, sources,
+      tooltip: ITEM_TOOLTIPS[id] ? (ITEM_TOOLTIPS[id].effects || ITEM_TOOLTIPS[id].flavor || "") : "",
+      flavor: ITEM_TOOLTIPS[id] ? (ITEM_TOOLTIPS[id].flavor || "") : "",
+      stats: ITEM_STATS[id] || null
+    });
+  }
+  for (const [id, ex] of Object.entries(EXTRA_ITEMS)){
+    if (map.has(id)){
+      const row = map.get(id);
+      // Prefer the longer / more descriptive CSV name if the equipment name is bare
+      if (ex.name && ex.name.length > row.name.length) row.name = ex.name;
+      if (!row.tooltip && ex.tooltip) row.tooltip = ex.tooltip;
+    } else {
+      map.set(id, {
+        id,
+        name: ex.name || id,
+        cat: ex.cat || "Other",
+        lvl: 0,
+        status: "—",
+        sources: "",
+        tooltip: ex.tooltip || "",
+        flavor: "",
+        stats: ITEM_STATS[id] || null
+      });
+    }
+  }
+  return [...map.values()];
+}
+
+const UNIFIED_ITEMS = buildUnifiedItems();
+
+/* --- render the Items grid --- */
+function buildItemGrid(){
+  const grid = document.getElementById("item-grid");
+  if (!grid) return;
+  grid.innerHTML = "";
+
+  const q = (document.getElementById("item-q")?.value || "").toLowerCase();
+  const catF = document.getElementById("item-cat")?.value || "";
+
+  const list = UNIFIED_ITEMS.filter(it=>{
+    if (catF && it.cat !== catF) return false;
+    if (!q) return true;
+    const hay = (it.name + " " + it.id + " " + it.cat + " " + (it.sources||"") + " " + (it.tooltip||"")).toLowerCase();
+    return hay.includes(q);
+  });
+
+  document.getElementById("item-count").textContent =
+    list.length + " of " + UNIFIED_ITEMS.length + " items";
+
+  for (const it of list){
+    const card = document.createElement("div");
+    card.className = "hero-card";
+
+    const color = it.lvl
+      ? itemNameColor(it.id, it.lvl, it.cat, it.status)
+      : itemNameColor(it.id, 0, it.cat, it.status);
+
+    const head = document.createElement("div");
+    head.className = "hero-head";
+    head.innerHTML = `
+      <h3 class="hero-name" style="color:${color};cursor:help">${escapeHtml(it.name)}</h3>
+      <span class="hero-attr" data-a="${escapeHtml(it.cat)}">${escapeHtml(it.cat)}</span>`;
+
+    const meta = document.createElement("div");
+    meta.className = "hero-stats";
+    meta.innerHTML = `
+      <span class="hero-stat">ID <b>${escapeHtml(it.id)}</b></span>
+      ${it.lvl ? `<span class="hero-stat">Lv <b>${it.lvl}</b></span>` : ""}
+      ${it.status && it.status !== "—" ? `<span class="hero-stat"><b>${escapeHtml(it.status)}</b></span>` : ""}`;
+
+    const body = document.createElement("div");
+    body.className = "spell-body";
+    body.style.display = "block";
+    let html = "";
+
+    // Stats block
+    if (it.stats && it.stats.length){
+      html += `<div style="color:#9fffbf;font-family:var(--mono);font-size:12.5px;line-height:1.7;margin-bottom:8px">` +
+              it.stats.map(s=>"▲ " + escapeHtml(s)).join("<br>") + `</div>`;
+    }
+
+    // Effects / description
+    if (it.tooltip){
+      html += `<p style="margin:8px 0 0">${wc3ToHtml(it.tooltip)}</p>`;
+    }
+
+    // Flavor
+    if (it.flavor && it.flavor !== it.tooltip){
+      html += `<p style="font-style:italic;color:#a0b2c8;margin:8px 0 0">“${wc3ToHtml(it.flavor)}”</p>`;
+    }
+
+    if (!html) html = `<p style="color:var(--muted);font-style:italic">No description in extracted data.</p>`;
+    body.innerHTML = html;
+
+    // Tooltip on hover
+    const nameEl = head.querySelector(".hero-name");
+    attachItemTip(nameEl, {
+      name: it.name, id: it.id, cat: it.cat, lvl: it.lvl,
+      status: it.status,
+      tooltip: ITEM_TOOLTIPS[it.id] || { effects: it.tooltip, flavor: it.flavor }
+    });
+
+    card.append(head, meta, body);
+    grid.appendChild(card);
+  }
+}
+
+/* =====================================================================
+   FILTERS + SORT + URL
+   ===================================================================== */
 function applyFilters(){
   const tbody = document.querySelectorAll("#gear tbody tr");
   let n = 0; const catCounts = {};
@@ -1998,14 +2512,16 @@ function applySort(){
 }
 
 function syncURL(){
-  const p = new URLSearchParams();
-  if (state.q) p.set("q", state.q);
-  if (state.cats.size) p.set("cats", [...state.cats].join(","));
-  if (state.statuses.size) p.set("st", [...state.statuses].join(","));
-  if (state.lvlMin) p.set("lmin", state.lvlMin);
-  if (state.lvlMax !== 100) p.set("lmax", state.lvlMax);
-  if (state.preset) p.set("pre", state.preset);
-  history.replaceState(null, "", "?" + p.toString());
+  try {
+    const p = new URLSearchParams();
+    if (state.q) p.set("q", state.q);
+    if (state.cats.size) p.set("cats", [...state.cats].join(","));
+    if (state.statuses.size) p.set("st", [...state.statuses].join(","));
+    if (state.lvlMin) p.set("lmin", state.lvlMin);
+    if (state.lvlMax !== 100) p.set("lmax", state.lvlMax);
+    if (state.preset) p.set("pre", state.preset);
+    history.replaceState(null, "", "?" + p.toString());
+  } catch(_) {}
 }
 
 function readURL(){
@@ -2021,8 +2537,10 @@ function readURL(){
 
 let toastTimer;
 function toast(msg){ const el=document.getElementById("toast"); el.textContent=msg; el.classList.add("show"); clearTimeout(toastTimer); toastTimer=setTimeout(()=>el.classList.remove("show"),1600); }
-function savePlanner(){ localStorage.setItem("st:planner3", JSON.stringify(PLANNER)); }
 
+/* =====================================================================
+   Planner render
+   ===================================================================== */
 function renderPlanner(){
   const box = document.getElementById("planner-content");
   if (!PLANNER.length){ box.innerHTML = `<div class="planner-empty">No items planned yet. Click <b>+ Plan</b> on a craftable row below.</div>`; return; }
@@ -2034,9 +2552,13 @@ function renderPlanner(){
     const ready = have === item.materials.length;
     const pct = item.materials.length ? Math.round(have/item.materials.length*100) : 100;
     if (ready) div.classList.add("ready");
+
+    const itemInfo = NAME_TO_ITEM[item.name.toLowerCase()];
+    const nameColor = itemInfo ? itemNameColor(itemInfo.id, itemInfo.lvl, itemInfo.cat, itemInfo.status) : "#dbe7f4";
+
     div.innerHTML = `
       <div class="planner-item-head">
-        <b>${escapeHtml(item.name)}</b>
+        <b style="color:${nameColor}">${escapeHtml(item.name)}</b>
         ${ready ? `<span class="planner-ready-badge">Ready to be crafted!</span>` : ""}
         <button class="remove" title="Remove from planner">✕</button>
       </div>
@@ -2045,7 +2567,12 @@ function renderPlanner(){
         <span>${have}/${item.materials.length}</span>
         <div class="planner-bar"><span style="width:${pct}%"></span></div>
         <span>${pct}%</span>
-      </div>`;
+      </div>
+      <details class="planner-used">
+        <summary>Used in — next craft</summary>
+        <div class="used-list"></div>
+      </details>`;
+
     const ul = div.querySelector("ul");
     item.materials.forEach((m,i)=>{
       const li = document.createElement("li");
@@ -2053,21 +2580,49 @@ function renderPlanner(){
       cb.type = "checkbox"; cb.id = `p_${item.id}_${i}`; cb.checked = !!m.have;
       const lbl = document.createElement("label");
       lbl.htmlFor = cb.id;
-      lbl.innerHTML = `<span class="planner-mat-qty">×${m.qty}</span> ${escapeHtml(m.name)}`;
+      const known = !!NAME_TO_ITEM[m.name.toLowerCase()];
+      const mColor = known ? itemNameColor(NAME_TO_ITEM[m.name.toLowerCase()].id, NAME_TO_ITEM[m.name.toLowerCase()].lvl, NAME_TO_ITEM[m.name.toLowerCase()].cat, NAME_TO_ITEM[m.name.toLowerCase()].status) : "";
+      lbl.innerHTML = `<span class="planner-mat-qty">×${m.qty}</span> <span class="${known?'mat-link':'mat-link mat-unknown'}" ${mColor?`style="color:${mColor}"`:""}>${escapeHtml(m.name)}</span>`;
       cb.onchange = ()=>{ m.have = cb.checked; savePlanner(); renderPlanner(); };
+      const linkEl = lbl.querySelector(".mat-link");
+      attachMaterialTip(linkEl, m.name);
       li.append(cb,lbl); ul.appendChild(li);
     });
+
+    const usedList = div.querySelector(".used-list");
+    const usedIn = USED_IN[item.name.toLowerCase()] || [];
+    if (!usedIn.length){
+      usedList.innerHTML = `<div class="used-none">This item is not a material in any registered recipe — it's likely a top-tier craft.</div>`;
+    } else {
+      for (const ref of usedIn){
+        const btn = document.createElement("button");
+        btn.className = "used-item" + (isPlanned(ref.id) ? " planned" : "");
+        const refInfo = NAME_TO_ITEM[ref.name.toLowerCase()];
+        const refColor = refInfo ? itemNameColor(refInfo.id, refInfo.lvl, refInfo.cat, refInfo.status) : "";
+        const equip = EQUIPMENT.find(e=>e[1]===ref.id);
+        const refLvl = equip ? equip[3] : "?";
+        btn.innerHTML = `<span style="color:${refColor}">${escapeHtml(ref.name)}</span><span class="used-tag">Lv ${refLvl}</span>`;
+        btn.title = isPlanned(ref.id) ? "Already in planner" : "Add to planner";
+        btn.onclick = (e)=>{
+          e.stopPropagation();
+          if (isPlanned(ref.id)){ toast("Already in planner"); return; }
+          if (planItem(ref.id)) toast("Added " + ref.name + " to planner");
+        };
+        usedList.appendChild(btn);
+      }
+    }
+
     div.querySelector(".remove").onclick = ()=>{
       PLANNER = PLANNER.filter(p=>p.id !== item.id);
-      savePlanner(); renderPlanner();
-      document.querySelectorAll(`tr[data-id="${item.id}"] .action-btn.plan`).forEach(b=>{
-        b.textContent = "+ Plan"; b.classList.remove("planned");
-      });
+      savePlanner(); renderPlanner(); syncPlanButtons();
     };
     box.appendChild(div);
   }
 }
 
+/* =====================================================================
+   Chips + listeners
+   ===================================================================== */
 function buildChips(){
   const cats = ["Weapon","Armor","Helmet","Accessory","Collectibles","Divine Card","Runes"];
   const statuses = ["Drop","Craft","Shop","Special","Unresolved"];
@@ -2138,8 +2693,7 @@ function attachListeners(){
   document.getElementById("planner-clear").onclick = ()=>{
     if (!PLANNER.length) return;
     if (!confirm("Clear all planned items?")) return;
-    PLANNER = []; savePlanner(); renderPlanner();
-    document.querySelectorAll(".action-btn.plan").forEach(b=>{b.textContent="+ Plan"; b.classList.remove("planned");});
+    PLANNER = []; savePlanner(); renderPlanner(); syncPlanButtons();
   };
   document.querySelectorAll("#gear thead th[data-sort]").forEach(th=>{
     th.addEventListener("click", ()=>{
@@ -2169,18 +2723,35 @@ function attachListeners(){
     themeBtn.textContent = next === "light" ? "☀️" : "🌙";
     localStorage.setItem("st:theme", next);
   };
-  const top = document.getElementById("scroll-top");
-  window.addEventListener("scroll", ()=>top.classList.toggle("visible", window.scrollY > 500));
-  top.onclick = ()=>window.scrollTo({top:0,behavior:"smooth"});
+  const topBtn = document.getElementById("scroll-top");
+  window.addEventListener("scroll", ()=>topBtn.classList.toggle("visible", window.scrollY > 500));
+  topBtn.onclick = ()=>window.scrollTo({top:0,behavior:"smooth"});
+
+  /* ----- Items tab controls ----- */
+  const itemQ = document.getElementById("item-q");
+  const itemCat = document.getElementById("item-cat");
+  const itemClear = document.getElementById("item-clear");
+  if (itemQ) itemQ.addEventListener("input", buildItemGrid);
+  if (itemCat) itemCat.addEventListener("change", buildItemGrid);
+  if (itemClear) itemClear.onclick = ()=>{
+    document.getElementById("item-q").value = "";
+    document.getElementById("item-cat").value = "";
+    buildItemGrid();
+  };
 }
 
 /* INIT */
 parseDrops();
+buildIndexes();
 buildTable();
 buildChips();
 renderPlanner();
 readURL();
 attachListeners();
 applyFilters();
+syncPlanButtons();
+buildItemGrid();
+
 </script>
+</body>
 </html>
