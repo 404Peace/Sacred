@@ -1,16 +1,16 @@
 /* Auto-split from the single-file guide. Safe to edit. */
 
 const EQUIPMENT = [
-["Thief's Mallet","tkno","Weapon",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Mode not specified</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Mode not specified</span>"],
-["Bandit Bracer","srtl","Weapon",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Mode not specified</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Mode not specified</span>"],
-["Bandit Short Bow","rots","Weapon",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Mode not specified</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Mode not specified</span>"],
-["Homemade Rifle","k3m2","Weapon",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Mode not specified</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Mode not specified</span>"],
-["Thief Staff","ckng","Weapon",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Mode not specified</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Mode not specified</span>"],
-["Beast Short Sword","ofro","Weapon",15,"Drop","Bearkin[Trash] <span class=\"pill\">Mode not specified</span><hr>Festering Beetle[Elite] <span class=\"pill\">Mode not specified</span><hr>Thunder Wolf Marco(Lord) <span class=\"pill\">Mode not specified</span>"],
-["Beast Hide Gauntlets","oli2","Weapon",15,"Drop","Bearkin[Trash] <span class=\"pill\">Mode not specified</span><hr>Festering Beetle[Elite] <span class=\"pill\">Mode not specified</span><hr>Thunder Wolf Marco(Lord) <span class=\"pill\">Mode not specified</span>"],
-["Beast Bow","frhg","Weapon",15,"Drop","Bearkin[Trash] <span class=\"pill\">Mode not specified</span><hr>Festering Beetle[Elite] <span class=\"pill\">Mode not specified</span><hr>Thunder Wolf Marco(Lord) <span class=\"pill\">Mode not specified</span>"],
-["Beast Rifle","I03I","Weapon",15,"Drop","Bearkin[Trash] <span class=\"pill\">Mode not specified</span><hr>Festering Beetle[Elite] <span class=\"pill\">Mode not specified</span><hr>Thunder Wolf Marco(Lord) <span class=\"pill\">Mode not specified</span>"],
-["Pine Wood Staff","rde4","Weapon",15,"Drop","Bearkin[Trash] <span class=\"pill\">Mode not specified</span><hr>Festering Beetle[Elite] <span class=\"pill\">Mode not specified</span><hr>Thunder Wolf Marco(Lord) <span class=\"pill\">Mode not specified</span>"],
+["Thief's Mallet","tkno","Weapon",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Normal</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Normal</span>"],
+["Bandit Bracer","srtl","Weapon",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Normal</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Normal</span>"],
+["Bandit Short Bow","rots","Weapon",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Normal</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Normal</span>"],
+["Homemade Rifle","k3m2","Weapon",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Normal</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Normal</span>"],
+["Thief Staff","ckng","Weapon",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Normal</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Normal</span>"],
+["Beast Short Sword","ofro","Weapon",15,"Drop","Bearkin[Trash] <span class=\"pill\">Normal</span><hr>Festering Beetle[Elite] <span class=\"pill\">Normal</span><hr>Thunder Wolf Marco(Lord) <span class=\"pill\">Normal</span>"],
+["Beast Hide Gauntlets","oli2","Weapon",15,"Drop","Bearkin[Trash] <span class=\"pill\">Normal</span><hr>Festering Beetle[Elite] <span class=\"pill\">Normal</span><hr>Thunder Wolf Marco(Lord) <span class=\"pill\">Normal</span>"],
+["Beast Bow","frhg","Weapon",15,"Drop","Bearkin[Trash] <span class=\"pill\">Normal</span><hr>Festering Beetle[Elite] <span class=\"pill\">Normal</span><hr>Thunder Wolf Marco(Lord) <span class=\"pill\">Normal</span>"],
+["Beast Rifle","I03I","Weapon",15,"Drop","Bearkin[Trash] <span class=\"pill\">Normal</span><hr>Festering Beetle[Elite] <span class=\"pill\">Normal</span><hr>Thunder Wolf Marco(Lord) <span class=\"pill\">Normal</span>"],
+["Pine Wood Staff","rde4","Weapon",15,"Drop","Bearkin[Trash] <span class=\"pill\">Normal</span><hr>Festering Beetle[Elite] <span class=\"pill\">Normal</span><hr>Thunder Wolf Marco(Lord) <span class=\"pill\">Normal</span>"],
 ["Soldier Battle Axe","modt","Weapon",25,"Drop","Village Chief Merlin (Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Blackstone Village</small>"],
 ["Snowfield Bracers","olig","Weapon",25,"Drop","Village Chief Merlin (Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Blackstone Village</small>"],
 ["Indifferent Longbow","gldo","Weapon",25,"Drop","Village Chief Merlin (Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Blackstone Village</small>"],
@@ -20,30 +20,30 @@ const EQUIPMENT = [
 ["False Loyalty","I08D","Weapon",25,"Drop","Village Chief Merlin (Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Blackstone Village</small>"],
 ["Vitality Branch","I08E","Weapon",25,"Drop","Village Chief Merlin (Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Blackstone Village</small>"],
 ["Cursed Sword","fwss","Weapon",35,"Drop","Abyss Apostle Marnay (Lord) <span class=\"pill\">Normal</span>"],
-["Troll Dagger","I07W","Weapon",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Mode not specified</span>"],
-["Troll Gauntlets","arsc","Weapon",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Mode not specified</span>"],
-["Skeleton King's Shadow Longsword","gobm","Weapon",30,"Drop","Bone King Deveak (Lord - Starter Equipment) <span class=\"pill\">Mode not specified</span>"],
+["Troll Dagger","I07W","Weapon",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Normal</span>"],
+["Troll Gauntlets","arsc","Weapon",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Normal</span>"],
+["Skeleton King's Shadow Longsword","gobm","Weapon",30,"Drop","Bone King Deveak (Lord - Starter Equipment) <span class=\"pill\">Normal</span>"],
 ["Bone Shard Longbow","oslo","Weapon",35,"Drop","Abyss Apostle Marnay (Lord) <span class=\"pill\">Normal</span>"],
-["Troll Hunting Crossbow","I066","Weapon",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Mode not specified</span>"],
-["Troll Rifle","I03J","Weapon",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Mode not specified</span>"],
-["Troll Scepter","spre","Weapon",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Mode not specified</span>"],
+["Troll Hunting Crossbow","I066","Weapon",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Normal</span>"],
+["Troll Rifle","I03J","Weapon",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Normal</span>"],
+["Troll Scepter","spre","Weapon",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Normal</span>"],
 ["Twisted Wand","I07X","Weapon",35,"Unresolved","<b>Unresolved:</b> present in the Equipment Codex but no direct boss-drop, recipe, or shop-stock source found in this extraction."],
 ["Shadow Gauntlets","I082","Weapon",40,"Drop","Abyss Apostle Marnay (Lord) <span class=\"pill\">Normal</span>"],
 ["Manor Staff","I080","Weapon",40,"Drop","Abyss Apostle Marnay (Lord) <span class=\"pill\">Normal</span>"],
 ["Plague Horn","I081","Weapon",40,"Drop","Abyss Apostle Marnay (Lord) <span class=\"pill\">Normal</span>"],
-["Ancient Tree Staff","I09A","Weapon",50,"Drop","Forest King Linton (Mythic) <span class=\"pill\">Mode not specified</span>"],
-["Holy Engraved Saber","rat3","Weapon",50,"Drop","Supreme Knight Gorth(Lord) <span class=\"pill\">Mode not specified</span>"],
+["Ancient Tree Staff","I09A","Weapon",50,"Drop","Forest King Linton (Mythic) <span class=\"pill\">Normal</span>"],
+["Holy Engraved Saber","rat3","Weapon",50,"Drop","Supreme Knight Gorth(Lord) <span class=\"pill\">Normal</span>"],
 ["Rune Longsword","mlst","Weapon",50,"Drop","Ruined City Wyrm Orephon(Lord) <span class=\"pill\">Normal</span>"],
 ["Royal Saber","gsou","Weapon",50,"Drop","Ruined City Wizard Oron(Boss) <span class=\"pill\">Normal</span><br><small>Dungeon Early Winter Valley</small><hr>Archmage Mageston(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Early Winter Valley</small>"],
 ["Valley Gauntlets","rugt","Weapon",50,"Drop","Ruined City Wizard Oron(Boss) <span class=\"pill\">Normal</span><br><small>Dungeon Early Winter Valley</small><hr>Archmage Mageston(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Early Winter Valley</small>"],
-["Soul Purge Gauntlets","jdrn","Weapon",50,"Drop","Supreme Knight Gorth(Lord) <span class=\"pill\">Mode not specified</span>"],
+["Soul Purge Gauntlets","jdrn","Weapon",50,"Drop","Supreme Knight Gorth(Lord) <span class=\"pill\">Normal</span>"],
 ["Shadow Gauntlets Modified","I088","Weapon",50,"Drop","Ruined City Wizard Oron(Boss) <span class=\"pill\">Normal</span><br><small>Dungeon Early Winter Valley</small><hr>Archmage Mageston(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Early Winter Valley</small>"],
 ["Bone Spur Longbow","kgal","Weapon",50,"Craft","<b>Craft:</b> 1 × Bone Shard Longbow + 1 × Fel Gem Blaze"],
 ["Bionic Magic Archer","I067","Weapon",50,"Drop","Ruined City Wizard Oron(Boss) <span class=\"pill\">Normal</span><br><small>Dungeon Early Winter Valley</small><hr>Archmage Mageston(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Early Winter Valley</small>"],
-["Ancient Ice String Longbow","I086","Weapon",50,"Drop","Ancient Guardian Antuun(Lord) <span class=\"pill\">Mode not specified</span>"],
-["Dalman Magic Gun","I087","Weapon",50,"Drop","Ancient Guardian Antuun(Lord) <span class=\"pill\">Mode not specified</span>"],
+["Ancient Ice String Longbow","I086","Weapon",50,"Drop","Ancient Guardian Antuun(Lord) <span class=\"pill\">Normal</span>"],
+["Dalman Magic Gun","I087","Weapon",50,"Drop","Ancient Guardian Antuun(Lord) <span class=\"pill\">Normal</span>"],
 ["Martyr's Staff","grsl","Weapon",50,"Drop","Ruined City Wyrm Orephon(Lord) <span class=\"pill\">Normal</span>"],
-["Amethyst Fel Short Staff","soul","Weapon",50,"Drop","Ancient Guardian Antuun(Lord) <span class=\"pill\">Mode not specified</span>"],
+["Amethyst Fel Short Staff","soul","Weapon",50,"Drop","Ancient Guardian Antuun(Lord) <span class=\"pill\">Normal</span>"],
 ["Shocking Blade","I053","Weapon",60,"Drop","Soul Iron Golem Kurkata(Boss) <span class=\"pill\">Normal</span><br><small>Dungeon Hall Ruins Courtyard</small><hr>Ruined City Sage Kiriyad(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Hall Ruins Courtyard</small>"],
 ["Sword of Deep Winter","I012","Weapon",60,"Craft","<b>Craft:</b> 1 × Rune Longsword + 1 × Rune Script + 1 × Broken Bone Shard"],
 ["Netherflame Sword","sor5","Weapon",60,"Craft","<b>Craft:</b> 1 × Royal Saber + 1 × Rune Script + 1 × Bone Ember"],
@@ -94,10 +94,10 @@ const EQUIPMENT = [
 ["Empire","I075","Weapon",75,"Craft","<b>Craft:</b> 1 × Crusher + 1 × Demon Dragon Soul + 1 × Fel Gem Blaze"],
 ["Snowstorm Wild Hunter","I03M","Weapon",75,"Craft","<b>Craft:</b> 1 × Wolf Fang Rifle + 1 × Deadly Hunter + 1 × Hollow Claw"],
 ["Cold Wisdom Wand","I02K","Weapon",75,"Craft","<b>Craft:</b> 1 × Heart of the Flame Demon King + 1 × Shattered Ice Heart + 1 × Earth Staff + 1 × Winter Song Icefall Scepter + 3 × Equipment Hardening Agent"],
-["Holy God Wedge","I063","Weapon",75,"Drop","Thunder Eagle Emperor Kailin(Lord) <span class=\"pill\">Mode not specified</span><br><small>Dungeon Abyss Arena</small>"],
-["Golden Flask of Redemption","arsh","Weapon",75,"Drop","Thunder Eagle Emperor Kailin(Lord) <span class=\"pill\">Mode not specified</span><br><small>Dungeon Abyss Arena</small>"],
-["Venomous Sting","ratf","Weapon",75,"Drop","Thunder Eagle Emperor Kailin(Lord) <span class=\"pill\">Mode not specified</span><br><small>Dungeon Abyss Arena</small>"],
-["Hunter's Desire","I09B","Weapon",75,"Drop","Desert Tyrant Amoras (Mythic) <span class=\"pill\">Mode not specified</span>"],
+["Holy God Wedge","I063","Weapon",75,"Drop","Thunder Eagle Emperor Kailin(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Abyss Arena</small>"],
+["Golden Flask of Redemption","arsh","Weapon",75,"Drop","Thunder Eagle Emperor Kailin(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Abyss Arena</small>"],
+["Venomous Sting","ratf","Weapon",75,"Drop","Thunder Eagle Emperor Kailin(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Abyss Arena</small>"],
+["Hunter's Desire","I09B","Weapon",75,"Drop","Desert Tyrant Amoras (Mythic) <span class=\"pill\">Normal</span>"],
 ["Renunciation Godslayer Blade","I02O","Weapon",80,"Craft","<b>Craft:</b> 1 × Scourge Battle Axe + 1 × Withered Nectar + 1 × Hollow Claw + 1 × Broken Bone Shard"],
 ["Pure Truesilver Sacred Vessel","I02L","Weapon",80,"Craft","<b>Craft:</b> 1 × Frozen Icebreaker Battle Axe + 1 × Ancient Divine Essence Crystal + 1 × Ancient Creation Crystal + 1 × Bone Ember"],
 ["Faith Unfaltering Blade","I02J","Weapon",80,"Craft","<b>Craft:</b> 1 × Demon Dragon Soul + 1 × Shattered Ice Heart + 1 × Venomous Sting + 1 × Formless Shadow Blade"],
@@ -115,7 +115,7 @@ const EQUIPMENT = [
 ["Isis's Endless Blizzard","I02P","Weapon",80,"Craft","<b>Craft:</b> 1 × Shattered Ice Heart + 1 × Ancient Divine Essence Crystal + 1 × Withered Nectar + 1 × Cold Wisdom Wand"],
 ["True Flame Unquenchable Scepter","I03E","Weapon",80,"Craft","<b>Craft:</b> 1 × Fel Gem Blaze + 1 × Demon Dragon Soul + 1 × Venomous Sting + 1 × Volcano Staff"],
 ["Holy Light Blessed Divine Staff","I047","Weapon",80,"Craft","<b>Craft:</b> 1 × Shattered Ice Heart + 1 × Withered Nectar + 1 × Prayer + 1 × Holy God Wedge"],
-["Hexbreak Dragon Magic Sword","I09D","Weapon",80,"Drop","Corpse Dragon Ryan (Mythic) <span class=\"pill\">Mode not specified</span>"],
+["Hexbreak Dragon Magic Sword","I09D","Weapon",80,"Drop","Corpse Dragon Ryan (Mythic) <span class=\"pill\">Normal</span>"],
 ["Snow Sound Ice Howl","I01U","Weapon",85,"Craft","<b>Craft:</b> 1 × Millennium Ice Feather + 1 × Tender New Branch + 1 × Blade Frostvein Demon Sword + 1 × Blade Cold Edge Greatsword + 3 × Superior Equipment Hardening Agent"],
 ["Hell Slaughter Battle Axe","I04I","Weapon",85,"Craft","<b>Craft:</b> 1 × Ancient Sculpture + 1 × Memory of Life + 1 × Ancient Divine Essence Crystal + 1 × Renunciation Godslayer Blade + 3 × Superior Equipment Hardening Agent"],
 ["Shatter Blood Annihilator","I04O","Weapon",85,"Craft","<b>Craft:</b> 1 × Withered Nectar + 1 × Millennium Ice Feather + 1 × Nectar of the World Tree + 1 × Pure Truesilver Sacred Vessel + 3 × Superior Equipment Hardening Agent"],
@@ -160,16 +160,16 @@ const EQUIPMENT = [
 ["Slaughter","I0BE","Weapon",100,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Trial</span>"],
 ["Ruinous Axe","I0BG","Weapon",100,"Drop","Calamity Insect King Yinkikot(Boss) <span class=\"pill\">Normal</span><br><small>Dungeon Void Land</small><hr>False Redemption Jesus(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Void Land</small>"],
 ["Feng Shui Faith","I0BF","Weapon",100,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Trial</span>"],
-["Thief Plate Armor","bgst","Armor",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Mode not specified</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Mode not specified</span>"],
-["Beast Iron Armor","rhth","Armor",15,"Drop","Bearkin[Trash] <span class=\"pill\">Mode not specified</span><hr>Festering Beetle[Elite] <span class=\"pill\">Mode not specified</span><hr>Thunder Wolf Marco(Lord) <span class=\"pill\">Mode not specified</span>"],
+["Thief Plate Armor","bgst","Armor",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Normal</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Normal</span>"],
+["Beast Iron Armor","rhth","Armor",15,"Drop","Bearkin[Trash] <span class=\"pill\">Normal</span><hr>Festering Beetle[Elite] <span class=\"pill\">Normal</span><hr>Thunder Wolf Marco(Lord) <span class=\"pill\">Normal</span>"],
 ["Soldier Coat","kpin","Armor",25,"Drop","Village Chief Merlin (Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Blackstone Village</small>"],
-["Troll Robe","belv","Armor",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Mode not specified</span>"],
-["Troll Light Armor","I06A","Armor",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Mode not specified</span>"],
-["Ancient Tree Robe","I099","Armor",50,"Drop","Forest King Linton (Mythic) <span class=\"pill\">Mode not specified</span>"],
+["Troll Robe","belv","Armor",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Normal</span>"],
+["Troll Light Armor","I06A","Armor",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Normal</span>"],
+["Ancient Tree Robe","I099","Armor",50,"Drop","Forest King Linton (Mythic) <span class=\"pill\">Normal</span>"],
 ["Manor Robe","I083","Armor",40,"Drop","Abyss Apostle Marnay (Lord) <span class=\"pill\">Normal</span>"],
-["Obsidian Armor","rde3","Armor",50,"Drop","Supreme Knight Gorth(Lord) <span class=\"pill\">Mode not specified</span><hr>Shop stock: Mysterious Merchant[Rare Goods Exchange]"],
+["Obsidian Armor","rde3","Armor",50,"Drop","Supreme Knight Gorth(Lord) <span class=\"pill\">Normal</span><hr>Shop stock: Mysterious Merchant[Rare Goods Exchange]"],
 ["Slaughter Coat","crys","Armor",50,"Drop","Ruined City Wyrm Orephon(Lord) <span class=\"pill\">Normal</span><hr>Shop stock: Mysterious Merchant[Rare Goods Exchange]"],
-["Royal Robe","bspd","Armor",50,"Drop","Ancient Guardian Antuun(Lord) <span class=\"pill\">Mode not specified</span><hr>Shop stock: Mysterious Merchant[Rare Goods Exchange]"],
+["Royal Robe","bspd","Armor",50,"Drop","Ancient Guardian Antuun(Lord) <span class=\"pill\">Normal</span><hr>Shop stock: Mysterious Merchant[Rare Goods Exchange]"],
 ["Calamity Bone War Armor","I027","Armor",55,"Drop","Soul Iron Golem Kurkata(Boss) <span class=\"pill\">Normal</span><br><small>Dungeon Hall Ruins Courtyard</small><hr>Ruined City Sage Kiriyad(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Hall Ruins Courtyard</small>"],
 ["Nectar Vestment","hcun","Armor",55,"Drop","Soul Iron Golem Kurkata(Boss) <span class=\"pill\">Normal</span><br><small>Dungeon Hall Ruins Courtyard</small><hr>Ruined City Sage Kiriyad(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Hall Ruins Courtyard</small>"],
 ["Clear Spring Armor","I06B","Armor",55,"Drop","Soul Iron Golem Kurkata(Boss) <span class=\"pill\">Normal</span><br><small>Dungeon Hall Ruins Courtyard</small><hr>Ruined City Sage Kiriyad(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Hall Ruins Courtyard</small>"],
@@ -201,7 +201,7 @@ const EQUIPMENT = [
 ["Surge of Holy Light","I022","Armor",80,"Craft","<b>Craft:</b> 1 × Holy Rag + 1 × Ancient Beast Crest + 1 × Withered Nectar + 1 × Snow God Blessing Armor"],
 ["Wisdom Kajadis's Robe","I06L","Armor",80,"Craft","<b>Craft:</b> 1 × Reflection Robe + 1 × Demon Bone Vestment + 1 × Demon Dragon Soul + 1 × Artifact Shard"],
 ["Pure Sky Guard","I024","Armor",80,"Craft","<b>Craft:</b> 1 × Holy Rag + 1 × Bone Ember + 1 × Withered Nectar + 1 × Netherworld Ghost Robe"],
-["Cursebound Dragon Magic Armor","I09C","Armor",80,"Drop","Corpse Dragon Ryan (Mythic) <span class=\"pill\">Mode not specified</span>"],
+["Cursebound Dragon Magic Armor","I09C","Armor",80,"Drop","Corpse Dragon Ryan (Mythic) <span class=\"pill\">Normal</span>"],
 ["Sealed Gade War Armor","I03A","Armor",85,"Drop","Ice Fang Mammoth Radkel(Lord) <span class=\"pill\">Normal</span><hr>Epic Chest【Open it and see!】 <span class=\"pill\">Trial</span>"],
 ["Blast Flame Burning War Armor","I038","Armor",85,"Craft","<b>Craft:</b> 1 × Tender New Branch + 1 × Demon Dragon Soul + 1 × Fel Gem Blaze + 1 × Rune Script + 1 × Suffering Soulflame War Armor"],
 ["Vitality Windbrushing Robe","I03F","Armor",85,"Craft","<b>Craft:</b> 1 × Nectar of the World Tree + 1 × Millennium Ice Feather + 1 × Ancient Creation Crystal + 1 × Satan Rune + 1 × Benevolent Robe"],
@@ -221,21 +221,21 @@ const EQUIPMENT = [
 ["Grand Sage's Wisdom","I09Y","Armor",95,"Craft","<b>Craft:</b> 1 × Vitality Windbrushing Robe + 1 × Demonic Lava + 1 × Millennium Ice Feather + 1 × World-Ending Rune + 1 × Queen's Mark"],
 ["Ruinous King Robe","I0BI","Armor",100,"Drop","God of Fiction Gold (Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Fictional Heaven</small>"],
 ["Nightmare Black Demon War Armor","I0BJ","Armor",100,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Trial</span>"],
-["Thief Headband","ciri","Helmet",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Mode not specified</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Mode not specified</span>"],
-["Novice Magic Hat","lhst","Helmet",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Mode not specified</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Mode not specified</span>"],
-["Beast Hide Cap","ratc","Helmet",15,"Drop","Bearkin[Trash] <span class=\"pill\">Mode not specified</span><hr>Festering Beetle[Elite] <span class=\"pill\">Mode not specified</span><hr>Thunder Wolf Marco(Lord) <span class=\"pill\">Mode not specified</span>"],
-["Magical Beast Hide Cap","rat6","Helmet",15,"Drop","Bearkin[Trash] <span class=\"pill\">Mode not specified</span><hr>Festering Beetle[Elite] <span class=\"pill\">Mode not specified</span><hr>Thunder Wolf Marco(Lord) <span class=\"pill\">Mode not specified</span>"],
+["Thief Headband","ciri","Helmet",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Normal</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Normal</span>"],
+["Novice Magic Hat","lhst","Helmet",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Normal</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Normal</span>"],
+["Beast Hide Cap","ratc","Helmet",15,"Drop","Bearkin[Trash] <span class=\"pill\">Normal</span><hr>Festering Beetle[Elite] <span class=\"pill\">Normal</span><hr>Thunder Wolf Marco(Lord) <span class=\"pill\">Normal</span>"],
+["Magical Beast Hide Cap","rat6","Helmet",15,"Drop","Bearkin[Trash] <span class=\"pill\">Normal</span><hr>Festering Beetle[Elite] <span class=\"pill\">Normal</span><hr>Thunder Wolf Marco(Lord) <span class=\"pill\">Normal</span>"],
 ["Voodoo Helmet","rat9","Helmet",25,"Drop","Village Chief Merlin (Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Blackstone Village</small>"],
 ["Soldier Helm","ajen","Helmet",25,"Drop","Village Chief Merlin (Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Blackstone Village</small>"],
-["Troll Helmet","odef","Helmet",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Mode not specified</span>"],
-["Servant's Hat","cnob","Helmet",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Mode not specified</span>"],
+["Troll Helmet","odef","Helmet",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Normal</span>"],
+["Servant's Hat","cnob","Helmet",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Normal</span>"],
 ["Manor Helm","I07Z","Helmet",40,"Drop","Abyss Apostle Marnay (Lord) <span class=\"pill\">Normal</span>"],
 ["Dusk Headwrap","rde1","Helmet",50,"Drop","Ruined City Wizard Oron(Boss) <span class=\"pill\">Normal</span><br><small>Dungeon Early Winter Valley</small><hr>Archmage Mageston(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Early Winter Valley</small>"],
-["Dahlman Knight Helmet","prvt","Helmet",50,"Drop","Ancient Guardian Antuun(Lord) <span class=\"pill\">Mode not specified</span>"],
+["Dahlman Knight Helmet","prvt","Helmet",50,"Drop","Ancient Guardian Antuun(Lord) <span class=\"pill\">Normal</span>"],
 ["Assassin Hood","rst1","Helmet",50,"Drop","Ruined City Wyrm Orephon(Lord) <span class=\"pill\">Normal</span>"],
 ["Knight War Helm","gopr","Helmet",55,"Drop","Soul Iron Golem Kurkata(Boss) <span class=\"pill\">Normal</span><br><small>Dungeon Hall Ruins Courtyard</small><hr>Ruined City Sage Kiriyad(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Hall Ruins Courtyard</small>"],
 ["Fine Iron Hero Helm","I04Z","Helmet",55,"Drop","Soul Iron Golem Kurkata(Boss) <span class=\"pill\">Normal</span><br><small>Dungeon Hall Ruins Courtyard</small><hr>Ruined City Sage Kiriyad(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Hall Ruins Courtyard</small>"],
-["Fragrant Hat","rlif","Helmet",55,"Drop","Supreme Knight Gorth(Lord) <span class=\"pill\">Mode not specified</span>"],
+["Fragrant Hat","rlif","Helmet",55,"Drop","Supreme Knight Gorth(Lord) <span class=\"pill\">Normal</span>"],
 ["Mad Blood Frenzy Headscarf","I00V","Helmet",60,"Craft","<b>Craft:</b> 1 × Dusk Headwrap + 1 × Holy Rag + 1 × Rune Script"],
 ["True Phantom Knight Helm","I00T","Helmet",60,"Craft","<b>Craft:</b> 1 × Knight War Helm + 1 × Satan Rune + 1 × Dahlman Knight Helmet"],
 ["Warrior's Crown","I00U","Helmet",60,"Craft","<b>Craft:</b> 1 × Assassin Hood + 1 × Fine Iron Hero Helm + 1 × Fel Gem Blaze"],
@@ -252,7 +252,7 @@ const EQUIPMENT = [
 ["Pitch Black Annihilator","I00Y","Helmet",75,"Craft","<b>Craft:</b> 1 × Warrior's Crown + 1 × Crimson Secret Treasure + 1 × Ancient Creation Crystal + 1 × Satan Rune + 2 × Equipment Hardening Agent"],
 ["Curse Brainrot Headscarf","I02V","Helmet",75,"Craft","<b>Craft:</b> 1 × Mad Blood Frenzy Headscarf + 1 × Shaman Atlas + 1 × Sacrificial Stone Slab + 1 × Crimson Secret Treasure + 2 × Equipment Hardening Agent"],
 ["Frost Wisdom Hood","I02U","Helmet",75,"Craft","<b>Craft:</b> 1 × Ancient Mask + 1 × Mad Blood Frenzy Headscarf + 1 × Ancient Creation Crystal + 1 × Demonic Lava + 2 × Equipment Hardening Agent"],
-["Evil Sacrifice Mask","I08A","Helmet",75,"Drop","Obsidian Bear Emperor Shami(Lord) <span class=\"pill\">Mode not specified</span><br><small>Dungeon Abyss Arena</small><hr>Flame Horn Boar King Taro(Lord) <span class=\"pill\">Mode not specified</span>"],
+["Evil Sacrifice Mask","I08A","Helmet",75,"Drop","Obsidian Bear Emperor Shami(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Abyss Arena</small><hr>Flame Horn Boar King Taro(Lord) <span class=\"pill\">Normal</span>"],
 ["Truth Envoy Helm","I05I","Helmet",75,"Craft","<b>Craft:</b> 1 × Righteous Envoy Helm + 1 × Crimson Secret Treasure + 1 × Ancient Beast Crest + 1 × Satan Rune"],
 ["Void Gaze","I039","Helmet",80,"Craft","<b>Craft:</b> 1 × Boundary Traveler's Hat + 1 × Demon Dragon Soul + 1 × Heart of the Flame Demon King + 1 × Bone Ember"],
 ["Divine Hazy Veil","mgtk","Helmet",80,"Craft","<b>Craft:</b> 1 × Boundary Traveler's Hat + 1 × Withered Nectar + 1 × Ancient Divine Essence Crystal + 1 × Holy Rag"],
@@ -280,23 +280,23 @@ const EQUIPMENT = [
 ["Destruction Warlock's Shelter","I00L","Helmet",90,"Craft","<b>Craft:</b> 1 × Rubick's Helm + 1 × Shaman Atlas + 1 × Crimson Secret Treasure + 1 × Tender New Branch + 1 × Imprisoned Soul"],
 ["Ice Abyss Lord's Helm","I09Q","Helmet",90,"Craft","<b>Craft:</b> 1 × Dark Commander's Crown + 1 × Sacrificial Stone Slab + 1 × Hollow Claw + 1 × Nectar of the World Tree + 1 × Infinite Sorrow"],
 ["Divine Realm Holy Traveler","I00J","Helmet",90,"Craft","<b>Craft:</b> 1 × Void Realm Soul Traveler + 1 × Activated Ancient Magic + 1 × World-Ending Rune + 1 × Sky Gem + 1 × Ancient Beast Crest"],
-["Tribulation Annihilation Mask","fgsk","Helmet",75,"Drop","World Tree's Agony Reverie【Abyss】 <span class=\"pill\">Mode not specified</span><hr>Ruined City Wizard Oron(Boss) <span class=\"pill\">Trial</span><br><small>Dungeon Early Winter Valley</small>"],
-["Naberius's Wrath","I00A","Helmet",75,"Drop","World Tree's Agony Reverie【Abyss】 <span class=\"pill\">Mode not specified</span><hr>Ruined City Wizard Oron(Boss) <span class=\"pill\">Trial</span><br><small>Dungeon Early Winter Valley</small>"],
-["Astral Immortal War Madness Helm","I089","Helmet",95,"Drop","World Tree's Wrath Reverie【Abyss】 <span class=\"pill\">Mode not specified</span><hr>Sealing Totem (Boss) <span class=\"pill\">Trial</span><br><small>Dungeon Dry Valley</small>"],
-["Astral Supreme Wisdom Headscarf","I08F","Helmet",95,"Drop","World Tree's Wrath Reverie【Abyss】 <span class=\"pill\">Mode not specified</span>"],
-["Astral Eternal Tyrant Face Guard","I05J","Helmet",95,"Drop","World Tree's Wrath Reverie【Abyss】 <span class=\"pill\">Mode not specified</span>"],
+["Tribulation Annihilation Mask","fgsk","Helmet",75,"Drop","World Tree's Agony Reverie【Abyss】 <span class=\"pill\">Normal</span><hr>Ruined City Wizard Oron(Boss) <span class=\"pill\">Trial</span><br><small>Dungeon Early Winter Valley</small>"],
+["Naberius's Wrath","I00A","Helmet",75,"Drop","World Tree's Agony Reverie【Abyss】 <span class=\"pill\">Normal</span><hr>Ruined City Wizard Oron(Boss) <span class=\"pill\">Trial</span><br><small>Dungeon Early Winter Valley</small>"],
+["Astral Immortal War Madness Helm","I089","Helmet",95,"Drop","World Tree's Wrath Reverie【Abyss】 <span class=\"pill\">Normal</span><hr>Sealing Totem (Boss) <span class=\"pill\">Trial</span><br><small>Dungeon Dry Valley</small>"],
+["Astral Supreme Wisdom Headscarf","I08F","Helmet",95,"Drop","World Tree's Wrath Reverie【Abyss】 <span class=\"pill\">Normal</span>"],
+["Astral Eternal Tyrant Face Guard","I05J","Helmet",95,"Drop","World Tree's Wrath Reverie【Abyss】 <span class=\"pill\">Normal</span>"],
 ["Type Zero Ultimate Fantasy","I044","Helmet",95,"Drop","Ice Demon King Kanrei(Legendary) <span class=\"pill\">Trial</span><br><small>Dungeon Spider King City</small>"],
 ["Type Zero Divine River Hat","I01C","Helmet",95,"Drop","Ice Demon King Kanrei(Legendary) <span class=\"pill\">Trial</span><br><small>Dungeon Spider King City</small>"],
 ["Type Zero Alpha Driver","I01B","Helmet",95,"Drop","Ice Demon King Kanrei(Legendary) <span class=\"pill\">Trial</span><br><small>Dungeon Spider King City</small>"],
 ["Doomsday Fantasizer","I0BH","Helmet",100,"Drop","God of Fiction Gold (Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Fictional Heaven</small>"],
-["Silver Ring","gmfr","Accessory",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Mode not specified</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Mode not specified</span>"],
-["Emerald Ring","jpnt","Accessory",15,"Drop","Bearkin[Trash] <span class=\"pill\">Mode not specified</span><hr>Festering Beetle[Elite] <span class=\"pill\">Mode not specified</span><hr>Thunder Wolf Marco(Lord) <span class=\"pill\">Mode not specified</span>"],
+["Silver Ring","gmfr","Accessory",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Normal</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Normal</span>"],
+["Emerald Ring","jpnt","Accessory",15,"Drop","Bearkin[Trash] <span class=\"pill\">Normal</span><hr>Festering Beetle[Elite] <span class=\"pill\">Normal</span><hr>Thunder Wolf Marco(Lord) <span class=\"pill\">Normal</span>"],
 ["Mystic Stone Pendant","skrt","Accessory",25,"Drop","Village Chief Merlin (Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Blackstone Village</small>"],
-["Bone Ring","wolg","Accessory",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Mode not specified</span>"],
-["Troll's Pocket","I07Y","Accessory",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Mode not specified</span>"],
-["Skeleton King's Shadow Ring","lure","Accessory",30,"Drop","Bone King Deveak (Lord - Starter Equipment) <span class=\"pill\">Mode not specified</span>"],
+["Bone Ring","wolg","Accessory",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Normal</span>"],
+["Troll's Pocket","I07Y","Accessory",35,"Drop","Treant Lord Gordon(Lord) <span class=\"pill\">Normal</span>"],
+["Skeleton King's Shadow Ring","lure","Accessory",30,"Drop","Bone King Deveak (Lord - Starter Equipment) <span class=\"pill\">Normal</span>"],
 ["Fruit Wood Ornament","I084","Accessory",40,"Drop","Abyss Apostle Marnay (Lord) <span class=\"pill\">Normal</span>"],
-["Tainted Crystal Skull","dthb","Accessory",50,"Drop","Supreme Knight Gorth(Lord) <span class=\"pill\">Mode not specified</span>"],
+["Tainted Crystal Skull","dthb","Accessory",50,"Drop","Supreme Knight Gorth(Lord) <span class=\"pill\">Normal</span>"],
 ["Berserk Ring","dphe","Accessory",50,"Drop","Ruined City Wizard Oron(Boss) <span class=\"pill\">Normal</span><br><small>Dungeon Early Winter Valley</small>"],
 ["Blood Fury Ring","blba","Accessory",55,"Drop","Ruined City Wyrm Orephon(Lord) <span class=\"pill\">Normal</span>"],
 ["Moon Ring","wtlg","Accessory",55,"Drop","Soul Iron Golem Kurkata(Boss) <span class=\"pill\">Normal</span><br><small>Dungeon Hall Ruins Courtyard</small>"],
@@ -315,9 +315,9 @@ const EQUIPMENT = [
 ["Poetic Pendant","I01N","Accessory",70,"Drop","Lava Demon Ratudas(Lord) <span class=\"pill\">Normal</span>"],
 ["Inferno Pendant","ledg","Accessory",70,"Drop","Lava Demon Ratudas(Lord) <span class=\"pill\">Normal</span>"],
 ["Bedrock Ring","dkfw","Accessory",75,"Drop","Loot【Your Hero presses A to attack the chest and open it】 <span class=\"pill\">Trial</span>"],
-["Ancient Heart","I02F","Accessory",75,"Drop","Obsidian Bear Emperor Shami(Lord) <span class=\"pill\">Mode not specified</span><br><small>Dungeon Abyss Arena</small><hr>Flame Horn Boar King Taro(Lord) <span class=\"pill\">Mode not specified</span>"],
-["Forbidden Magic Ring","I08G","Accessory",75,"Drop","Obsidian Bear Emperor Shami(Lord) <span class=\"pill\">Mode not specified</span><br><small>Dungeon Abyss Arena</small>"],
-["Ring of Sin","kybl","Accessory",75,"Drop","Desert Tyrant Amoras (Mythic) <span class=\"pill\">Mode not specified</span>"],
+["Ancient Heart","I02F","Accessory",75,"Drop","Obsidian Bear Emperor Shami(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Abyss Arena</small><hr>Flame Horn Boar King Taro(Lord) <span class=\"pill\">Normal</span>"],
+["Forbidden Magic Ring","I08G","Accessory",75,"Drop","Obsidian Bear Emperor Shami(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Abyss Arena</small>"],
+["Ring of Sin","kybl","Accessory",75,"Drop","Desert Tyrant Amoras (Mythic) <span class=\"pill\">Normal</span>"],
 ["Sky Ring","I029","Accessory",80,"Craft","<b>Craft:</b> 1 × Ancient Spirit Ring + 1 × Forbidden Magic Ring + 1 × Ancient Divine Essence Crystal + 1 × Artifact Shard"],
 ["Inexhaustible Eternal Sacred Thought","I01L","Accessory",80,"Craft","<b>Craft:</b> 1 × Raging Sea Waves + 1 × Ancient Creation Crystal + 1 × Hollow Claw + 1 × Satan Rune"],
 ["Ghost Dragon Ring","I028","Accessory",80,"Craft","<b>Craft:</b> 1 × Ancient Heart + 1 × Wrath of the Vengeful Spirit + 1 × Hollow Claw + 1 × Ancient Creation Crystal"],
@@ -325,11 +325,11 @@ const EQUIPMENT = [
 ["Distant Angel's Heart","I02A","Accessory",80,"Craft","<b>Craft:</b> 1 × Demon Dragon Soul + 1 × Ancient Creation Crystal + 1 × Hollow Claw + 1 × Bedrock Ring + 1 × God's Crystal"],
 ["Hope of the Newborn","I02X","Accessory",80,"Craft","<b>Craft:</b> 1 × Hollow Claw + 1 × Ancient Creation Crystal + 1 × Shaman Atlas + 1 × Fel Gem Blaze + 1 × Poetic Pendant"],
 ["Lucifer's Heavenly Amulet","I04S","Accessory",80,"Craft","<b>Craft:</b> 1 × Heart of the Flame Demon King + 1 × Demonic Lava + 1 × Forbidden Magic Ring + 1 × Ancient Pendant"],
-["Endless Nightmare","k3m1","Accessory",80,"Drop","Corpse Dragon Ryan (Mythic) <span class=\"pill\">Mode not specified</span>"],
-["Creator's Eye","engs","Accessory",85,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Mode not specified</span>"],
-["Reaper's Claw","mort","Accessory",85,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Mode not specified</span>"],
-["Life Amulet","I062","Accessory",85,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Mode not specified</span>"],
-["Hurricane Orb","I03Q","Accessory",85,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Mode not specified</span>"],
+["Endless Nightmare","k3m1","Accessory",80,"Drop","Corpse Dragon Ryan (Mythic) <span class=\"pill\">Normal</span>"],
+["Creator's Eye","engs","Accessory",85,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Normal</span>"],
+["Reaper's Claw","mort","Accessory",85,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Normal</span>"],
+["Life Amulet","I062","Accessory",85,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Normal</span>"],
+["Hurricane Orb","I03Q","Accessory",85,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Normal</span>"],
 ["Rift Eye","I03B","Accessory",90,"Drop","Ice Fang Mammoth Radkel(Lord) <span class=\"pill\">Normal</span>"],
 ["Thunder Binding Chain","I03R","Accessory",90,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Trial</span>"],
 ["Plague Doom Ring","I05D","Accessory",90,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Trial</span>"],
@@ -342,10 +342,10 @@ const EQUIPMENT = [
 ["Eternal Hope","I0A1","Accessory",95,"Craft","<b>Craft:</b> 1 × Hope of the Newborn + 1 × Ancient Sculpture + 1 × Sky Gem + 1 × Orichalcum Metal + 1 × Imprisoned Soul"],
 ["Endshade Ring","I0BK","Accessory",10,"Drop","Calamity Insect King Yinkikot(Boss) <span class=\"pill\">Normal</span><br><small>Dungeon Void Land</small>"],
 ["Demon Blood Sacred Vessel","I0BL","Accessory",10,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Trial</span>"],
-["Wooden Shield","ssil","Collectibles",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Mode not specified</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Mode not specified</span>"],
+["Wooden Shield","ssil","Collectibles",0,"Drop","Wandering Corpse[Trash] <span class=\"pill\">Normal</span><hr>Mutated Wagon[Elite] <span class=\"pill\">Normal</span>"],
 ["Star Seeker Badge","kysn","Collectibles",35,"Craft","<b>Craft:</b> 1 × Energy Belt + 1 × Mystic Stone Pendant"],
 ["Energy Belt","pmna","Collectibles",25,"Drop","Village Chief Merlin (Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Blackstone Village</small>"],
-["Ancient Wood Bracelet","spsh","Collectibles",55,"Drop","Supreme Knight Gorth(Lord) <span class=\"pill\">Mode not specified</span>"],
+["Ancient Wood Bracelet","spsh","Collectibles",55,"Drop","Supreme Knight Gorth(Lord) <span class=\"pill\">Normal</span>"],
 ["Eternal Relic","rwiz","Collectibles",60,"Drop","Loot【Your Hero presses A to attack the chest and open it】 <span class=\"pill\">Trial</span>"],
 ["Dried Heart","hval","Collectibles",60,"Drop","Soul Iron Golem Kurkata(Boss) <span class=\"pill\">Normal</span><br><small>Dungeon Hall Ruins Courtyard</small>"],
 ["Skull Overflowing with Grudge","I00P","Collectibles",60,"Drop","Loot【Your Hero presses A to attack the chest and open it】 <span class=\"pill\">Trial</span>"],
@@ -358,8 +358,8 @@ const EQUIPMENT = [
 ["Savage Mark","shen","Collectibles",70,"Craft","<b>Craft:</b> 1 × Eternal Relic + 1 × Ancient Beast Crest + 1 × Artifact Shard + 1 × Fel Gem Blaze"],
 ["Ruthless Hunter","I00G","Collectibles",70,"Craft","<b>Craft:</b> 1 × Dried Heart + 1 × Shattered Ice Heart + 1 × Broken Bone Shard + 1 × Ancient Sculpture"],
 ["Traveler's Bundle","I06N","Collectibles",70,"Craft","<b>Craft:</b> 1 × Mystery Lunchbox + 1 × Artifact Shard + 1 × Rune Script + 1 × Sacrificial Stone Slab"],
-["Unstable Magic Stone","azhr","Collectibles",75,"Drop","Obsidian Bear Emperor Shami(Lord) <span class=\"pill\">Mode not specified</span><br><small>Dungeon Abyss Arena</small>"],
-["Ancient Jade","esaz","Collectibles",75,"Drop","Obsidian Bear Emperor Shami(Lord) <span class=\"pill\">Mode not specified</span><br><small>Dungeon Abyss Arena</small>"],
+["Unstable Magic Stone","azhr","Collectibles",75,"Drop","Obsidian Bear Emperor Shami(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Abyss Arena</small>"],
+["Ancient Jade","esaz","Collectibles",75,"Drop","Obsidian Bear Emperor Shami(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Abyss Arena</small>"],
 ["Ancient Blues Recollection","stel","Collectibles",75,"Drop","Loot【Your Hero presses A to attack the chest and open it】 <span class=\"pill\">Trial</span>"],
 ["Ancient Floating Light","I00N","Collectibles",80,"Drop","Divine Realm Gatekeeper Mardakela(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Macgas Orchard, Dungeon Sacred Tree Sanctum</small>"],
 ["Sealed Hope","I00O","Collectibles",80,"Craft","<b>Craft:</b> 1 × Ancient Fragment + 1 × Ancient Divine Essence Crystal + 1 × Sacrificial Stone Slab + 1 × Shaman Atlas + 1 × Broken Bone Shard + 3 × Lost Forge Whetstone"],
@@ -382,13 +382,13 @@ const EQUIPMENT = [
 ["Thunderbound Rune Satchel","I06R","Collectibles",90,"Craft","<b>Craft:</b> 1 × Portable Alchemy Satchel + 1 × Queen's Mark + 1 × World-Ending Rune + 1 × Demon God Snow Crystal + 1 × Fel Gem Blaze + 3 × Ancient Titan Whetstone"],
 ["Gaid's Book of Dark Forbidden Curses","I058","Collectibles",95,"Craft","<b>Craft:</b> 1 × Sealed Tome of Gade + 1 × Imprisoned Soul + 1 × Fallen Beast Blood + 1 × Memory of Life + 1 × Sacrificial Stone Slab + 3 × Ancient Titan Whetstone"],
 ["Light Lotus Truth of the Sword","I05L","Collectibles",95,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Trial</span>"],
-["World Tree Fruit","pdiv","Collectibles",75,"Drop","World Tree's Agony Reverie【Abyss】 <span class=\"pill\">Mode not specified</span>"],
-["Blade of Corruption","dust","Collectibles",75,"Drop","World Tree's Agony Reverie【Abyss】 <span class=\"pill\">Mode not specified</span>"],
+["World Tree Fruit","pdiv","Collectibles",75,"Drop","World Tree's Agony Reverie【Abyss】 <span class=\"pill\">Normal</span>"],
+["Blade of Corruption","dust","Collectibles",75,"Drop","World Tree's Agony Reverie【Abyss】 <span class=\"pill\">Normal</span>"],
 ["Astral Tree of Fantasy","I00B","Collectibles",95,"Drop","Ice Demon King Kanrei(Legendary) <span class=\"pill\">Trial</span>"],
-["Astral Book of Supremacy","I00K","Collectibles",95,"Drop","World Tree's Wrath Reverie【Abyss】 <span class=\"pill\">Mode not specified</span>"],
-["Astral Reminiscence White Lotus","I00S","Collectibles",95,"Drop","World Tree's Wrath Reverie【Abyss】 <span class=\"pill\">Mode not specified</span>"],
+["Astral Book of Supremacy","I00K","Collectibles",95,"Drop","World Tree's Wrath Reverie【Abyss】 <span class=\"pill\">Normal</span>"],
+["Astral Reminiscence White Lotus","I00S","Collectibles",95,"Drop","World Tree's Wrath Reverie【Abyss】 <span class=\"pill\">Normal</span>"],
 ["Astral Azure Blessing","I00C","Collectibles",95,"Drop","Ice Demon King Kanrei(Legendary) <span class=\"pill\">Trial</span>"],
-["Astral True Soul Gourd","I05P","Collectibles",95,"Drop","World Tree's Wrath Reverie【Abyss】 <span class=\"pill\">Mode not specified</span>"],
+["Astral True Soul Gourd","I05P","Collectibles",95,"Drop","World Tree's Wrath Reverie【Abyss】 <span class=\"pill\">Normal</span>"],
 ["Type Zero Fictional Aether Cube","I04V","Collectibles",95,"Drop","Ice Demon King Kanrei(Legendary) <span class=\"pill\">Trial</span>"],
 ["Sage's Mark","I0A2","Collectibles",95,"Craft","<b>Craft:</b> 1 × King's Mark + 1 × Activated Ancient Magic + 1 × Nectar of the World Tree + 1 × Crimson Secret Treasure + 1 × Ancient Sculpture + 3 × Ancient Titan Whetstone"],
 ["Hunter's Will","I0A3","Collectibles",95,"Craft","<b>Craft:</b> 1 × Sanctum Hunter + 1 × Hollow Claw + 1 × Sky Gem + 1 × Orichalcum Metal + 1 × Infinite Sorrow + 3 × Ancient Titan Whetstone"],
@@ -431,7 +431,7 @@ const EQUIPMENT = [
 ["Rune Stone: Pioneer","I0AU","Runes",10,"Special","<b>Special reward:</b> Event: Level Rush Plan (I00X)."],
 ["Rune Stone: Village Chief","gold","Runes",20,"Drop","Village Chief Merlin (Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Blackstone Village</small>"],
 ["Rune Stone: Dark Apostle","rwat","Runes",35,"Drop","Abyss Apostle Marnay (Lord) <span class=\"pill\">Normal</span>"],
-["Rune Stone: Lingering Light","I09M","Runes",40,"Drop","Light Demon King Ra(Mythic) <span class=\"pill\">Mode not specified</span>"],
+["Rune Stone: Lingering Light","I09M","Runes",40,"Drop","Light Demon King Ra(Mythic) <span class=\"pill\">Normal</span>"],
 ["Rune Stone: Ruined City Wizard","rsps","Runes",50,"Drop","Ruined City Wizard Oron(Boss) <span class=\"pill\">Normal</span><br><small>Dungeon Early Winter Valley</small>"],
 ["Legendary Rune Stone: Ruined City Wizard","I08N","Runes",80,"Drop","Ruined City Wizard Oron(Boss) <span class=\"pill\">Trial</span><br><small>Dungeon Early Winter Valley</small>"],
 ["Rune Stone: Archmage","rres","Runes",50,"Drop","Archmage Mageston(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Early Winter Valley</small>"],
@@ -459,10 +459,10 @@ const EQUIPMENT = [
 ["Legendary Rune Stone: Lava Demon","I093","Runes",90,"Drop","Lava Demon Ratudas(Lord) <span class=\"pill\">Trial</span>"],
 ["Rune Stone: Flame Demon King","rspd","Runes",70,"Drop","Loot【Your Hero presses A to attack the chest and open it】 <span class=\"pill\">Trial</span>"],
 ["Legendary Rune Stone: Flame Demon King","I094","Runes",90,"Drop","Loot【Your Hero presses A to attack the chest and open it】 <span class=\"pill\">Trial</span>"],
-["Legendary Rune Stone: Obsidian Bear Emperor","rhe1","Runes",90,"Drop","Obsidian Bear Emperor Shami(Lord) <span class=\"pill\">Mode not specified</span><br><small>Dungeon Abyss Arena</small>"],
-["Legendary Rune Stone: Thunder Eagle Emperor","guvi","Runes",90,"Drop","Thunder Eagle Emperor Kailin(Lord) <span class=\"pill\">Mode not specified</span><br><small>Dungeon Abyss Arena</small>"],
-["Legendary Rune Stone: Flame Horn Boar King","rre1","Runes",90,"Drop","Flame Horn Boar King Taro(Lord) <span class=\"pill\">Mode not specified</span>"],
-["Legendary Rune Stone: Beast King","tpow","Runes",90,"Drop","Loot【Your Hero presses A to attack the chest and open it】 <span class=\"pill\">Mode not specified</span>"],
+["Legendary Rune Stone: Obsidian Bear Emperor","rhe1","Runes",90,"Drop","Obsidian Bear Emperor Shami(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Abyss Arena</small>"],
+["Legendary Rune Stone: Thunder Eagle Emperor","guvi","Runes",90,"Drop","Thunder Eagle Emperor Kailin(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Abyss Arena</small>"],
+["Legendary Rune Stone: Flame Horn Boar King","rre1","Runes",90,"Drop","Flame Horn Boar King Taro(Lord) <span class=\"pill\">Normal</span>"],
+["Legendary Rune Stone: Beast King","tpow","Runes",90,"Drop","Loot【Your Hero presses A to attack the chest and open it】 <span class=\"pill\">Normal</span>"],
 ["Rune Stone: Volcano Queen","gfor","Runes",80,"Drop","Volcano Queen Kaleschirin(Lord) <span class=\"pill\">Normal</span><br><small>Dungeon Demon Dragon Realm</small>"],
 ["Legendary Rune Stone: Volcano Queen","I09G","Runes",100,"Drop","Volcano Queen Kaleschirin(Lord) <span class=\"pill\">Trial</span><br><small>Dungeon Demon Dragon Realm</small>"],
 ["Rune Stone: Jackal Hero","tint","Runes",80,"Drop","Jackal Strongman Tyson (Boss) <span class=\"pill\">Normal</span>"],
@@ -475,7 +475,7 @@ const EQUIPMENT = [
 ["Legendary Rune Stone: Heaven Realm","I09K","Runes",100,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Trial</span>"],
 ["Rune Stone: Ancient Spider King","crdt","Runes",80,"Drop","Ice Demon King Kanrei(Legendary) <span class=\"pill\">Normal</span><br><small>Dungeon Spider King City</small>"],
 ["Legendary Rune Stone: Ancient Spider King","I09L","Runes",100,"Drop","Ice Demon King Kanrei(Legendary) <span class=\"pill\">Trial</span><br><small>Dungeon Spider King City</small>"],
-["Legendary Rune Stone: World Tree God","kymn","Runes",100,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Mode not specified</span>"],
+["Legendary Rune Stone: World Tree God","kymn","Runes",100,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Normal</span>"],
 ["Rune Stone: Void Prophet","rhe3","Runes",85,"Drop","Shadow Council Void Prophet(Void) <span class=\"pill\">Normal</span>"],
 ["Rune Stone: Withered Knight","phea","Runes",85,"Drop","Third Knight Order Knight-Captain Famine(Lord) <span class=\"pill\">Normal</span>"],
 ["Rune Stone: Fenrir","spro","Runes",85,"Drop","Snowfield Wolf King Fenrir(Boss) <span class=\"pill\">Normal</span>"],
@@ -486,175 +486,2257 @@ const EQUIPMENT = [
 ["Legendary Rune Stone: Void Forge","tsct","Runes",95,"Drop","Epic Chest【Open it and see!】 <span class=\"pill\">Trial</span>"]
 ];
 
-const DROP_CSV = `normal,n00D,hcun,1700,1201,1300,5.882353,30.000000,1.764706,<=3000/10000,182471
-normal,n00D,I053,1700,701,800,5.882353,30.000000,1.764706,<=3000/10000,182471
-normal,n00D,I050,1700,801,900,5.882353,30.000000,1.764706,<=3000/10000,182471
-normal,n00D,I027,1700,551,700,8.823529,30.000000,2.647059,<=3000/10000,182471
-normal,n00D,I04Z,1700,401,550,8.823529,30.000000,2.647059,<=3000/10000,182471
-normal,n00D,tst2,1700,901,1000,5.882353,30.000000,1.764706,<=3000/10000,182471
-normal,n00D,tstr,1700,901,1000,5.882353,30.000000,1.764706,<=3000/10000,182471
-normal,n00D,gopr,1700,1101,1200,5.882353,30.000000,1.764706,<=3000/10000,182471
-normal,n00D,wtlg,1700,1001,1100,5.882353,30.000000,1.764706,<=3000/10000,182471
-normal,n00D,hval,1700,1401,1500,5.882353,30.000000,1.764706,<=3000/10000,182471
-normal,n00D,I06B,1700,1301,1400,5.882353,30.000000,1.764706,<=3000/10000,182471
-normal,njg1,I065,1250,101,150,4.000000,100.000000,4.000000,,181578
-normal,njg1,I08D,1250,151,200,4.000000,100.000000,4.000000,,181578
-normal,njg1,I08E,1250,201,250,4.000000,100.000000,4.000000,,181578
-normal,njg1,gldo,1250,251,350,8.000000,100.000000,8.000000,,181578
-normal,njg1,modt,1250,351,450,8.000000,100.000000,8.000000,,181578
-normal,njg1,I08C,1250,451,550,8.000000,100.000000,8.000000,,181578
-normal,njg1,I07U,1250,551,650,8.000000,100.000000,8.000000,,181578
-normal,njg1,rat9,1250,651,750,8.000000,100.000000,8.000000,,181578
-normal,njg1,ajen,1250,751,850,8.000000,100.000000,8.000000,,181578
-normal,njg1,kpin,1250,851,950,8.000000,100.000000,8.000000,,181578
-normal,njg1,skrt,1250,951,1050,8.000000,100.000000,8.000000,,181578
-normal,njg1,gold,1250,1051,1150,8.000000,100.000000,8.000000,,181578
-normal,njg1,olig,1250,1,100,8.000000,100.000000,8.000000,,181578
-normal,njg1,pmna,1250,1150,1250,8.080000,100.000000,8.080000,,181578
-normal,n02L,soul,1000,1,100,10.000000,100.000000,10.000000,<=10000/10000,183898
-normal,n02L,I086,1000,900,1000,10.100000,100.000000,10.100000,<=10000/10000,183898
-normal,n02L,I087,1000,101,200,10.000000,100.000000,10.000000,<=10000/10000,183898
-normal,n02L,prvt,1000,601,750,15.000000,100.000000,15.000000,<=10000/10000,183898
-normal,n02L,bspd,1000,751,900,15.000000,100.000000,15.000000,<=10000/10000,183898
-normal,n02M,rat3,1000,1,100,10.000000,100.000000,10.000000,<=10000/10000,183943
-normal,n02M,jdrn,1000,900,1000,10.100000,100.000000,10.100000,<=10000/10000,183943
-normal,n02M,rlif,1000,101,200,10.000000,100.000000,10.000000,<=10000/10000,183943
-normal,n02M,spsh,1000,601,700,10.000000,100.000000,10.000000,<=10000/10000,183943
-normal,n02M,rde3,1000,701,800,10.000000,100.000000,10.000000,<=10000/10000,183943
-normal,n02M,dthb,1000,801,900,10.000000,100.000000,10.000000,<=10000/10000,183943
-normal,n02E,arsc,1100,1,100,9.090909,100.000000,9.090909,,181662
-normal,n02E,I03J,1100,101,200,9.090909,100.000000,9.090909,,181662
-normal,n02E,I066,1100,201,300,9.090909,100.000000,9.090909,,181662
-normal,n02E,spre,1100,301,400,9.090909,100.000000,9.090909,,181662
-normal,n02E,I07W,1100,401,500,9.090909,100.000000,9.090909,,181662
-normal,n02E,odef,1100,501,600,9.090909,100.000000,9.090909,,181662
-normal,n02E,cnob,1100,601,700,9.090909,100.000000,9.090909,,181662
-normal,n02E,belv,1100,701,800,9.090909,100.000000,9.090909,,181662
-normal,n02E,I06A,1100,801,900,9.090909,100.000000,9.090909,,181662
-normal,n02E,I07Y,1100,901,1000,9.090909,100.000000,9.090909,,181662
-normal,n02E,wolg,1100,1001,1100,9.090909,100.000000,9.090909,,181662
-normal,nfrl,rag1,1000,1,100,10.000000,15.000000,1.500000,<=1500/10000,181939
-normal,nfrl,evtl,1000,101,200,10.000000,15.000000,1.500000,<=1500/10000,181939
-normal,nfrl,I04U,1000,201,300,10.000000,15.000000,1.500000,<=1500/10000,181939
-normal,nfrl,rdis,1000,301,400,10.000000,15.000000,1.500000,<=1500/10000,181939
-normal,nfrl,shtm,1000,401,500,10.000000,15.000000,1.500000,<=1500/10000,181939
-normal,nfrl,oflg,1000,501,600,10.000000,15.000000,1.500000,<=1500/10000,181939
-normal,n036,rag1,1000,1,100,10.000000,30.000000,3.000000,<=3000/10000,182037
-normal,n036,evtl,1000,101,200,10.000000,30.000000,3.000000,<=3000/10000,182037
-normal,n036,I04U,1000,201,300,10.000000,30.000000,3.000000,<=3000/10000,182037
-normal,n036,gomn,1000,301,400,10.000000,30.000000,3.000000,<=3000/10000,182037
-normal,n036,shtm,1000,401,500,10.000000,30.000000,3.000000,<=3000/10000,182037
-normal,n036,oflg,1000,501,600,10.000000,30.000000,3.000000,<=3000/10000,182037
-normal,n01N,I01N,1000,1,100,10.000000,25.000000,2.500000,<=2500/10000,182135
-normal,n01N,ledg,1000,101,200,10.000000,25.000000,2.500000,<=2500/10000,182135
-normal,n01N,tgxp,1000,201,300,10.000000,25.000000,2.500000,<=2500/10000,182135
-normal,n01N,manh,1000,301,400,10.000000,25.000000,2.500000,<=2500/10000,182135
-normal,n01N,I03L,1000,401,500,10.000000,25.000000,2.500000,<=2500/10000,182135
-normal,n00S,esaz,1000,1,90,9.000000,15.000000,1.350000,<=1500/10000,182237
-normal,n00S,I02F,1000,91,180,9.000000,15.000000,1.350000,<=1500/10000,182237
-normal,n00S,I08G,1000,181,270,9.000000,15.000000,1.350000,<=1500/10000,182237
-normal,n00S,azhr,1000,271,360,9.000000,15.000000,1.350000,<=1500/10000,182237
-normal,n00S,I08A,1000,361,450,9.000000,15.000000,1.350000,<=1500/10000,182237
-normal,n02P,I063,1000,1,50,5.000000,15.000000,0.750000,<=1500/10000,182364
-normal,n02P,arsh,1000,51,100,5.000000,15.000000,0.750000,<=1500/10000,182364
-normal,n02P,ratf,1000,101,150,5.000000,15.000000,0.750000,<=1500/10000,182364
-normal,n02P,iwbr,1000,151,200,5.000000,15.000000,0.750000,<=1500/10000,182364
-normal,n02P,guvi,1000,201,250,5.000000,15.000000,0.750000,<=1500/10000,182364
-normal,nspr,I096,12000,1,3000,25.000000,75.000000,18.750000,<=7500/10000,184592
-normal,nspr,I097,12000,3001,4000,8.333333,75.000000,6.250000,<=7500/10000,184592
-normal,nspr,I07G,12000,4001,7000,25.000000,75.000000,18.750000,<=7500/10000,184592
-normal,nspr,I095,12000,7001,8600,13.333333,75.000000,10.000000,<=7500/10000,184592
-normal,nspr,I09D,3,1,3,100.000000,25.000000,25.000000,<=3000/12000,184592
-normal,nspr,k3m1,3,1,3,100.000000,25.000000,25.000000,<=3000/12000,184592
-normal,nspr,I09C,3,1,3,100.000000,25.000000,25.000000,<=3000/12000,184592
-normal,n00U,I02E,10000,7001,8000,10.000000,10.000000,1.000000,<=1000/10000,185072
-normal,n00U,I01E,10000,8001,9000,10.000000,10.000000,1.000000,<=1000/10000,185072
-normal,n00U,schl,10000,9001,9500,5.000000,10.000000,0.500000,<=1000/10000,185072
-normal,n00U,crdt,10000,9501,10000,5.000000,10.000000,0.500000,<=1000/10000,185072
-normal,n00T,sor3,10000,7001,7500,5.000000,10.000000,0.500000,<=1000/10000,185206
-normal,n00T,sor4,10000,7501,8000,5.000000,10.000000,0.500000,<=1000/10000,185206
-normal,n00T,I02D,10000,8001,8500,5.000000,10.000000,0.500000,<=1000/10000,185206
-normal,n00T,lgdh,10000,8501,9000,5.000000,10.000000,0.500000,<=1000/10000,185206
-normal,n00T,phea,10000,9001,10000,10.000000,10.000000,1.000000,<=1000/10000,185206
-normal,n024,ccmd,10000,7001,8000,10.000000,20.000000,2.000000,<=2000/10000,184687
-normal,n024,kygh,10000,8001,9000,10.000000,20.000000,2.000000,<=2000/10000,184687
-normal,n024,gfor,10000,9001,10000,10.000000,20.000000,2.000000,<=2000/10000,184687
-normal,ngns,lnrn,10000,7001,8000,10.000000,15.000000,1.500000,<=1500/10000,184756
-normal,ngns,I01G,10000,8001,9000,10.000000,15.000000,1.500000,<=1500/10000,184756
-normal,ngns,tint,10000,9001,10000,10.000000,15.000000,1.500000,<=1500/10000,184756
-normal,n027,bfhr,10000,7501,8000,5.000000,10.000000,0.500000,<=1000/10000,184896
-normal,n027,I056,10000,8001,8500,5.000000,10.000000,0.500000,<=1000/10000,184896
-normal,n027,I00N,10000,8501,9000,5.000000,10.000000,0.500000,<=1000/10000,184896
-normal,n027,fgun,10000,9001,9500,5.000000,10.000000,0.500000,<=1000/10000,184896
-normal,n027,tin2,10000,9501,10000,5.000000,10.000000,0.500000,<=1000/10000,184896
-normal,h00D,ofir,1400,801,850,3.571429,30.000000,1.071429,<=3000/10000,186135
-normal,h00D,I064,1400,851,900,3.571429,30.000000,1.071429,<=3000/10000,186135
-normal,h00D,I078,1400,901,950,3.571429,30.000000,1.071429,<=3000/10000,186135
-normal,h00D,tdex,1400,951,1100,10.714286,30.000000,3.214286,<=3000/10000,186135
-normal,h00D,thle,1400,1101,1200,7.142857,30.000000,2.142857,<=3000/10000,186135
-normal,h00D,sbch,1400,1201,1300,7.142857,30.000000,2.142857,<=3000/10000,186135
-normal,h00D,I051,1400,1301,1400,7.142857,30.000000,2.142857,<=3000/10000,186135
-normal,h00D,pams,1000,1,100,10.000000,25.000000,2.500000,<=2500/10000,186135
-normal,h00D,asbl,1000,101,200,10.000000,25.000000,2.500000,<=2500/10000,186135
-normal,h00D,I068,1000,201,300,10.000000,25.000000,2.500000,<=2500/10000,186135
-normal,h00D,dkfw,1000,301,340,4.000000,25.000000,1.000000,<=2500/10000,186135
-normal,h00D,stel,1000,341,380,4.000000,25.000000,1.000000,<=2500/10000,186135
-normal,h00D,dsum,1000,381,420,4.000000,25.000000,1.000000,<=2500/10000,186135
-normal,h00D,pspd,1000,421,460,4.000000,25.000000,1.000000,<=2500/10000,186135
-normal,h00D,rspd,1000,461,500,4.000000,25.000000,1.000000,<=2500/10000,186135
-normal,h00D,I063,1000,1,50,5.000000,35.000000,1.750000,<=3500/10000,186135
-normal,h00D,arsh,1000,51,100,5.000000,35.000000,1.750000,<=3500/10000,186135
-normal,h00D,ratf,1000,101,150,5.000000,35.000000,1.750000,<=3500/10000,186135
-normal,h00D,iwbr,1000,151,200,5.000000,35.000000,1.750000,<=3500/10000,186135
-normal,h00D,tpow,1000,201,250,5.000000,35.000000,1.750000,<=3500/10000,186135
-normal,h00D,esaz,1000,251,300,5.000000,35.000000,1.750000,<=3500/10000,186135
-normal,h00D,I02F,1000,301,350,5.000000,35.000000,1.750000,<=3500/10000,186135
-normal,h00D,I08G,1000,351,400,5.000000,35.000000,1.750000,<=3500/10000,186135
-normal,h00D,azhr,1000,401,450,5.000000,35.000000,1.750000,<=3500/10000,186135
-normal,h00D,I08A,1000,451,500,5.000000,35.000000,1.750000,<=3500/10000,186135
-normal,n00R,rej2,10000,6501,7000,5.000000,10.000000,0.500000,<=1000/10000,183325
-normal,n00R,scul,10000,7001,7500,5.000000,10.000000,0.500000,<=1000/10000,183325
-normal,n00R,I05Y,10000,7501,8000,5.000000,10.000000,0.500000,<=1000/10000,183325
-normal,n00R,I03A,10000,8001,8500,5.000000,10.000000,0.500000,<=1000/10000,183325
-normal,n00R,I03P,10000,8501,9000,5.000000,10.000000,0.500000,<=1000/10000,183325
-normal,n00R,I03B,10000,9001,9500,5.000000,10.000000,0.500000,<=1000/10000,183325
-normal,n00R,shas,10000,9501,10000,5.000000,10.000000,0.500000,<=1000/10000,183325
-normal,ngst,mnsf,10000,6501,7000,5.000000,10.000000,0.500000,<=1000/10000,183411
-normal,ngst,sor9,10000,7001,7500,5.000000,10.000000,0.500000,<=1000/10000,183411
-normal,ngst,I05Z,10000,7501,8000,5.000000,10.000000,0.500000,<=1000/10000,183411
-normal,ngst,I060,10000,8001,8500,5.000000,10.000000,0.500000,<=1000/10000,183411
-normal,ngst,I03O,10000,8501,9000,5.000000,10.000000,0.500000,<=1000/10000,183411
-normal,ngst,I05C,10000,9001,9500,5.000000,10.000000,0.500000,<=1000/10000,183411
-normal,ngst,skul,10000,9501,10000,5.000000,10.000000,0.500000,<=1000/10000,183411
-normal,n01P,flag,1400,251,450,14.285714,30.000000,4.285714,<=3000/10000,183727
-normal,n01P,I00E,1400,451,650,14.285714,30.000000,4.285714,<=3000/10000,183727
-normal,n01P,clsd,1400,651,750,7.142857,30.000000,2.142857,<=3000/10000,183727
-normal,n01P,I04Y,1400,751,900,10.714286,30.000000,3.214286,<=3000/10000,183727
-normal,n01P,penr,1400,901,1000,7.142857,30.000000,2.142857,<=3000/10000,183727
-normal,n01P,tdx2,1400,1001,1100,7.142857,30.000000,2.142857,<=3000/10000,183727
-normal,n01P,bzbe,1400,1101,1200,7.142857,30.000000,2.142857,<=3000/10000,183727
-normal,n01P,ward,1400,1201,1300,7.142857,30.000000,2.142857,<=3000/10000,183727
-normal,n01P,nflg,1400,1301,1400,7.142857,30.000000,2.142857,<=3000/10000,183727
-normal,nnht,I0BD,9800,7501,7900,4.081633,6.000000,0.244898,<=600/10000,185284
-normal,nnht,I0BG,9800,7901,8400,5.102041,6.000000,0.306122,<=600/10000,185284
-normal,nnht,I0BK,9800,8401,8800,4.081633,6.000000,0.244898,<=600/10000,185284
-normal,nndk,I0BD,9800,7501,7900,4.081633,8.000000,0.326531,<=800/10000,185343
-normal,nndk,I0BG,9800,7901,8400,5.102041,8.000000,0.408163,<=800/10000,185343
-normal,nndk,I0BK,9800,8401,8800,4.081633,8.000000,0.326531,<=800/10000,185343
-normal,nmdr,I0BH,9200,7501,7900,4.347826,8.000000,0.347826,<=800/10000,185403
-normal,nmdr,I0BI,9200,7901,8400,5.434783,8.000000,0.434783,<=800/10000,185403`;
+/* ============================================================
+   OFFICIAL DROP RATES — transcribed from Sacred_Tree_ORPG_F3_drop_rates.pdf
+   Keyed by unit ID. Each unit can have multiple trigger sections
+   (e.g. "On death" + "On taking damage").
+   ============================================================ */
 
-const UNIT_NAMES = {
-  n00D:"Soul Iron Golem Kurkata",n009:"Ruined City Sage Kiriyad",njg1:"Village Chief Merlin",
-  n02L:"Ancient Guardian Antuun",n02M:"Supreme Knight Gorth",n02E:"Treant Lord Gordon",
-  nfrl:"War Machine Latur",n036:"High Chieftain Mas",n01N:"Lava Demon Ratudas",
-  n00S:"Obsidian Bear Emperor Shami",n02P:"Thunder Eagle Emperor Kailin",
-  n024:"Volcano Queen Kaleschirin",ngns:"Traitorous Star Seeker Meshra",n027:"Divine Realm Gatekeeper Mardakela",
-  nspr:"Ice Demon King Kanrei",n00R:"Ice Fang Mammoth Radkel",ngst:"World-Ending Evil Dragon Alduin",
-  n01P:"King of the Ruined City Bain",h00D:"Heaven Realm Trial Chest",
-  nnht:"Calamity Insect King Yinkikot",nndk:"False Redemption Jesus",nmdr:"God of Fiction Gold",
-  n00U:"Ice Demon King Kanrei (Spider King City)",n00T:"Third Knight Order Knight-Captain Famine"
+const OFFICIAL_DROPS = {
+
+  /* ---- Page 1 ---- */
+
+  "net2": {
+    name: "Punishment Tower[Void]",
+    level: 0,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 50.00, solo: 100.00, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 15.00, solo: 90.00,  item: "Relic Fragment", id: "shea", mult: 3 }
+      ]
+    }]
+  },
+
+  "no2T": {
+    name: "Divine Essence Crystal Mine (Event)",
+    level: 1,
+    sections: [
+      {
+        trigger: "On death (rolled once per kill)",
+        rolls: { solo: 1, group: null },
+        drops: [
+          { chance: 130.20, solo: 130.20, item: "Charm Crystal", id: "I07L" },
+          { chance: 100.00, solo: 100.00, item: "Basic Enhancement Stone", id: "bzb" },
+          { chance: 39.90,  solo: 39.90,  item: "Intermediate Enhancement Stone", id: "tmmt" },
+          { chance: 29.90,  solo: 29.90,  item: "Advanced Enhancement Stone", id: "I002" }
+        ]
+      },
+      {
+        trigger: "On taking damage (one roll per 10% HP lost — 10 rolls per kill)",
+        rolls: { solo: 10, group: null },
+        drops: [
+          { chance: 130.20, solo: 1302.00, item: "Charm Crystal", id: "I07L" },
+          { chance: 100.00, solo: 1000.00, item: "Basic Enhancement Stone", id: "bzb" },
+          { chance: 39.90,  solo: 399.00,  item: "Intermediate Enhancement Stone", id: "tmmt" },
+          { chance: 29.90,  solo: 299.00,  item: "Advanced Enhancement Stone", id: "I002" }
+        ]
+      }
+    ]
+  },
+
+  "nenp": {
+    name: "Mysterious Jar (Event)",
+    level: 1,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 117.43, solo: 117.43, item: "Elixir Gift Pack", id: "gvsm" },
+        { chance: 99.80,  solo: 99.80,  item: "Rich Cheese", id: "infis" },
+        { chance: 50.10,  solo: 50.10,  item: "Croissant", id: "pghe" },
+        { chance: 39.96,  solo: 39.96,  item: "Vanilla Cream Cheesesteak", id: "I000" },
+        { chance: 38.18,  solo: 38.18,  item: "Superior Elixir Gift Pack", id: "I096" },
+        { chance: 27.25,  solo: 27.25,  item: "Life Nectar", id: "totw" },
+        { chance: 18.18,  solo: 18.18,  item: "Life Cake", id: "wlsd" },
+        { chance: 9.09,   solo: 9.09,   item: "Holy Elixir Gift Pack", id: "I097" }
+      ]
+    }]
+  },
+
+  "h00D": {
+    name: "Loot[Your Hero presses A to attack the chest and open it]",
+    level: 3,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 3, group: "3 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 200.00, solo: 200.00, item: "Dim World Fragment",  id: "I001" },
+        { chance: 135.97, solo: 407.91, item: "Charm Crystal",       id: "I07L" },
+        { chance: 100.00, solo: 100.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 70.00,  solo: 210.00, item: "Dim World Fragment",  id: "I001" },
+        { chance: 60.00,  solo: 180.00, item: "Dim Treasure Shard",  id: "I07K" },
+        { chance: 60.00,  solo: 180.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 40.00,  solo: 120.00, item: "Shining Second-Tier Treasure Shard", id: "I095" },
+        { chance: 32.63,  solo: 97.88,  item: "Basic Enhancement Stone", id: "bzb" },
+        { chance: 30.00,  solo: 90.00,  item: "Intermediate Enhancement Stone", id: "tmmt" },
+        { chance: 16.67,  solo: 50.00,  item: "Legendary Rune Stone: Phantom Knight", id: "I08T" },
+        { chance: 16.67,  solo: 50.00,  item: "Legendary Rune Stone: Death Hunter", id: "I08S" },
+        { chance: 13.95,  solo: 41.86,  item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 10.00,  solo: 30.00,  item: "World Tree Fruit", id: "pdv", cond: true },
+        { chance: 10.00,  solo: 30.00,  item: "Blade of Corruption", id: "dust", cond: true },
+        { chance: 6.67,   solo: 20.00,  item: "Low-grade Divine Rune (+8)", id: "drph", cond: true },
+        { chance: 6.67,   solo: 20.00,  item: "Tribulation Annihilation Mask", id: "fgsk", cond: true },
+        { chance: 6.67,   solo: 20.00,  item: "Naberius's Wrath", id: "I00A", cond: true },
+        { chance: 3.21,   solo: 9.64,   item: "Rune Stone: Phantom Knight", id: "tdex", cond: true },
+        { chance: 2.90,   solo: 8.71,   item: "Rune Stone: Death Hunter", id: "rspl", cond: true },
+        { chance: 2.50,   solo: 7.50,   item: "Night Elf Bow", id: "pams", cond: true },
+        { chance: 2.50,   solo: 7.50,   item: "Demon Steel Fists", id: "asbl", cond: true },
+        { chance: 2.50,   solo: 7.50,   item: "Demon Hunter's Wrath", id: "I068", cond: true },
+        { chance: 2.33,   solo: 6.98,   item: "Legendary Rune Stone: Flame Demon King", id: "I094", cond: true },
+        { chance: 2.14,   solo: 6.43,   item: "Nethersound Pendant", id: "thle", cond: true },
+        { chance: 2.14,   solo: 6.43,   item: "Ancient Vestment", id: "sbch", cond: true },
+        { chance: 2.14,   solo: 6.43,   item: "Knight's Code", id: "I051", cond: true },
+        { chance: 1.94,   solo: 5.81,   item: "Skull Overflowing with Grudge", id: "I00P", cond: true },
+        { chance: 1.94,   solo: 5.81,   item: "Night Cloak", id: "mcou", cond: true },
+        { chance: 1.94,   solo: 5.81,   item: "Eternal Relic", id: "rwiz", cond: true },
+        { chance: 1.94,   solo: 5.81,   item: "Raging Wave Ring", id: "sclp", cond: true },
+        { chance: 1.94,   solo: 5.81,   item: "Lithium Alloy Heavy Armor", id: "I052", cond: true },
+        { chance: 1.94,   solo: 5.81,   item: "Calm Mind Pendant", id: "phlt", cond: true },
+        { chance: 1.75,   solo: 5.25,   item: "Holy God Wedge", id: "I063", cond: true },
+        { chance: 1.75,   solo: 5.25,   item: "Golden Flask of Redemption", id: "arsh", cond: true },
+        { chance: 1.75,   solo: 5.25,   item: "Venomous Sting", id: "ratf", cond: true },
+        { chance: 1.75,   solo: 5.25,   item: "Ancient Creation Crystal", id: "iwbr", cond: true },
+        { chance: 1.75,   solo: 5.25,   item: "Legendary Rune Stone: Beast King", id: "tpow", cond: true },
+        { chance: 1.75,   solo: 5.25,   item: "Ancient Jade", id: "esaz", cond: true },
+        { chance: 1.75,   solo: 5.25,   item: "Ancient Heart", id: "I02F", cond: true },
+        { chance: 1.75,   solo: 5.25,   item: "Forbidden Magic Ring", id: "I08G", cond: true },
+        { chance: 1.75,   solo: 5.25,   item: "Unstable Magic Stone", id: "azhr", cond: true },
+        { chance: 1.75,   solo: 5.25,   item: "Evil Sacrifice Mask", id: "I08A", cond: true },
+        { chance: 1.07,   solo: 3.21,   item: "Ancient Guardian Pauldrons", id: "I078", cond: true },
+        { chance: 1.07,   solo: 3.21,   item: "Warhammer of Destruction", id: "ofir", cond: true },
+        { chance: 1.07,   solo: 3.21,   item: "Earth Staff", id: "I064", cond: true },
+        { chance: 1.00,   solo: 3.00,   item: "Bedrock Ring", id: "dkfw", cond: true },
+        { chance: 1.00,   solo: 3.00,   item: "Ancient Blues Recollection", id: "stel", cond: true },
+        { chance: 1.00,   solo: 3.00,   item: "Shaman Mask", id: "dsum", cond: true },
+        { chance: 1.00,   solo: 3.00,   item: "Heart of the Flame Demon King", id: "pspd", cond: true },
+        { chance: 1.00,   solo: 3.00,   item: "Rune Stone: Flame Demon King", id: "rspd", cond: true },
+        { chance: 0.70,   solo: 2.09,   item: "Type Zero Divine River Hat", id: "I01C", cond: true },
+        { chance: 0.70,   solo: 2.09,   item: "Type Zero Fictional Aether Cube", id: "I04V", cond: true },
+        { chance: 0.70,   solo: 2.09,   item: "Type Zero Ultimate Fantasy", id: "I044", cond: true },
+        { chance: 0.70,   solo: 2.09,   item: "Type Zero Alpha Driver", id: "I01B", cond: true },
+        { chance: 0.70,   solo: 2.09,   item: "Astral Azure Blessing", id: "I00C", cond: true },
+        { chance: 0.70,   solo: 2.09,   item: "Astral Tree of Fantasy", id: "I00B", cond: true },
+        { chance: 0.23,   solo: 0.70,   item: "Advanced Divine Rune (+13)", id: "I09O", cond: true }
+      ]
+    }]
+  },
+
+  "nfrs": {
+    name: "Wandering Corpse[Trash]",
+    level: 3,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 100.00, solo: 100.00, item: "Basic Enhancement Stone", id: "bzbf" },
+        { chance: 100.00, solo: 100.00, item: "Wooden Shield", id: "ssil" },
+        { chance: 5.00,   solo: 5.00,   item: "Thief Plate Armor", id: "bgst" },
+        { chance: 5.00,   solo: 5.00,   item: "Silver Ring", id: "gmfr" },
+        { chance: 5.00,   solo: 5.00,   item: "Homemade Rifle", id: "k3m2" },
+        { chance: 5.00,   solo: 5.00,   item: "Bandit Short Bow", id: "rots" },
+        { chance: 5.00,   solo: 5.00,   item: "Bandit Bracer", id: "srtl" },
+        { chance: 5.00,   solo: 5.00,   item: "Thief's Mallet", id: "tkno" },
+        { chance: 5.00,   solo: 5.00,   item: "Thief Headband", id: "ciri" },
+        { chance: 5.00,   solo: 5.00,   item: "Novice Magic Hat", id: "lhst" },
+        { chance: 5.00,   solo: 5.00,   item: "Thief Staff", id: "ckng" }
+      ]
+    }]
+  },
+
+  /* ---- Page 3 ---- */
+
+  "h01E": {
+    name: "Epic Chest[Open it and see!]",
+    level: 5,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 3, group: "3 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 190.00, solo: 570.00, item: "Shining World Fragment",   id: "I098", cond: true },
+        { chance: 42.55,  solo: 127.65, item: "Advanced Enhancement Stone", id: "I002", cond: true },
+        { chance: 14.00,  solo: 42.00,  item: "Superior Enhancement Stone", id: "I003", cond: true },
+        { chance: 13.95,  solo: 41.86,  item: "Advanced Enhancement Stone", id: "I002", cond: true },
+        { chance: 9.30,   solo: 27.91,  item: "Charm Crystal", id: "I07L", cond: true },
+        { chance: 2.33,   solo: 6.98,   item: "Legendary Rune Stone: Heaven Realm", id: "I09K", cond: true },
+        { chance: 0.80,   solo: 2.40,   item: "Slaughter", id: "I0BE", cond: true },
+        { chance: 0.75,   solo: 2.25,   item: "Tender New Branch", id: "sor2", cond: true },
+        { chance: 0.75,   solo: 2.25,   item: "Nectar of the World Tree", id: "klmm", cond: true },
+        { chance: 0.75,   solo: 2.25,   item: "Creator's Eye", id: "engs", cond: true },
+        { chance: 0.75,   solo: 2.25,   item: "Reaper's Claw", id: "mort", cond: true },
+        { chance: 0.75,   solo: 2.25,   item: "Life Amulet", id: "I062", cond: true },
+        { chance: 0.75,   solo: 2.25,   item: "Hurricane Orb", id: "I03Q", cond: true },
+        { chance: 0.75,   solo: 2.25,   item: "Legendary Rune Stone: World Tree God", id: "kymn", cond: true },
+        { chance: 0.75,   solo: 2.25,   item: "Infinite Sorrow", id: "hbth", cond: true },
+        { chance: 0.75,   solo: 2.25,   item: "Imprisoned Soul", id: "I06T", cond: true },
+        { chance: 0.75,   solo: 2.25,   item: "Death Fang", id: "I04G", cond: true },
+        { chance: 0.75,   solo: 2.25,   item: "Deaththorn Crystal Curse Staff", id: "I04H", cond: true },
+        { chance: 0.75,   solo: 2.25,   item: "Frozen Legend Battleblade", id: "I00M", cond: true },
+        { chance: 0.75,   solo: 2.25,   item: "Branch of the Curse", id: "I01A", cond: true },
+        { chance: 0.75,   solo: 2.25,   item: "Ghost Remnant Ring", id: "I04E", cond: true },
+        { chance: 0.75,   solo: 2.25,   item: "Legendary Rune Stone: Void Forge", id: "tsct", cond: true },
+        { chance: 0.70,   solo: 2.11,   item: "Type Zero Divine River Hat", id: "I01C", cond: true },
+        { chance: 0.70,   solo: 2.09,   item: "Type Zero Alpha Driver", id: "I01B", cond: true },
+        { chance: 0.70,   solo: 2.09,   item: "Astral Azure Blessing", id: "I00C", cond: true },
+        { chance: 0.70,   solo: 2.09,   item: "Astral Tree of Fantasy", id: "I00B", cond: true },
+        { chance: 0.70,   solo: 2.09,   item: "Type Zero Fictional Aether Cube", id: "I04V", cond: true },
+        { chance: 0.70,   solo: 2.09,   item: "Type Zero Ultimate Fantasy", id: "I044", cond: true },
+        { chance: 0.60,   solo: 1.80,   item: "Sky Gem", id: "sor1", cond: true },
+        { chance: 0.60,   solo: 1.80,   item: "Memory of Life", id: "sora", cond: true },
+        { chance: 0.60,   solo: 1.80,   item: "Sealed Gade War Armor", id: "I03A", cond: true },
+        { chance: 0.60,   solo: 1.80,   item: "Sealed Tome of Gade", id: "I03S", cond: true },
+        { chance: 0.60,   solo: 1.80,   item: "Sealed Gade Power", id: "I031", cond: true },
+        { chance: 0.60,   solo: 1.80,   item: "Rune Stone: Heaven Realm", id: "rreb", cond: true },
+        { chance: 0.60,   solo: 1.80,   item: "Heavenly Mask", id: "I02D", cond: true },
+        { chance: 0.60,   solo: 1.80,   item: "Legendary Rune Stone: Shadow Demon King", id: "I0BP", cond: true },
+        { chance: 0.60,   solo: 1.80,   item: "Legendary Rune Stone: Dragon King", id: "I0BQ", cond: true },
+        { chance: 0.50,   solo: 1.50,   item: "Omniscient Crystal Stone", id: "anfg", cond: true },
+        { chance: 0.50,   solo: 1.50,   item: "Activated Ancient Magic", id: "stwa", cond: true },
+        { chance: 0.50,   solo: 1.50,   item: "Orichalcum Metal", id: "msp", cond: true },
+        { chance: 0.50,   solo: 1.50,   item: "Ancient Shaman Mask", id: "I05X", cond: true },
+        { chance: 0.50,   solo: 1.50,   item: "Calamity Crown", id: "I05B", cond: true },
+        { chance: 0.50,   solo: 1.50,   item: "Soul Hunter", id: "I04F", cond: true },
+        { chance: 0.50,   solo: 1.50,   item: "Thunder Binding Chain", id: "I03R", cond: true },
+        { chance: 0.50,   solo: 1.50,   item: "Rune Stone: Ultimate Divine Weapon", id: "vamp", cond: true },
+        { chance: 0.50,   solo: 1.50,   item: "Queen's Mark", id: "btst", cond: true },
+        { chance: 0.50,   solo: 1.50,   item: "Nightmare Helm", id: "I04D", cond: true },
+        { chance: 0.50,   solo: 1.50,   item: "Radiance of Truth Holy Carved Nova", id: "I05K", cond: true },
+        { chance: 0.50,   solo: 1.50,   item: "Plague Doom Ring", id: "I05D", cond: true },
+        { chance: 0.50,   solo: 1.50,   item: "Light Lotus Truth of the Sword", id: "I05L", cond: true },
+        { chance: 0.50,   solo: 1.50,   item: "Rune Stone: Ice Crown Empress", id: "rnec", cond: true },
+        { chance: 0.40,   solo: 1.20,   item: "Ethereal Lantern", id: "I0BX", cond: true },
+        { chance: 0.40,   solo: 1.20,   item: "Shadow Mushroom", id: "I0BW", cond: true },
+        { chance: 0.40,   solo: 1.20,   item: "Demon Blood Sacred Vessel", id: "I0BL", cond: true },
+        { chance: 0.40,   solo: 1.20,   item: "Ultimate Dragon Scale", id: "I0BV", cond: true },
+        { chance: 0.40,   solo: 1.20,   item: "Demon Dragon Black Core", id: "I0BY", cond: true },
+        { chance: 0.40,   solo: 1.20,   item: "Feng Shui Faith", id: "I0BF", cond: true },
+        { chance: 0.40,   solo: 1.20,   item: "Doom Orb", id: "I05F", cond: true },
+        { chance: 0.40,   solo: 1.20,   item: "Arlon Crystal", id: "I0BR", cond: true },
+        { chance: 0.40,   solo: 1.20,   item: "Calamity Death Demon Crystal", id: "I05G", cond: true },
+        { chance: 0.40,   solo: 1.20,   item: "Nightmare Black Demon War Armor", id: "I0BJ", cond: true },
+        { chance: 0.23,   solo: 0.68,   item: "Advanced Divine Rune (+13)", id: "I09O", cond: true }
+      ]
+    }]
+  },
+
+  /* ---- Page 4 ---- */
+
+  "n02B": {
+    name: "Mutated Wagon[Elite]",
+    level: 5,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 100.00, solo: 100.00, item: "Basic Enhancement Stone", id: "bzb" },
+        { chance: 100.00, solo: 100.00, item: "Wooden Shield", id: "ssil" },
+        { chance: 10.00,  solo: 10.00,  item: "Thief Plate Armor", id: "bgst" },
+        { chance: 10.00,  solo: 10.00,  item: "Silver Ring", id: "gmfr" },
+        { chance: 10.00,  solo: 10.00,  item: "Homemade Rifle", id: "k3m2" },
+        { chance: 10.00,  solo: 10.00,  item: "Bandit Short Bow", id: "rots" },
+        { chance: 10.00,  solo: 10.00,  item: "Bandit Bracer", id: "srtl" },
+        { chance: 10.00,  solo: 10.00,  item: "Thief's Mallet", id: "tkno" },
+        { chance: 10.00,  solo: 10.00,  item: "Thief Headband", id: "ciri" },
+        { chance: 10.00,  solo: 10.00,  item: "Novice Magic Hat", id: "lhst" },
+        { chance: 10.00,  solo: 10.00,  item: "Thief Staff", id: "ckng" }
+      ]
+    }]
+  },
+
+  "nfrp": {
+    name: "Bearkin[Trash]",
+    level: 8,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 2.00, solo: 2.00, item: "Beast Hide Cap", id: "ratc" },
+        { chance: 2.00, solo: 2.00, item: "Magical Beast Hide Cap", id: "rat6" },
+        { chance: 2.00, solo: 2.00, item: "Beast Iron Armor", id: "rhth" },
+        { chance: 2.00, solo: 2.00, item: "Emerald Ring", id: "jpnt" },
+        { chance: 2.00, solo: 2.00, item: "Beast Bow", id: "frhg" },
+        { chance: 2.00, solo: 2.00, item: "Beast Short Sword", id: "ofro" },
+        { chance: 2.00, solo: 2.00, item: "Beast Hide Gauntlets", id: "oli2" },
+        { chance: 2.00, solo: 2.00, item: "Pine Wood Staff", id: "rde4" },
+        { chance: 2.00, solo: 2.00, item: "Beast Rifle", id: "I03I" }
+      ]
+    }]
+  },
+
+  "n02C": {
+    name: "Festering Beetle[Elite]",
+    level: 12,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 3.50, solo: 3.50, item: "Beast Short Sword", id: "ofro" },
+        { chance: 3.50, solo: 3.50, item: "Beast Hide Gauntlets", id: "oli2" },
+        { chance: 3.50, solo: 3.50, item: "Pine Wood Staff", id: "rde4" },
+        { chance: 3.50, solo: 3.50, item: "Beast Rifle", id: "I03I" },
+        { chance: 3.50, solo: 3.50, item: "Beast Hide Cap", id: "ratc" },
+        { chance: 3.50, solo: 3.50, item: "Magical Beast Hide Cap", id: "rat6" },
+        { chance: 3.50, solo: 3.50, item: "Beast Iron Armor", id: "rhth" },
+        { chance: 3.50, solo: 3.50, item: "Emerald Ring", id: "jpnt" },
+        { chance: 3.50, solo: 3.50, item: "Beast Bow", id: "frhg" }
+      ]
+    }]
+  },
+
+  "npfm": {
+    name: "Treant Sprite[Trash]",
+    level: 20,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 100.00, solo: 100.00, item: "Mission Scroll[Random Event]", id: "ocor", cond: true },
+        { chance: 2.00,   solo: 2.00,   item: "Voodoo Helmet", id: "rat9" },
+        { chance: 2.00,   solo: 2.00,   item: "Soldier Helm", id: "ajen" },
+        { chance: 2.00,   solo: 2.00,   item: "Soldier Coat", id: "kpin" },
+        { chance: 2.00,   solo: 2.00,   item: "Mystic Stone Pendant", id: "skrt" },
+        { chance: 2.00,   solo: 2.00,   item: "Energy Belt", id: "pmna" }
+      ]
+    }]
+  },
+
+  /* ---- Page 5 ---- */
+
+  "n02D": {
+    name: "Thunder Wolf Marco(Lord)",
+    level: 24,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 11.11, solo: 22.22, item: "Beast Bow", id: "frhg", mult: 2 },
+        { chance: 11.11, solo: 22.22, item: "Beast Short Sword", id: "ofro", mult: 2 },
+        { chance: 11.11, solo: 22.22, item: "Pine Wood Staff", id: "rde4", mult: 2 },
+        { chance: 11.11, solo: 22.22, item: "Beast Hide Gauntlets", id: "oli2", mult: 2 },
+        { chance: 11.11, solo: 22.22, item: "Beast Rifle", id: "I03I", mult: 2 },
+        { chance: 11.11, solo: 22.22, item: "Beast Hide Cap", id: "ratc", mult: 2 },
+        { chance: 11.11, solo: 22.22, item: "Magical Beast Hide Cap", id: "rat6", mult: 2 },
+        { chance: 11.11, solo: 22.22, item: "Beast Iron Armor", id: "rhth", mult: 2 },
+        { chance: 11.11, solo: 22.22, item: "Emerald Ring", id: "jpnt", mult: 2 }
+      ]
+    }]
+  },
+
+  "njg1": {
+    name: "Village Chief Merlin (Lord)",
+    level: 35,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 38.00, solo: 76.00, item: "Charm Crystal", id: "I07L" },
+        { chance: 10.00, solo: 20.00, item: "Legendary Rune Stone: Village Chief", id: "I08V" },
+        { chance: 8.08,  solo: 16.16, item: "Energy Belt", id: "pmna" },
+        { chance: 8.00,  solo: 16.00, item: "Snowfield Bracers", id: "olig" },
+        { chance: 8.00,  solo: 16.00, item: "Indifferent Longbow", id: "gldo" },
+        { chance: 8.00,  solo: 16.00, item: "Soldier Battle Axe", id: "modt" },
+        { chance: 8.00,  solo: 16.00, item: "Devout's Staff", id: "I08C" },
+        { chance: 8.00,  solo: 16.00, item: "Soldier Rifle", id: "I07U" },
+        { chance: 8.00,  solo: 16.00, item: "Voodoo Helmet", id: "rat9" },
+        { chance: 8.00,  solo: 16.00, item: "Soldier Helm", id: "ajen" },
+        { chance: 8.00,  solo: 16.00, item: "Mystic Stone Pendant", id: "skrt" },
+        { chance: 8.00,  solo: 16.00, item: "Soldier Coat", id: "kpin" },
+        { chance: 7.92,  solo: 15.84, item: "Rune Stone: Village Chief", id: "gold" },
+        { chance: 4.00,  solo: 8.00,  item: "Shining Courage", id: "I065" },
+        { chance: 4.00,  solo: 8.00,  item: "False Loyalty", id: "I08D" },
+        { chance: 4.00,  solo: 8.00,  item: "Vitality Branch", id: "I08E" },
+        { chance: 2.00,  solo: 4.00,  item: "Low-grade Divine Rune (+8)", id: "drph" }
+      ]
+    }]
+  },
+
+  "nfra": {
+    name: "Bone King Deveak (Lord - Starter Equipment)",
+    level: 40,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 37.49, solo: 74.98, item: "Spicy Roast Ribs", id: "fgdg", mult: 2 },
+        { chance: 18.75, solo: 37.50, item: "Skeleton King's Shadow Ring", id: "lure", mult: 2 },
+        { chance: 18.75, solo: 37.50, item: "Skeleton King's Shadow Longsword", id: "gobm", mult: 2 }
+      ]
+    }]
+  },
+
+  "n02E": {
+    name: "Treant Lord Gordon(Lord)",
+    level: 40,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 9.09, solo: 18.18, item: "Troll Gauntlets", id: "arsc", mult: 2 },
+        { chance: 9.09, solo: 18.18, item: "Troll Rifle", id: "I03J", mult: 2 },
+        { chance: 9.09, solo: 18.18, item: "Troll Hunting Crossbow", id: "I066", mult: 2 },
+        { chance: 9.09, solo: 18.18, item: "Troll Scepter", id: "spre", mult: 2 },
+        { chance: 9.09, solo: 18.18, item: "Troll Dagger", id: "I07W", mult: 2 },
+        { chance: 9.09, solo: 18.18, item: "Troll Helmet", id: "odef", mult: 2 },
+        { chance: 9.09, solo: 18.18, item: "Servant's Hat", id: "cnob", mult: 2 },
+        { chance: 9.09, solo: 18.18, item: "Troll Robe", id: "belv", mult: 2 },
+        { chance: 9.09, solo: 18.18, item: "Troll Light Armor", id: "I06A", mult: 2 },
+        { chance: 9.09, solo: 18.18, item: "Troll's Pocket", id: "I07Y", mult: 2 },
+        { chance: 9.09, solo: 18.18, item: "Bone Ring", id: "wolg", mult: 2 }
+      ]
+    }]
+  },
+
+  /* ---- Page 6 ---- */
+
+  "nrog": {
+    name: "Sanctuary Beast[Trash]",
+    level: 44,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 3.00, solo: 3.00, item: "Basic Enhancement Stone", id: "bzb" },
+        { chance: 2.00, solo: 2.00, item: "Rich Cheese", id: "infis" }
+      ]
+    }]
+  },
+
+  "nbrg": {
+    name: "Sanctuary Warden[Minion]",
+    level: 45,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 3.00, solo: 3.00, item: "Basic Enhancement Stone", id: "bzb" },
+        { chance: 2.00, solo: 2.00, item: "Rich Cheese", id: "infis" }
+      ]
+    }]
+  },
+
+  "nbd": {
+    name: "Supreme Commander (Elite)",
+    level: 48,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 12.00, solo: 12.00, item: "Basic Enhancement Stone", id: "bzb" },
+        { chance: 8.00,  solo: 8.00,  item: "Rich Cheese", id: "infis" }
+      ]
+    }]
+  },
+
+  "n031": {
+    name: "Light Demon King Ra(Mythic)",
+    level: 50,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 51.72, solo: 103.45, item: "Basic Enhancement Stone", id: "bzb" },
+        { chance: 16.81, solo: 33.62,  item: "Dim World Fragment", id: "I001" },
+        { chance: 6.47,  solo: 12.93,  item: "Rune Stone: Lingering Light", id: "I09M" }
+      ]
+    }]
+  },
+
+  "nwrg": {
+    name: "Void Frenzied Bird[Void]",
+    level: 50,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 15.00, solo: 30.00, item: "Divine Card Fragment", id: "sorf" }
+      ]
+    }]
+  },
+
+  "n00F": {
+    name: "Void Miner[Void]",
+    level: 52,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 15.00, solo: 30.00, item: "Divine Card Fragment", id: "sorf" }
+      ]
+    }]
+  },
+
+  "nsgg": {
+    name: "Dark Axe Warrior[Void]",
+    level: 54,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 30.00, solo: 60.00, item: "Divine Card Fragment", id: "sorf" }
+      ]
+    }]
+  },
+
+  "nbg": {
+    name: "Abyss Apostle Marnay (Lord)",
+    level: 55,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 38.00, solo: 76.00, item: "Charm Crystal", id: "I07L" },
+        { chance: 10.00, solo: 20.00, item: "Legendary Rune Stone: Dark Apostle", id: "I08W" },
+        { chance: 8.89,  solo: 17.78, item: "Manor Helm", id: "I07Z" },
+        { chance: 8.89,  solo: 17.78, item: "Manor Robe", id: "I083" },
+        { chance: 8.89,  solo: 17.78, item: "Rune Stone: Dark Apostle", id: "rwat" },
+        { chance: 8.89,  solo: 17.78, item: "Bone Shard Longbow", id: "oslo" },
+        { chance: 8.89,  solo: 17.78, item: "Cursed Sword", id: "fwss" },
+        { chance: 8.89,  solo: 17.78, item: "Shadow Gauntlets", id: "I082" },
+        { chance: 8.89,  solo: 17.78, item: "Fruit Wood Ornament", id: "I084" },
+        { chance: 8.89,  solo: 17.78, item: "Plague Horn", id: "I081" },
+        { chance: 8.89,  solo: 17.78, item: "Manor Staff", id: "I080" },
+        { chance: 2.00,  solo: 4.00,  item: "Low-grade Divine Rune (+8)", id: "drph" }
+      ]
+    }]
+  },
+
+  /* ---- Page 7 ---- */
+
+  "nhrr": {
+    name: "Void Fiend[Void]",
+    level: 56,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 20.00, solo: 40.00, item: "Divine Card Fragment", id: "sorf" }
+      ]
+    }]
+  },
+
+  "nhar": {
+    name: "Void Warlock[Void]",
+    level: 56,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 15.00, solo: 30.00, item: "Divine Card Fragment", id: "sorf" }
+      ]
+    }]
+  },
+
+  "nhrr_prince": {
+    name: "Prince Oli[Void]",
+    level: 58,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 20.00, solo: 40.00, item: "Divine Card Fragment", id: "sorf" }
+      ]
+    }]
+  },
+
+  "n038": {
+    name: "Queen Kasha[Void]",
+    level: 58,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 20.00, solo: 40.00, item: "Divine Card Fragment", id: "sorf" }
+      ]
+    }]
+  },
+
+  "nhrr_leader": {
+    name: "Void Fiend Leader[Void]",
+    level: 58,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 40.00, solo: 80.00, item: "Divine Card Fragment", id: "sorf" }
+      ]
+    }]
+  },
+
+  "n039": {
+    name: "Abyss Furbolg Priest[Void]",
+    level: 60,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 45.00, solo: 90.00, item: "Divine Card Fragment", id: "sorf" }
+      ]
+    }]
+  },
+
+  "nhrr_furbolg": {
+    name: "Abyss Furbolg[Void]",
+    level: 60,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 45.00, solo: 90.00, item: "Divine Card Fragment", id: "sorf" }
+      ]
+    }]
+  },
+
+  "n02L": {
+    name: "Ancient Guardian Antuun(Lord)",
+    level: 60,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 40.00, solo: 40.00, item: "Basic Enhancement Stone", id: "bzb" },
+        { chance: 15.00, solo: 15.00, item: "Dahlman Knight Helmet", id: "prvt" },
+        { chance: 14.90, solo: 14.90, item: "Royal Robe", id: "bspd" },
+        { chance: 10.10, solo: 10.10, item: "Ancient Ice String Longbow", id: "I086" },
+        { chance: 10.00, solo: 10.00, item: "Amethyst Fel Short Staff", id: "soul" },
+        { chance: 10.00, solo: 10.00, item: "Dalman Magic Gun", id: "I087" }
+      ]
+    }]
+  },
+
+  "n00C": {
+    name: "Archmage Mageston(Lord)",
+    level: 60,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 35.00, solo: 70.00, item: "Dim World Fragment", id: "I001" },
+        { chance: 30.00, solo: 60.00, item: "Dim Treasure Shard", id: "I07K" },
+        { chance: 25.00, solo: 50.00, item: "Basic Enhancement Stone", id: "bzb" },
+        { chance: 15.83, solo: 31.67, item: "Charm Crystal", id: "I07L" },
+        { chance: 13.64, solo: 27.27, item: "Rune Script", id: "brag" },
+        { chance: 13.64, solo: 27.27, item: "Fel Gem Blaze", id: "nspi" },
+        { chance: 6.89,  solo: 13.77, item: "Berserk Ring", id: "dphe" },
+        { chance: 6.82,  solo: 13.64, item: "Shadow Gauntlets Modified", id: "I088" },
+        { chance: 6.82,  solo: 13.64, item: "Bionic Magic Archer", id: "I067" },
+        { chance: 6.82,  solo: 13.64, item: "Valley Gauntlets", id: "rugt" },
+        { chance: 6.82,  solo: 13.64, item: "Rune Stone: Archmage", id: "rres" },
+        { chance: 6.82,  solo: 13.64, item: "Royal Saber", id: "gsou" },
+        { chance: 6.75,  solo: 13.50, item: "Dusk Headwrap", id: "rde1" },
+        { chance: 4.17,  solo: 8.33,  item: "Legendary Rune Stone: Archmage", id: "I08O" },
+        { chance: 1.25,  solo: 2.50,  item: "Blade of Corruption", id: "dust" },
+        { chance: 1.25,  solo: 2.50,  item: "World Tree Fruit", id: "pdiv" }
+      ]
+    }]
+  },
+
+  "n037": {
+    name: "Demon General Satan[Void Lord]",
+    level: 60,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 100.00, solo: 200.00, item: "Divine Card Fragment", id: "sorf" }
+      ]
+    }]
+  },
+
+  "nhfp": {
+    name: "Evoker[Void]",
+    level: 60,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 45.00, solo: 90.00, item: "Divine Card Fragment", id: "sorf" }
+      ]
+    }]
+  },
+
+  "nssp": {
+    name: "Forest King Linton (Mythic)",
+    level: 60,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 29.83, solo: 59.66, item: "Rich Cheese", id: "infis", mult: 2 },
+        { chance: 17.05, solo: 34.09, item: "Elixir Gift Pack", id: "gvsm", mult: 2 },
+        { chance: 12.78, solo: 25.57, item: "Basic Enhancement Stone", id: "bzbf", mult: 2 },
+        { chance: 8.52,  solo: 17.05, item: "Dim World Fragment", id: "I001", mult: 2 },
+        { chance: 3.41,  solo: 6.82,  item: "Ancient Tree Staff", id: "I09A", mult: 2 },
+        { chance: 3.41,  solo: 6.82,  item: "Ancient Tree Robe", id: "I099", mult: 2 }
+      ]
+    }]
+  },
+
+  "nhvh": {
+    name: "Gnoll Warrior[Void]",
+    level: 60,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 45.00, solo: 90.00, item: "Divine Card Fragment", id: "sorf" }
+      ]
+    }]
+  },
+
+  "n000": {
+    name: "Ruined City Wizard Oron(Boss)",
+    level: 60,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 35.00, solo: 70.00, item: "Dim World Fragment", id: "I001" },
+        { chance: 31.50, solo: 63.00, item: "Charm Crystal", id: "I07L" },
+        { chance: 30.00, solo: 60.00, item: "Dim Treasure Shard", id: "I07K" },
+        { chance: 13.64, solo: 27.27, item: "Rune Script", id: "brag" },
+        { chance: 13.64, solo: 27.27, item: "Fel Gem Blaze", id: "nspi" },
+        { chance: 7.50,  solo: 15.00, item: "Legendary Rune Stone: Ruined City Wizard", id: "I08N" },
+        { chance: 6.89,  solo: 13.77, item: "Berserk Ring", id: "dphe" },
+        { chance: 6.82,  solo: 13.64, item: "Shadow Gauntlets Modified", id: "I088" },
+        { chance: 6.82,  solo: 13.64, item: "Bionic Magic Archer", id: "I067" },
+        { chance: 6.82,  solo: 13.64, item: "Valley Gauntlets", id: "rugt" },
+        { chance: 6.82,  solo: 13.64, item: "Rune Stone: Ruined City Wizard", id: "rsps" },
+        { chance: 6.82,  solo: 13.64, item: "Royal Saber", id: "gsou" },
+        { chance: 6.75,  solo: 13.50, item: "Dusk Headwrap", id: "rde1" },
+        { chance: 1.50,  solo: 3.00,  item: "Tribulation Annihilation Mask", id: "fgsk" },
+        { chance: 1.50,  solo: 3.00,  item: "Naberius's Wrath", id: "I00A" },
+        { chance: 1.50,  solo: 3.00,  item: "Blade of Corruption", id: "dust" },
+        { chance: 1.50,  solo: 3.00,  item: "World Tree Fruit", id: "pdiv" }
+      ]
+    }]
+  },
+
+  /* ---- Page 11 ---- */
+
+  "nahy": {
+    name: "Ruined Prince Agares[Void Lord]",
+    level: 65,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 83.33, solo: 166.67, item: "Divine Card Fragment", id: "sorf", cond: true },
+        { chance: 16.67, solo: 66.67,  item: "Relic Fragment", id: "shea", mult: 2, cond: true }
+      ]
+    }]
+  },
+
+  "nhrq": {
+    name: "Ancient Savage[Void]",
+    level: 66,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 20.83, solo: 41.67, item: "Divine Card Fragment", id: "sorf", cond: true },
+        { chance: 4.17,  solo: 16.67, item: "Relic Fragment", id: "shea", mult: 2, cond: true }
+      ]
+    }]
+  },
+
+  "n00D": {
+    name: "Ruined City Sage Kiriyad(Lord)",
+    level: 66,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 35.00, solo: 70.00, item: "Dim World Fragment", id: "I001" },
+        { chance: 31.50, solo: 63.00, item: "Charm Crystal", id: "I07L" },
+        { chance: 30.00, solo: 60.00, item: "Dim Treasure Shard", id: "I07K" },
+        { chance: 7.50,  solo: 15.00, item: "Legendary Rune Stone: Soul Iron Golem", id: "I08Q" },
+        { chance: 3.55,  solo: 7.09,  item: "Mystery Lunchbox", id: "I04W" },
+        { chance: 3.53,  solo: 7.06,  item: "Bone Ember", id: "I00D" },
+        { chance: 3.53,  solo: 7.06,  item: "Broken Bone Shard", id: "I00F" },
+        { chance: 2.65,  solo: 5.29,  item: "Fine Iron Hero Helm", id: "I04Z" },
+        { chance: 2.65,  solo: 5.29,  item: "Calamity Bone War Armor", id: "I027" },
+        { chance: 1.76,  solo: 3.53,  item: "Knight War Helm", id: "gopr" },
+        { chance: 1.76,  solo: 3.53,  item: "Nectar Vestment", id: "hcun" },
+        { chance: 1.76,  solo: 3.53,  item: "Explosive Barrel", id: "I050" },
+        { chance: 1.76,  solo: 3.53,  item: "Rune Stone: Ruined City Sage", id: "tst2" },
+        { chance: 1.76,  solo: 3.53,  item: "Moon Ring", id: "wtlg" },
+        { chance: 1.76,  solo: 3.53,  item: "Clear Spring Armor", id: "I06B" },
+        { chance: 1.76,  solo: 3.53,  item: "Shocking Blade", id: "I053" },
+        { chance: 1.75,  solo: 3.49,  item: "Dried Heart", id: "hval" },
+        { chance: 1.50,  solo: 3.00,  item: "Tribulation Annihilation Mask", id: "fgsk" },
+        { chance: 1.50,  solo: 3.00,  item: "Naberius's Wrath", id: "I00A" },
+        { chance: 1.50,  solo: 3.00,  item: "Blade of Corruption", id: "dust" },
+        { chance: 1.50,  solo: 3.00,  item: "World Tree Fruit", id: "pdiv" }
+      ]
+    }]
+  },
+
+  "nits": {
+    name: "Abyss Snow Troll[Void]",
+    level: 68,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 20.83, solo: 41.67, item: "Divine Card Fragment", id: "sorf", cond: true },
+        { chance: 4.17,  solo: 16.67, item: "Relic Fragment", id: "shea", mult: 2, cond: true }
+      ]
+    }]
+  },
+
+  "nitp": {
+    name: "Ancient Savage Mage[Void]",
+    level: 68,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 20.83, solo: 41.67, item: "Divine Card Fragment", id: "sorf", cond: true },
+        { chance: 4.17,  solo: 16.67, item: "Relic Fragment", id: "shea", mult: 2, cond: true }
+      ]
+    }]
+  },
+
+  "n03C": {
+    name: "Bone Archer[Void]",
+    level: 68,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 45.83, solo: 91.67, item: "Divine Card Fragment", id: "sorf", cond: true },
+        { chance: 9.17,  solo: 36.67, item: "Relic Fragment", id: "shea", mult: 2, cond: true }
+      ]
+    }]
+  },
+
+  /* ---- Page 12 ---- */
+
+  "ufro": {
+    name: "Deathfrost Fang Safin[Void]",
+    level: 68,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 20.83, solo: 41.67, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 4.17,  solo: 16.67, item: "Relic Fragment", id: "shea", mult: 2 }
+      ]
+    }]
+  },
+
+  "nth_soldier": {
+    name: "Fallen Ancient Soldier[Void]",
+    level: 68,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 45.83, solo: 91.67, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 9.17,  solo: 36.67, item: "Relic Fragment", id: "shea", mult: 2 }
+      ]
+    }]
+  },
+
+  "nth_technician": {
+    name: "Fallen Ancient Technician[Void]",
+    level: 68,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 45.83, solo: 91.67, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 9.17,  solo: 36.67, item: "Relic Fragment", id: "shea", mult: 2 }
+      ]
+    }]
+  },
+
+  "nkb": {
+    name: "Kobold[Void]",
+    level: 68,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 45.83, solo: 91.67, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 9.17,  solo: 36.67, item: "Relic Fragment", id: "shea", mult: 2 }
+      ]
+    }]
+  },
+
+  "ngh1": {
+    name: "Sealing Totem (Boss)",
+    level: 68,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 20.00, solo: 40.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 20.00, solo: 40.00, item: "Shining Second-Tier Treasure Shard", id: "I095" },
+        { chance: 7.56,  solo: 15.13, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 5.04,  solo: 10.08, item: "Charm Crystal", id: "I07L" },
+        { chance: 5.00,  solo: 10.00, item: "Intermediate Enhancement Stone", id: "tmmt" },
+        { chance: 1.25,  solo: 2.50,  item: "Blood-Red Helmet", id: "gcel" },
+        { chance: 1.25,  solo: 2.50,  item: "Ash Hat", id: "clfm" },
+        { chance: 1.25,  solo: 2.50,  item: "Almighty War Armor", id: "afac" },
+        { chance: 1.25,  solo: 2.50,  item: "Rune Stone: Sealing Totem", id: "rman" },
+        { chance: 1.25,  solo: 2.50,  item: "Shaman Atlas", id: "shhn" },
+        { chance: 1.25,  solo: 2.50,  item: "Ancient Sculpture", id: "shcw" },
+        { chance: 1.25,  solo: 2.50,  item: "Ancient Mask", id: "rde2" },
+        { chance: 1.25,  solo: 2.50,  item: "Resolute Warhelm", id: "I06X" },
+        { chance: 0.76,  solo: 1.51,  item: "Legendary Rune Stone: Sealing Totem", id: "I08Z" },
+        { chance: 0.25,  solo: 0.50,  item: "Astral Eternal Tyrant Face Guard", id: "I05J" },
+        { chance: 0.25,  solo: 0.50,  item: "Astral Supreme Wisdom Headscarf", id: "I08F" },
+        { chance: 0.25,  solo: 0.50,  item: "Astral Immortal War Madness Helm", id: "I089" },
+        { chance: 0.25,  solo: 0.50,  item: "Astral Book of Supremacy", id: "I00K" },
+        { chance: 0.25,  solo: 0.50,  item: "Astral True Soul Gourd", id: "I05P" },
+        { chance: 0.25,  solo: 0.50,  item: "Astral Reminiscence White Lotus", id: "I00S" },
+        { chance: 0.13,  solo: 0.25,  item: "Intermediate Divine Rune (+11)", id: "I09N" }
+      ]
+    }]
+  },
+
+  "n03A": {
+    name: "Annihilation Decayer[Void]",
+    level: 70,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 45.83, solo: 91.67, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 9.17,  solo: 36.67, item: "Relic Fragment", id: "shea", mult: 2 }
+      ]
+    }]
+  },
+
+  /* ---- Page 13 ---- */
+
+  "ntr": {
+    name: "Annihilation Skullcrusher[Void]",
+    level: 70,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 45.83, solo: 91.67, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 9.17,  solo: 36.67, item: "Relic Fragment", id: "shea", mult: 2 }
+      ]
+    }]
+  },
+
+  "nkot": {
+    name: "Kobold Overlord[Void]",
+    level: 70,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 45.83, solo: 91.67, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 9.17,  solo: 36.67, item: "Relic Fragment", id: "shea", mult: 2 }
+      ]
+    }]
+  },
+
+  "ngh2": {
+    name: "Millennial Behemoth Kamon (Lord)",
+    level: 70,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 20.00, solo: 40.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 20.00, solo: 40.00, item: "Shining Second-Tier Treasure Shard", id: "I095" },
+        { chance: 17.65, solo: 35.29, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 13.33, solo: 26.67, item: "Intermediate Enhancement Stone", id: "tmmt" },
+        { chance: 11.76, solo: 23.53, item: "Charm Crystal", id: "I07L" },
+        { chance: 3.33,  solo: 6.67,  item: "Ash Hat", id: "clfm" },
+        { chance: 3.33,  solo: 6.67,  item: "Blood-Red Helmet", id: "gcel" },
+        { chance: 3.33,  solo: 6.67,  item: "Rune Stone: Millennial Colossus", id: "lmbr" },
+        { chance: 3.33,  solo: 6.67,  item: "Shaman Atlas", id: "shhn" },
+        { chance: 3.33,  solo: 6.67,  item: "Ancient Sculpture", id: "shcw" },
+        { chance: 3.33,  solo: 6.67,  item: "Almighty War Armor", id: "afac" },
+        { chance: 3.33,  solo: 6.67,  item: "Ancient Mask", id: "rde2" },
+        { chance: 3.33,  solo: 6.67,  item: "Resolute Warhelm", id: "I06X" },
+        { chance: 1.76,  solo: 3.53,  item: "Legendary Rune Stone: Millennial Colossus", id: "I090" },
+        { chance: 0.59,  solo: 1.18,  item: "Astral Eternal Tyrant Face Guard", id: "I05J" },
+        { chance: 0.59,  solo: 1.18,  item: "Astral True Soul Gourd", id: "I05P" },
+        { chance: 0.59,  solo: 1.18,  item: "Astral Supreme Wisdom Headscarf", id: "I08F" },
+        { chance: 0.59,  solo: 1.18,  item: "Astral Book of Supremacy", id: "I00K" },
+        { chance: 0.59,  solo: 1.18,  item: "Astral Immortal War Madness Helm", id: "I089" },
+        { chance: 0.59,  solo: 1.18,  item: "Astral Reminiscence White Lotus", id: "I00S" },
+        { chance: 0.29,  solo: 0.59,  item: "Intermediate Divine Rune (+11)", id: "I09N" }
+      ]
+    }]
+  },
+
+  "nitw": {
+    name: "Reborn Bone King Dweck[Void]",
+    level: 70,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 45.83, solo: 91.67, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 9.17,  solo: 36.67, item: "Relic Fragment", id: "shea", mult: 2 }
+      ]
+    }]
+  },
+
+  "nfrl": {
+    name: "War Machine Latur (Boss)",
+    level: 70,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 20.00, solo: 40.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 20.00, solo: 40.00, item: "Shining Second-Tier Treasure Shard", id: "I095" },
+        { chance: 7.56,  solo: 15.13, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 6.00,  solo: 12.00, item: "Intermediate Enhancement Stone", id: "tmmt" },
+        { chance: 5.04,  solo: 10.08, item: "Charm Crystal", id: "I07L" },
+        { chance: 1.50,  solo: 3.00,  item: "Demon Bone Vestment", id: "rag1" },
+        { chance: 1.50,  solo: 3.00,  item: "Shadow Iron Armor", id: "evtl" },
+        { chance: 1.50,  solo: 3.00,  item: "Ancient Pendant", id: "I04U" },
+        { chance: 1.50,  solo: 3.00,  item: "Rune Stone: War Machine", id: "rdis" },
+        { chance: 1.50,  solo: 3.00,  item: "Sacrificial Stone Slab", id: "shtm" },
+        { chance: 1.50,  solo: 3.00,  item: "Ancient Beast Crest", id: "oflg" },
+        { chance: 0.76,  solo: 1.51,  item: "Legendary Rune Stone: War Machine", id: "I091" },
+        { chance: 0.25,  solo: 0.50,  item: "Astral Eternal Tyrant Face Guard", id: "I05J" },
+        { chance: 0.25,  solo: 0.50,  item: "Astral Supreme Wisdom Headscarf", id: "I08F" },
+        { chance: 0.25,  solo: 0.50,  item: "Astral Immortal War Madness Helm", id: "I089" },
+        { chance: 0.25,  solo: 0.50,  item: "Astral Book of Supremacy", id: "I00K" },
+        { chance: 0.25,  solo: 0.50,  item: "Astral True Soul Gourd", id: "I05P" },
+        { chance: 0.25,  solo: 0.50,  item: "Astral Reminiscence White Lotus", id: "I00S" },
+        { chance: 0.13,  solo: 0.25,  item: "Intermediate Divine Rune (+11)", id: "I09N" }
+      ]
+    }]
+  },
+
+  /* ---- Page 14 ---- */
+
+  "nkg": {
+    name: "Murloc[Void]",
+    level: 72,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 23.08, solo: 46.15, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 6.92,  solo: 41.54, item: "Relic Fragment", id: "shea", mult: 3 }
+      ]
+    }]
+  },
+
+  "nlt": {
+    name: "Phantom Elf[Void]",
+    level: 74,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 23.08, solo: 46.15, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 6.92,  solo: 41.54, item: "Relic Fragment", id: "shea", mult: 3 }
+      ]
+    }]
+  },
+
+  "nkol": {
+    name: "Venomous Murloc[Void]",
+    level: 74,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 23.08, solo: 46.15, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 6.92,  solo: 41.54, item: "Relic Fragment", id: "shea", mult: 3 }
+      ]
+    }]
+  },
+
+  "n021": {
+    name: "Flame Horn Boar King Taro(Lord)",
+    level: 75,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 30.00, solo: 60.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 20.00, solo: 40.00, item: "Shining Second-Tier Treasure Shard", id: "I095" },
+        { chance: 7.50,  solo: 15.00, item: "Intermediate Enhancement Stone", id: "tmmt" },
+        { chance: 1.35,  solo: 2.70,  item: "Evil Sacrifice Mask", id: "I08A" },
+        { chance: 1.35,  solo: 2.70,  item: "Ancient Jade", id: "esaz" },
+        { chance: 1.35,  solo: 2.70,  item: "Ancient Heart", id: "I02F" },
+        { chance: 1.35,  solo: 2.70,  item: "Forbidden Magic Ring", id: "I08G" },
+        { chance: 1.35,  solo: 2.70,  item: "Unstable Magic Stone", id: "azhr" },
+        { chance: 0.75,  solo: 1.50,  item: "Legendary Rune Stone: Flame Horn Boar King", id: "rre1" }
+      ]
+    }]
+  },
+
+  "n036": {
+    name: "High Chieftain Mas(Lord)",
+    level: 75,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 20.00, solo: 40.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 20.00, solo: 40.00, item: "Shining Second-Tier Treasure Shard", id: "I095" },
+        { chance: 17.65, solo: 35.29, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 12.00, solo: 24.00, item: "Intermediate Enhancement Stone", id: "tmmt" },
+        { chance: 11.76, solo: 23.53, item: "Charm Crystal", id: "I07L" },
+        { chance: 3.00,  solo: 6.00,  item: "Demon Bone Vestment", id: "rag1" },
+        { chance: 3.00,  solo: 6.00,  item: "Shadow Iron Armor", id: "evtl" },
+        { chance: 3.00,  solo: 6.00,  item: "Ancient Pendant", id: "I04U" },
+        { chance: 3.00,  solo: 6.00,  item: "Rune Stone: High Chieftain", id: "gomn" },
+        { chance: 3.00,  solo: 6.00,  item: "Sacrificial Stone Slab", id: "shtm" },
+        { chance: 3.00,  solo: 6.00,  item: "Ancient Beast Crest", id: "oflg" },
+        { chance: 1.76,  solo: 3.53,  item: "Legendary Rune Stone: High Chieftain", id: "I092" },
+        { chance: 0.59,  solo: 1.18,  item: "Astral Eternal Tyrant Face Guard", id: "I05J" },
+        { chance: 0.59,  solo: 1.18,  item: "Astral True Soul Gourd", id: "I05P" },
+        { chance: 0.59,  solo: 1.18,  item: "Astral Supreme Wisdom Headscarf", id: "I08F" },
+        { chance: 0.59,  solo: 1.18,  item: "Astral Book of Supremacy", id: "I00K" },
+        { chance: 0.59,  solo: 1.18,  item: "Astral Immortal War Madness Helm", id: "I089" },
+        { chance: 0.59,  solo: 1.18,  item: "Astral Reminiscence White Lotus", id: "I00S" },
+        { chance: 0.29,  solo: 0.59,  item: "Intermediate Divine Rune (+11)", id: "I09N" }
+      ]
+    }]
+  },
+
+  /* ---- Page 15 ---- */
+
+  "noos": {
+    name: "Obsidian Bear Emperor Shami(Lord)",
+    level: 75,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 30.00, solo: 60.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 20.00, solo: 40.00, item: "Shining Second-Tier Treasure Shard", id: "I095" },
+        { chance: 7.50,  solo: 15.00, item: "Intermediate Enhancement Stone", id: "tmmt" },
+        { chance: 1.35,  solo: 2.70,  item: "Evil Sacrifice Mask", id: "I08A" },
+        { chance: 1.35,  solo: 2.70,  item: "Ancient Jade", id: "esaz" },
+        { chance: 1.35,  solo: 2.70,  item: "Ancient Heart", id: "I02F" },
+        { chance: 1.35,  solo: 2.70,  item: "Forbidden Magic Ring", id: "I08G" },
+        { chance: 1.35,  solo: 2.70,  item: "Unstable Magic Stone", id: "azhr" },
+        { chance: 0.75,  solo: 1.50,  item: "Legendary Rune Stone: Obsidian Bear Emperor", id: "rhe1" }
+      ]
+    }]
+  },
+
+  "n02P": {
+    name: "Thunder Eagle Emperor Kailin(Lord)",
+    level: 75,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 30.00, solo: 60.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 20.00, solo: 40.00, item: "Shining Second-Tier Treasure Shard", id: "I095" },
+        { chance: 11.25, solo: 22.50, item: "Intermediate Enhancement Stone", id: "tmmt" },
+        { chance: 0.75,  solo: 1.50,  item: "Holy God Wedge", id: "I063" },
+        { chance: 0.75,  solo: 1.50,  item: "Venomous Sting", id: "ratf" },
+        { chance: 0.75,  solo: 1.50,  item: "Ancient Creation Crystal", id: "iwbr" },
+        { chance: 0.75,  solo: 1.50,  item: "Legendary Rune Stone: Thunder Eagle Emperor", id: "guvi" },
+        { chance: 0.75,  solo: 1.50,  item: "Golden Flask of Redemption", id: "arsh" }
+      ]
+    }]
+  },
+
+  "ners": {
+    name: "True Crimson Ruler Rakdan(Boss)",
+    level: 75,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 24.00, solo: 24.00, item: "Superior Equipment Hardening Agent", id: "oven" },
+        { chance: 18.00, solo: 18.00, item: "Life Nectar", id: "totw" },
+        { chance: 12.00, solo: 12.00, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 6.00,  solo: 6.00,  item: "Elixir Gift Pack", id: "gvsm" }
+      ]
+    }]
+  },
+
+  "nstw": {
+    name: "Lightning Magic Bear[Void]",
+    level: 76,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 50.00, solo: 100.00, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 15.00, solo: 90.00,  item: "Relic Fragment", id: "shea", mult: 3 }
+      ]
+    }]
+  },
+
+  "nlpr": {
+    name: "Mad Crab Fiend[Void]",
+    level: 76,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 50.00, solo: 100.00, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 15.00, solo: 90.00,  item: "Relic Fragment", id: "shea", mult: 3 }
+      ]
+    }]
+  },
+
+  "nina": {
+    name: "Phantom Elf Queen[Void]",
+    level: 76,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 23.08, solo: 46.15, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 6.92,  solo: 41.54, item: "Relic Fragment", id: "shea", mult: 3 }
+      ]
+    }]
+  },
+
+  /* ---- Page 17 ---- */
+
+  "nth_bear": {
+    name: "Revived Bear Emperor[Void]",
+    level: 80,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 50.00, solo: 100.00, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 15.00, solo: 90.00,  item: "Relic Fragment", id: "shea", mult: 3 }
+      ]
+    }]
+  },
+
+  "nwzr": {
+    name: "Void Realm Archmage[Void]",
+    level: 80,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 50.00, solo: 100.00, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 15.00, solo: 90.00,  item: "Relic Fragment", id: "shea", mult: 3 }
+      ]
+    }]
+  },
+
+  "nbd_abyss": {
+    name: "World Tree's Agony Reverie[Abyss]",
+    level: 80,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 2.85, solo: 5.69, item: "Dim World Fragment", id: "I001", mult: 2 },
+        { chance: 2.85, solo: 5.69, item: "Charm Crystal", id: "I07L", mult: 2 },
+        { chance: 0.09, solo: 0.19, item: "Blade of Corruption", id: "dust", mult: 2 },
+        { chance: 0.09, solo: 0.19, item: "Tribulation Annihilation Mask", id: "fgsk", mult: 2 },
+        { chance: 0.06, solo: 0.12, item: "Naberius's Wrath", id: "I00A", mult: 2 },
+        { chance: 0.06, solo: 0.12, item: "World Tree Fruit", id: "pdv", mult: 2 }
+      ]
+    }]
+  },
+
+  "nfgb": {
+    name: "Ancient Beast Lord[Elite]",
+    level: 82,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 1.33, solo: 1.33, item: "Life Nectar", id: "totw" },
+        { chance: 1.33, solo: 1.33, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 1.33, solo: 1.33, item: "Dim World Fragment", id: "I001" }
+      ]
+    }]
+  },
+
+  "nsc2": {
+    name: "Desert Tyrant Amoras (Mythic)",
+    level: 85,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 18.29, solo: 54.88, item: "Elixir Gift Pack", id: "gvsm", mult: 3 },
+        { chance: 18.29, solo: 54.88, item: "Lost Forge Whetstone", id: "I07H", mult: 3 },
+        { chance: 18.29, solo: 54.88, item: "Intermediate Enhancement Stone", id: "tmmt", mult: 3 },
+        { chance: 10.37, solo: 31.10, item: "Dim Treasure Shard", id: "I07K", mult: 3 },
+        { chance: 6.10,  solo: 18.29, item: "Superior Elixir Gift Pack", id: "I096", mult: 3 },
+        { chance: 1.83,  solo: 5.49,  item: "Hunter's Desire", id: "I09B", mult: 3 },
+        { chance: 1.83,  solo: 5.49,  item: "Ring of Sin", id: "kybl", mult: 3 }
+      ]
+    }]
+  },
+
+  "nfod": {
+    name: "Dragonkin Soul[Trash]",
+    level: 85,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 1.50, solo: 1.50, item: "Western Meal", id: "I0A7" },
+        { chance: 1.50, solo: 1.50, item: "Advanced Enhancement Stone", id: "I002" }
+      ]
+    }]
+  },
+
+  /* ---- Page 18 ---- */
+
+  "n011": {
+    name: "Snowfield Storm[Elite]",
+    level: 85,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 1.67, solo: 1.67, item: "Western Meal", id: "I0A7" },
+        { chance: 1.67, solo: 1.67, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 1.67, solo: 1.67, item: "Shining World Fragment", id: "I098" }
+      ]
+    }]
+  },
+
+  "nwzg": {
+    name: "Centaur Archer[Void]",
+    level: 90,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 28.57, solo: 57.14, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 11.43, solo: 91.43, item: "Relic Fragment", id: "shea", mult: 4 }
+      ]
+    }]
+  },
+
+  "nld": {
+    name: "Centaur Warrior[Void]",
+    level: 90,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 28.57, solo: 57.14, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 11.43, solo: 91.43, item: "Relic Fragment", id: "shea", mult: 4 }
+      ]
+    }]
+  },
+
+  "nspr": {
+    name: "Corpse Dragon Ryan (Mythic)",
+    level: 90,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 18.75, solo: 75.00, item: "Superior Elixir Gift Pack", id: "I096", mult: 4 },
+        { chance: 18.75, solo: 75.00, item: "Ancient Titan Whetstone", id: "I07G", mult: 4 },
+        { chance: 18.75, solo: 75.00, item: "Advanced Enhancement Stone", id: "I002", mult: 4 },
+        { chance: 10.00, solo: 40.00, item: "Shining Second-Tier Treasure Shard", id: "I095", mult: 4 },
+        { chance: 6.25,  solo: 25.00, item: "Holy Elixir Gift Pack", id: "I097", mult: 4 },
+        { chance: 0.83,  solo: 3.33,  item: "Hexbreak Dragon Magic Sword", id: "I09D", mult: 4 },
+        { chance: 0.83,  solo: 3.33,  item: "Endless Nightmare", id: "k3m1", mult: 4 },
+        { chance: 0.83,  solo: 3.33,  item: "Cursebound Dragon Magic Armor", id: "I09C", mult: 4 }
+      ]
+    }]
+  },
+
+  "n02X": {
+    name: "Divine Realm Gatekeeper Mardakela(Boss)",
+    level: 90,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 10.00, solo: 20.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 6.80,  solo: 13.60, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 0.40,  solo: 0.80,  item: "Ancient Floating Light", id: "I00N" },
+        { chance: 0.40,  solo: 0.80,  item: "Withered Nectar", id: "fgun" },
+        { chance: 0.20,  solo: 0.40,  item: "Ancient Divine Essence Crystal", id: "bfhr" },
+        { chance: 0.20,  solo: 0.40,  item: "Cursed Eternal Robe", id: "I056" }
+      ]
+    }]
+  },
+
+  "n027": {
+    name: "Divine Realm Gatekeeper Mardakela(Lord)",
+    level: 90,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 30.00, solo: 60.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 16.28, solo: 32.56, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 10.85, solo: 21.71, item: "Charm Crystal", id: "I07L" },
+        { chance: 7.50,  solo: 15.00, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 2.71,  solo: 5.43,  item: "Legendary Rune Stone: Ancient Tree Guardian", id: "I09J" },
+        { chance: 0.81,  solo: 1.63,  item: "Astral Eternal Tyrant Face Guard", id: "I05J" },
+        { chance: 0.81,  solo: 1.63,  item: "Astral Reminiscence White Lotus", id: "I00S" },
+        { chance: 0.81,  solo: 1.63,  item: "Astral Book of Supremacy", id: "I00K" },
+        { chance: 0.81,  solo: 1.63,  item: "Astral True Soul Gourd", id: "I05P" },
+        { chance: 0.81,  solo: 1.63,  item: "Astral Supreme Wisdom Headscarf", id: "I08F" },
+        { chance: 0.81,  solo: 1.63,  item: "Astral Immortal War Madness Helm", id: "I089" },
+        { chance: 0.50,  solo: 1.00,  item: "Ancient Divine Essence Crystal", id: "bfhr" },
+        { chance: 0.50,  solo: 1.00,  item: "Cursed Eternal Robe", id: "I056" },
+        { chance: 0.50,  solo: 1.00,  item: "Ancient Floating Light", id: "I00N" },
+        { chance: 0.50,  solo: 1.00,  item: "Withered Nectar", id: "fgun" },
+        { chance: 0.50,  solo: 1.00,  item: "Rune Stone: Ancient Tree Guardian", id: "tin2" },
+        { chance: 0.27,  solo: 0.54,  item: "Intermediate Divine Rune (+11)", id: "I09N" }
+      ]
+    }]
+  },
+
+  /* ---- Page 19 ---- */
+
+  "nltc": {
+    name: "False Sacred Tree Bahamut[Void Lord]",
+    level: 90,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 76.92, solo: 153.85, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 23.08, solo: 138.46, item: "Relic Fragment", id: "shea", mult: 3 }
+      ]
+    }]
+  },
+
+  "nooU": {
+    name: "Ice Demon King Kanrei(Legendary)",
+    level: 90,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 30.00, solo: 60.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 13.95, solo: 27.91, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 9.30,  solo: 18.60, item: "Charm Crystal", id: "I07L" },
+        { chance: 7.00,  solo: 14.00, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 2.33,  solo: 4.65,  item: "Legendary Rune Stone: Ancient Spider King", id: "I09L" },
+        { chance: 1.00,  solo: 2.00,  item: "Pure Spring Secret Staff", id: "I02E" },
+        { chance: 1.00,  solo: 2.00,  item: "Demonic Blood Staff", id: "I01E" },
+        { chance: 0.70,  solo: 1.40,  item: "Type Zero Divine River Hat", id: "I01C" },
+        { chance: 0.70,  solo: 1.40,  item: "Type Zero Fictional Aether Cube", id: "I04V" },
+        { chance: 0.70,  solo: 1.40,  item: "Type Zero Ultimate Fantasy", id: "I044" },
+        { chance: 0.70,  solo: 1.40,  item: "Type Zero Alpha Driver", id: "I01B" },
+        { chance: 0.70,  solo: 1.40,  item: "Astral Azure Blessing", id: "I00C" },
+        { chance: 0.70,  solo: 1.40,  item: "Astral Tree of Fantasy", id: "I00B" },
+        { chance: 0.50,  solo: 1.00,  item: "Millennium Ice Feather", id: "schl" },
+        { chance: 0.50,  solo: 1.00,  item: "Rune Stone: Ancient Spider King", id: "crdt" },
+        { chance: 0.23,  solo: 0.47,  item: "Intermediate Divine Rune (+11)", id: "I09N" }
+      ]
+    }]
+  },
+
+  "ngns": {
+    name: "Jackal Strongman Tyson (Boss)",
+    level: 90,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 30.00, solo: 60.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 16.28, solo: 32.56, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 10.85, solo: 21.71, item: "Charm Crystal", id: "I07L" },
+        { chance: 10.50, solo: 21.00, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 2.71,  solo: 5.43,  item: "Legendary Rune Stone: Jackal Hero", id: "I09I" },
+        { chance: 1.50,  solo: 3.00,  item: "Hollow Claw", id: "lnn" },
+        { chance: 1.50,  solo: 3.00,  item: "Void Dark Armor", id: "I01G" },
+        { chance: 1.50,  solo: 3.00,  item: "Rune Stone: Jackal Hero", id: "tint" },
+        { chance: 0.81,  solo: 1.63,  item: "Astral Eternal Tyrant Face Guard", id: "I05J" },
+        { chance: 0.81,  solo: 1.63,  item: "Astral Reminiscence White Lotus", id: "I00S" },
+        { chance: 0.81,  solo: 1.63,  item: "Astral Book of Supremacy", id: "I00K" },
+        { chance: 0.81,  solo: 1.63,  item: "Astral True Soul Gourd", id: "I05P" },
+        { chance: 0.81,  solo: 1.63,  item: "Astral Supreme Wisdom Headscarf", id: "I08F" },
+        { chance: 0.81,  solo: 1.63,  item: "Astral Immortal War Madness Helm", id: "I089" },
+        { chance: 0.27,  solo: 0.54,  item: "Intermediate Divine Rune (+11)", id: "I09N" }
+      ]
+    }]
+  },
+
+  "n023": {
+    name: "Shadow Council Void Prophet(Void)",
+    level: 90,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 40.00, solo: 80.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 1.00,  solo: 2.00,  item: "Rune Stone: Void Prophet", id: "rhe3" }
+      ]
+    }]
+  },
+
+  /* ---- Page 20 ---- */
+
+  "rhe2_starseeker": {
+    name: "Traitorous Star Seeker Meshra(Lord)",
+    level: 90,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 30.00, solo: 60.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 10.50, solo: 21.00, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 6.98,  solo: 13.95, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 4.65,  solo: 9.30,  item: "Charm Crystal", id: "I07L" },
+        { chance: 1.50,  solo: 3.00,  item: "Hollow Claw", id: "lnn" },
+        { chance: 1.50,  solo: 3.00,  item: "Ancient Guardian War Armor", id: "I061" },
+        { chance: 1.50,  solo: 3.00,  item: "Rune Stone: Star Seeker", id: "rhe2" },
+        { chance: 1.16,  solo: 2.33,  item: "Legendary Rune Stone: Star Seeker", id: "I09H" },
+        { chance: 0.35,  solo: 0.70,  item: "Astral Supreme Wisdom Headscarf", id: "I08F" },
+        { chance: 0.35,  solo: 0.70,  item: "Astral Eternal Tyrant Face Guard", id: "I05J" },
+        { chance: 0.35,  solo: 0.70,  item: "Astral Immortal War Madness Helm", id: "I089" },
+        { chance: 0.35,  solo: 0.70,  item: "Astral Reminiscence White Lotus", id: "I00S" },
+        { chance: 0.35,  solo: 0.70,  item: "Astral Book of Supremacy", id: "I00K" },
+        { chance: 0.35,  solo: 0.70,  item: "Astral True Soul Gourd", id: "I05P" },
+        { chance: 0.12,  solo: 0.23,  item: "Intermediate Divine Rune (+11)", id: "I09N" }
+      ]
+    }]
+  },
+
+  "n024": {
+    name: "Volcano Queen Kaleschirin(Lord)",
+    level: 90,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 20.00, solo: 40.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 16.28, solo: 32.56, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 14.00, solo: 28.00, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 10.85, solo: 21.71, item: "Charm Crystal", id: "I07L" },
+        { chance: 2.71,  solo: 5.43,  item: "Legendary Rune Stone: Volcano Queen", id: "I09G" },
+        { chance: 2.00,  solo: 4.00,  item: "Demon Dragon Soul", id: "ccmd" },
+        { chance: 2.00,  solo: 4.00,  item: "Greedy Demon Dragon Staff", id: "kygh" },
+        { chance: 2.00,  solo: 4.00,  item: "Rune Stone: Volcano Queen", id: "gfor" },
+        { chance: 0.81,  solo: 1.63,  item: "Astral Eternal Tyrant Face Guard", id: "I05J" },
+        { chance: 0.81,  solo: 1.63,  item: "Astral Reminiscence White Lotus", id: "I00S" },
+        { chance: 0.81,  solo: 1.63,  item: "Astral Book of Supremacy", id: "I00K" },
+        { chance: 0.81,  solo: 1.63,  item: "Astral True Soul Gourd", id: "I05P" },
+        { chance: 0.81,  solo: 1.63,  item: "Astral Supreme Wisdom Headscarf", id: "I08F" },
+        { chance: 0.81,  solo: 1.63,  item: "Astral Immortal War Madness Helm", id: "I089" },
+        { chance: 0.27,  solo: 0.54,  item: "Intermediate Divine Rune (+11)", id: "I09N" }
+      ]
+    }]
+  },
+
+  "nlsn": {
+    name: "Centaur Prince[Void]",
+    level: 92,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 28.57, solo: 57.14, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 11.43, solo: 91.43, item: "Relic Fragment", id: "shea", mult: 4 }
+      ]
+    }]
+  },
+
+  "n00R": {
+    name: "Ice Fang Mammoth Radkel(Lord)",
+    level: 93,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 40.00, solo: 80.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 6.50,  solo: 13.00, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 0.50,  solo: 1.00,  item: "Void Blood-Red Bud", id: "scul" },
+        { chance: 0.50,  solo: 1.00,  item: "Fallen Beast Blood", id: "rej2" },
+        { chance: 0.50,  solo: 1.00,  item: "Ancient Tree Vein Battle Axe", id: "I05Y" },
+        { chance: 0.50,  solo: 1.00,  item: "Sealed Gade War Armor", id: "I03A" },
+        { chance: 0.50,  solo: 1.00,  item: "Surge Lightning Core Leather Armor", id: "I03P" },
+        { chance: 0.50,  solo: 1.00,  item: "Rift Eye", id: "I03B" },
+        { chance: 0.50,  solo: 1.00,  item: "Rune Stone: Ice Fang Mammoth", id: "shas" }
+      ]
+    }]
+  },
+
+  /* ---- Page 21 ---- */
+
+  "spro_fenrir": {
+    name: "Snowfield Wolf King Fenrir(Boss)",
+    level: 93,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 40.00, solo: 80.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 0.50,  solo: 1.00,  item: "Rune Stone: Fenrir", id: "spro" }
+      ]
+    }]
+  },
+
+  "n00T": {
+    name: "Third Knight Order Knight-Captain Famine(Lord)",
+    level: 93,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 40.00, solo: 80.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 7.00,  solo: 14.00, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 1.00,  solo: 2.00,  item: "Rune Stone: Withered Knight", id: "phea" },
+        { chance: 0.50,  solo: 1.00,  item: "Cursed Talisman Paper", id: "sor3" },
+        { chance: 0.50,  solo: 1.00,  item: "Demon God Snow Crystal", id: "sor4" },
+        { chance: 0.50,  solo: 1.00,  item: "Heavenly Mask", id: "I02D" },
+        { chance: 0.50,  solo: 1.00,  item: "Extraordinary Helmet", id: "lgdh" }
+      ]
+    }]
+  },
+
+  "ngst": {
+    name: "World-Ending Evil Dragon Alduin (Lord)",
+    level: 93,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 40.00, solo: 80.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 6.50,  solo: 13.00, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 0.50,  solo: 1.00,  item: "World-Ending Rune", id: "sor9" },
+        { chance: 0.50,  solo: 1.00,  item: "Crimson Abyss Blood Jade", id: "mnst" },
+        { chance: 0.50,  solo: 1.00,  item: "Breath of the Forest Sturdy Pine Longbow", id: "I05Z" },
+        { chance: 0.50,  solo: 1.00,  item: "Voice of the Ancient Forest Storm Gauntlets", id: "I060" },
+        { chance: 0.50,  solo: 1.00,  item: "Thunder Source Scepter", id: "I03O" },
+        { chance: 0.50,  solo: 1.00,  item: "Corpse Curse Plague Rotting Sword", id: "I05C" },
+        { chance: 0.50,  solo: 1.00,  item: "Rune Stone: World-Ending Evil Dragon", id: "skul" }
+      ]
+    }]
+  },
+
+  "nlds": {
+    name: "Void Serpent Dragon[Void]",
+    level: 94,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 28.57, solo: 57.14, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 11.43, solo: 91.43, item: "Relic Fragment", id: "shea", mult: 4 }
+      ]
+    }]
+  },
+
+  "n01M": {
+    name: "Agony Prison Paine(Mythic)",
+    level: 95,
+    sections: [{
+      trigger: "On taking damage (one roll per 10% HP lost — 10 rolls per kill)",
+      rolls: { solo: 10, group: null },
+      drops: [
+        { chance: 1.75, solo: 17.50, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 0.13, solo: 1.25,  item: "Death Fang", id: "I04G" },
+        { chance: 0.13, solo: 1.25,  item: "Deaththorn Crystal Curse Staff", id: "I04H" },
+        { chance: 0.13, solo: 1.25,  item: "Frozen Legend Battleblade", id: "I00M" },
+        { chance: 0.13, solo: 1.25,  item: "Branch of the Curse", id: "I01A" },
+        { chance: 0.13, solo: 1.25,  item: "Ghost Remnant Ring", id: "I04E" },
+        { chance: 0.06, solo: 0.63,  item: "Infinite Sorrow", id: "hbth" },
+        { chance: 0.06, solo: 0.63,  item: "Imprisoned Soul", id: "I06T" }
+      ]
+    }]
+  },
+
+  "nadr": {
+    name: "Prison of Desire Levi (Mythic)",
+    level: 95,
+    sections: [{
+      trigger: "On taking damage (one roll per 10% HP lost — 10 rolls per kill)",
+      rolls: { solo: 10, group: null },
+      drops: [
+        { chance: 2.80, solo: 28.00, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 0.20, solo: 2.00,  item: "Death Fang", id: "I04G" },
+        { chance: 0.20, solo: 2.00,  item: "Deaththorn Crystal Curse Staff", id: "I04H" },
+        { chance: 0.20, solo: 2.00,  item: "Frozen Legend Battleblade", id: "I00M" },
+        { chance: 0.20, solo: 2.00,  item: "Branch of the Curse", id: "I01A" },
+        { chance: 0.20, solo: 2.00,  item: "Ghost Remnant Ring", id: "I04E" },
+        { chance: 0.10, solo: 1.00,  item: "Infinite Sorrow", id: "hbth" },
+        { chance: 0.10, solo: 1.00,  item: "Imprisoned Soul", id: "I06T" }
+      ]
+    }]
+  },
+
+  /* ---- Page 22 ---- */
+
+  "nkl": {
+    name: "Ghoul King[Void]",
+    level: 96,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 28.57, solo: 57.14, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 11.43, solo: 91.43, item: "Relic Fragment", id: "shea", mult: 4 }
+      ]
+    }]
+  },
+
+  "nmgr": {
+    name: "Ice Demon Emperor[Void]",
+    level: 96,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 32.14, solo: 64.29, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 12.86, solo: 102.86, item: "Relic Fragment", id: "shea", mult: 4 }
+      ]
+    }]
+  },
+
+  "nnht": {
+    name: "Calamity Insect King Yinkikot(Boss)",
+    level: 98,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 4.29, solo: 8.57, item: "Superior Enhancement Stone", id: "I003" },
+        { chance: 0.49, solo: 0.98, item: "Legendary Rune Stone: Calamity Swarm", id: "I0BM" },
+        { chance: 0.31, solo: 0.61, item: "Reminiscence Bud", id: "I0BT" },
+        { chance: 0.31, solo: 0.61, item: "Ruinous Axe", id: "I0BG" },
+        { chance: 0.24, solo: 0.49, item: "Endshade Ring", id: "I0BK" },
+        { chance: 0.24, solo: 0.49, item: "Soul Devouring Ritual Sword", id: "I0BD" }
+      ]
+    }]
+  },
+
+  "nnck": {
+    name: "False Redemption Jesus(Lord)",
+    level: 98,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 5.71, solo: 11.43, item: "Superior Enhancement Stone", id: "I003" },
+        { chance: 0.65, solo: 1.31, item: "Legendary Rune Stone: False Savior", id: "I0BN" },
+        { chance: 0.41, solo: 0.82, item: "Void Leyline", id: "I0BS" },
+        { chance: 0.41, solo: 0.82, item: "Ruinous Axe", id: "I0BG" },
+        { chance: 0.33, solo: 0.65, item: "Soul Devouring Ritual Sword", id: "I0BD" },
+        { chance: 0.33, solo: 0.65, item: "Endshade Ring", id: "I0BK" }
+      ]
+    }]
+  },
+
+  "nmdr": {
+    name: "God of Fiction Gold (Lord)",
+    level: 98,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 6.09, solo: 12.17, item: "Superior Enhancement Stone", id: "I003" },
+        { chance: 0.70, solo: 1.39, item: "Legendary Rune Stone: False Savior", id: "I0BN" },
+        { chance: 0.43, solo: 0.87, item: "Heavenly Tears", id: "I0BU" },
+        { chance: 0.43, solo: 0.87, item: "Ruinous King Robe", id: "I0BI" },
+        { chance: 0.35, solo: 0.70, item: "Doomsday Fantasizer", id: "I0BH" }
+      ]
+    }]
+  },
+
+  "nmgd": {
+    name: "Shadow of Demon King Gaid[Tower Master]",
+    level: 100,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 71.43, solo: 142.86, item: "Divine Card Fragment", id: "sorf" },
+        { chance: 28.57, solo: 228.57, item: "Relic Fragment", id: "shea", mult: 4 }
+      ]
+    }]
+  },
+
+  "nbzw": {
+    name: "World Tree's Wrath Reverie[Abyss]",
+    level: 100,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 3.18, solo: 6.36, item: "Shining World Fragment", id: "I098", mult: 2 },
+        { chance: 0.45, solo: 0.91, item: "Astral True Soul Gourd", id: "I05P", mult: 2 },
+        { chance: 0.45, solo: 0.91, item: "Astral Immortal War Madness Helm", id: "I089", mult: 2 },
+        { chance: 0.45, solo: 0.91, item: "Astral Reminiscence White Lotus", id: "I00S", mult: 2 },
+        { chance: 0.45, solo: 0.91, item: "Astral Book of Supremacy", id: "I00K", mult: 2 }
+      ]
+    }]
+  },
+
+  /* ---- Page 23 ---- */
+
+  "unknown_boss": {
+    name: "Boss not identified (unit type is checked in the trigger condition itself)",
+    level: null,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 1, group: "1 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 6.00, solo: 6.00, item: "Advanced Enhancement Stone", id: "I002", cond: true },
+        { chance: 0.40, solo: 0.40, item: "Creator's Eye", id: "engs", cond: true },
+        { chance: 0.40, solo: 0.40, item: "Reaper's Claw", id: "mort", cond: true },
+        { chance: 0.40, solo: 0.40, item: "Life Amulet", id: "I062", cond: true },
+        { chance: 0.40, solo: 0.40, item: "Hurricane Orb", id: "I03Q", cond: true },
+        { chance: 0.20, solo: 0.20, item: "Tender New Branch", id: "sor2", cond: true },
+        { chance: 0.20, solo: 0.20, item: "Nectar of the World Tree", id: "klmm", cond: true }
+      ]
+    }]
+  },
+
+  /* ---- Additions from full text extraction ---- */
+
+  "nfrb": {
+    name: "Lost Treant[Elite]",
+    level: 24,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 100.00, solo: 100.00, item: "Mission Scroll[Random Event]", id: "ocor", cond: true },
+        { chance: 4.00, solo: 4.00, item: "Voodoo Helmet", id: "rat9" },
+        { chance: 4.00, solo: 4.00, item: "Soldier Helm", id: "ajen" },
+        { chance: 4.00, solo: 4.00, item: "Soldier Coat", id: "kpin" },
+        { chance: 4.00, solo: 4.00, item: "Mystic Stone Pendant", id: "skrt" },
+        { chance: 4.00, solo: 4.00, item: "Energy Belt", id: "pmna" }
+      ]
+    }]
+  },
+
+  "n02M": {
+    name: "Supreme Knight Gorth(Lord)",
+    level: 60,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 40.00, solo: 40.00, item: "Basic Enhancement Stone", id: "bzb" },
+        { chance: 10.10, solo: 10.10, item: "Soul Purge Gauntlets", id: "jdrn" },
+        { chance: 10.00, solo: 10.00, item: "Holy Engraved Saber", id: "rat3" },
+        { chance: 10.00, solo: 10.00, item: "Fragrant Hat", id: "rlif" },
+        { chance: 10.00, solo: 10.00, item: "Ancient Wood Bracelet", id: "spsh" },
+        { chance: 10.00, solo: 10.00, item: "Obsidian Armor", id: "rde3" },
+        { chance: 9.90,  solo: 9.90,  item: "Tainted Crystal Skull", id: "dthb" }
+      ]
+    }]
+  },
+
+  "nhyd": {
+    name: "Gnoll Assassin[Void]",
+    level: 62,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 45.00, solo: 90.00, item: "Divine Card Fragment", id: "sorf", cond: true }
+      ]
+    }]
+  },
+
+  "nehy": {
+    name: "Void Swordfiend Satyr[Void]",
+    level: 62,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 45.00, solo: 90.00, item: "Divine Card Fragment", id: "sorf", cond: true }
+      ]
+    }]
+  },
+
+  "nrel": {
+    name: "Desert Crab[Trash]",
+    level: 63,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 100.00, solo: 100.00, item: "Mission Scroll[Random Event]", id: "ocor", cond: true },
+        { chance: 1.50, solo: 1.50, item: "Intermediate Enhancement Stone", id: "tmmt" },
+        { chance: 1.50, solo: 1.50, item: "Vanilla Cream Cheesesteak", id: "I000" }
+      ]
+    }]
+  },
+
+  "nele": {
+    name: "Desert Giant Spider (Elite)",
+    level: 63,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 100.00, solo: 100.00, item: "Mission Scroll[Random Event]", id: "ocor", cond: true }
+      ]
+    }]
+  },
+
+  "n009": {
+    name: "Soul Iron Golem Kurkata(Boss)",
+    level: 63,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 35.00, solo: 70.00, item: "Dim World Fragment", id: "I001" },
+        { chance: 31.67, solo: 63.33, item: "Charm Crystal", id: "I07L" },
+        { chance: 30.00, solo: 60.00, item: "Dim Treasure Shard", id: "I07K" },
+        { chance: 8.33,  solo: 16.67, item: "Legendary Rune Stone: Soul Iron Golem", id: "I08Q" },
+        { chance: 3.55,  solo: 7.09,  item: "Mystery Lunchbox", id: "I04W" },
+        { chance: 3.53,  solo: 7.06,  item: "Bone Ember", id: "I00D" },
+        { chance: 3.53,  solo: 7.06,  item: "Broken Bone Shard", id: "I00F" },
+        { chance: 2.65,  solo: 5.29,  item: "Fine Iron Hero Helm", id: "I04Z" },
+        { chance: 2.65,  solo: 5.29,  item: "Calamity Bone War Armor", id: "I027" },
+        { chance: 2.50,  solo: 5.00,  item: "World Tree Fruit", id: "pdiv" },
+        { chance: 2.50,  solo: 5.00,  item: "Blade of Corruption", id: "dust" },
+        { chance: 1.76,  solo: 3.53,  item: "Knight War Helm", id: "gopr" },
+        { chance: 1.76,  solo: 3.53,  item: "Nectar Vestment", id: "hcun" },
+        { chance: 1.76,  solo: 3.53,  item: "Explosive Barrel", id: "I050" },
+        { chance: 1.76,  solo: 3.53,  item: "Rune Stone: Soul Iron Golem", id: "tstr" },
+        { chance: 1.76,  solo: 3.53,  item: "Moon Ring", id: "wtlg" },
+        { chance: 1.76,  solo: 3.53,  item: "Clear Spring Armor", id: "I06B" },
+        { chance: 1.76,  solo: 3.53,  item: "Shocking Blade", id: "I053" },
+        { chance: 1.75,  solo: 3.49,  item: "Dried Heart", id: "hval" },
+        { chance: 1.67,  solo: 3.33,  item: "Low-grade Divine Rune (+8)", id: "drph" },
+        { chance: 1.67,  solo: 3.33,  item: "Tribulation Annihilation Mask", id: "fgsk" },
+        { chance: 1.67,  solo: 3.33,  item: "Naberius's Wrath", id: "I00A" }
+      ]
+    }]
+  },
+
+  "ndtw": {
+    name: "Desert Hunter Rakdak(Boss)",
+    level: 65,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 30.00, solo: 30.00, item: "Equipment Hardening Agent", id: "ram1" },
+        { chance: 22.50, solo: 22.50, item: "Vanilla Cream Cheesesteak", id: "I000" },
+        { chance: 15.00, solo: 15.00, item: "Intermediate Enhancement Stone", id: "tmmt" },
+        { chance: 7.50,  solo: 7.50,  item: "Elixir Gift Pack", id: "gvsm" }
+      ]
+    }]
+  },
+
+  "nelb": {
+    name: "Desert Venomous Scorpion (Elite)",
+    level: 65,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 100.00, solo: 100.00, item: "Mission Scroll[Random Event]", id: "ocor", cond: true }
+      ]
+    }]
+  },
+
+  "n02I": {
+    name: "Ruined City Wyrm Orephon(Lord)",
+    level: 65,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 35.00, solo: 70.00, item: "Dim World Fragment", id: "I001" },
+        { chance: 30.00, solo: 60.00, item: "Dim Treasure Shard", id: "I07K" },
+        { chance: 28.50, solo: 57.00, item: "Charm Crystal", id: "I07L" },
+        { chance: 10.23, solo: 20.45, item: "Holy Rag", id: "I08J" },
+        { chance: 10.23, solo: 20.45, item: "Satan Rune", id: "envl" },
+        { chance: 7.50,  solo: 15.00, item: "Legendary Rune Stone: Ruined City Wyvern", id: "I08P" },
+        { chance: 4.13,  solo: 8.26,  item: "Assassin Hood", id: "rst1" },
+        { chance: 4.09,  solo: 8.18,  item: "Martyr's Staff", id: "grsl" },
+        { chance: 4.09,  solo: 8.18,  item: "Rune Longsword", id: "mlst" },
+        { chance: 4.09,  solo: 8.18,  item: "Slaughter Coat", id: "crys" },
+        { chance: 4.09,  solo: 8.18,  item: "Rune Stone: Ruined City Wyvern", id: "texp" },
+        { chance: 4.05,  solo: 8.10,  item: "Blood Fury Ring", id: "blba" },
+        { chance: 2.25,  solo: 4.50,  item: "Blade of Corruption", id: "dust" },
+        { chance: 2.25,  solo: 4.50,  item: "World Tree Fruit", id: "pdiv" },
+        { chance: 1.50,  solo: 3.00,  item: "Low-grade Divine Rune (+8)", id: "drph" },
+        { chance: 1.50,  solo: 3.00,  item: "Tribulation Annihilation Mask", id: "fgsk" },
+        { chance: 1.50,  solo: 3.00,  item: "Naberius's Wrath", id: "I00A" }
+      ]
+    }]
+  },
+
+  "nbdo": {
+    name: "Molten Magma Elemental[Minion]",
+    level: 75,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 100.00, solo: 100.00, item: "Mission Scroll[Random Event]", id: "ocor", cond: true }
+      ]
+    }]
+  },
+
+  "nbds": {
+    name: "Volcano Guardian (Elite)",
+    level: 76,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 100.00, solo: 100.00, item: "Mission Scroll[Random Event]", id: "ocor", cond: true }
+      ]
+    }]
+  },
+
+  "nbdm": {
+    name: "Volcano Wyrm (Elite)",
+    level: 76,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 100.00, solo: 100.00, item: "Mission Scroll[Random Event]", id: "ocor", cond: true }
+      ]
+    }]
+  },
+
+  "ntt1": {
+    name: "Void Tower[Void]",
+    level: 76,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 50.00, solo: 100.00, item: "Divine Card Fragment", id: "sorf", cond: true },
+        { chance: 15.00, solo: 90.00,  item: "Relic Fragment", id: "shea", mult: 3, cond: true }
+      ]
+    }]
+  },
+
+  "ndt2": {
+    name: "Frost Tower[Void]",
+    level: 78,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 50.00, solo: 100.00, item: "Divine Card Fragment", id: "sorf", cond: true },
+        { chance: 15.00, solo: 90.00,  item: "Relic Fragment", id: "shea", mult: 3, cond: true }
+      ]
+    }]
+  },
+
+  "nwiz": {
+    name: "Void Realm Warlock[Void]",
+    level: 78,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 50.00, solo: 100.00, item: "Divine Card Fragment", id: "sorf", cond: true },
+        { chance: 15.00, solo: 90.00,  item: "Relic Fragment", id: "shea", mult: 3, cond: true }
+      ]
+    }]
+  },
+
+  "nfot": {
+    name: "Ancient Beast General[Trash]",
+    level: 80,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 1.00, solo: 1.00, item: "Life Nectar", id: "totw" },
+        { chance: 1.00, solo: 1.00, item: "Advanced Enhancement Stone", id: "I002" }
+      ]
+    }]
+  },
+
+  "ninc": {
+    name: "Ancient Beast Soldier[Trash]",
+    level: 80,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 1.00, solo: 1.00, item: "Life Nectar", id: "totw" },
+        { chance: 1.00, solo: 1.00, item: "Advanced Enhancement Stone", id: "I002" }
+      ]
+    }]
+  },
+
+  "ninm": {
+    name: "Ghostflame Count Hagaliel[Void Lord]",
+    level: 80,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 83.33, solo: 166.67, item: "Divine Card Fragment", id: "sorf", cond: true },
+        { chance: 16.67, solo: 66.67,  item: "Relic Fragment", id: "shea", mult: 2, cond: true }
+      ]
+    }]
+  },
+
+  "n00O": {
+    name: "Dragonkin Spirit[Trash]",
+    level: 85,
+    sections: [{
+      trigger: "On death (rolled once per kill)",
+      rolls: { solo: 1, group: null },
+      drops: [
+        { chance: 1.50, solo: 1.50, item: "Western Meal", id: "I0A7" },
+        { chance: 1.50, solo: 1.50, item: "Advanced Enhancement Stone", id: "I002" }
+      ]
+    }]
+  },
+
+  "nmgw": {
+    name: "Ghoul Berserker[Void]",
+    level: 96,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.5 × heroes (rounded down)" },
+      drops: [
+        { chance: 28.57, solo: 57.14, item: "Divine Card Fragment", id: "sorf", cond: true },
+        { chance: 11.43, solo: 91.43, item: "Relic Fragment", id: "shea", mult: 4, cond: true }
+      ]
+    }]
+  },
+
+  /* ---- Extra units from DROP_CSV migration ---- */
+
+  "n01P": {
+    name: "King of the Ruined City Bain (Legendary)",
+    level: 65,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 35.00, solo: 70.00, item: "Dim World Fragment", id: "I001" },
+        { chance: 30.00, solo: 60.00, item: "Dim Treasure Shard", id: "I07K" },
+        { chance: 29.41, solo: 58.82, item: "Charm Crystal", id: "I07L" },
+        { chance: 7.35,  solo: 14.71, item: "Legendary Rune Stone: King of Ruins", id: "I08U" },
+        { chance: 5.36,  solo: 10.71, item: "Basic Enhancement Stone", id: "bzb" },
+        { chance: 4.29,  solo: 8.57,  item: "Artifact Shard", id: "flag" },
+        { chance: 4.29,  solo: 8.57,  item: "Shattered Ice Heart", id: "I00E" },
+        { chance: 3.21,  solo: 6.43,  item: "Vanguard Striker", id: "I04Y" },
+        { chance: 2.94,  solo: 5.88,  item: "Naberius's Wrath", id: "I00A" },
+        { chance: 2.94,  solo: 5.88,  item: "World Tree Fruit", id: "pdiv" },
+        { chance: 2.94,  solo: 5.88,  item: "Tribulation Annihilation Mask", id: "fgsk" },
+        { chance: 2.94,  solo: 5.88,  item: "Blade of Corruption", id: "dust" },
+        { chance: 2.14,  solo: 4.29,  item: "Crusader Ring", id: "bzbe" },
+        { chance: 2.14,  solo: 4.29,  item: "Ancient Concerto Movement", id: "ward" },
+        { chance: 2.14,  solo: 4.29,  item: "Guardian's Soul", id: "nflg" },
+        { chance: 2.14,  solo: 4.29,  item: "Sword of Kingship", id: "penr" },
+        { chance: 2.14,  solo: 4.29,  item: "Rune Stone: King of Ruins", id: "tdx2" },
+        { chance: 2.14,  solo: 4.29,  item: "Ancient Fragment", id: "clsd" },
+        { chance: 1.47,  solo: 2.94,  item: "Low-grade Divine Rune (+8)", id: "drph" }
+      ]
+    }]
+  },
+
+  "n01N": {
+    name: "Lava Demon Ratudas(Lord)",
+    level: 80,
+    sections: [{
+      trigger: "On death",
+      rolls: { solo: 2, group: "2 + 0.75 × heroes (rounded down)" },
+      drops: [
+        { chance: 20.00, solo: 40.00, item: "Shining World Fragment", id: "I098" },
+        { chance: 20.00, solo: 40.00, item: "Shining Second-Tier Treasure Shard", id: "I095" },
+        { chance: 17.65, solo: 35.29, item: "Advanced Enhancement Stone", id: "I002" },
+        { chance: 11.76, solo: 23.53, item: "Charm Crystal", id: "I07L" },
+        { chance: 7.50,  solo: 15.00, item: "Intermediate Enhancement Stone", id: "tmmt" },
+        { chance: 2.50,  solo: 5.00,  item: "Poetic Pendant", id: "I01N" },
+        { chance: 2.50,  solo: 5.00,  item: "Inferno Pendant", id: "ledg" },
+        { chance: 2.50,  solo: 5.00,  item: "Claw of Chaos", id: "tgxp" },
+        { chance: 2.50,  solo: 5.00,  item: "Rune Stone: Lava Demon", id: "manh" },
+        { chance: 2.50,  solo: 5.00,  item: "Wolf Fang Rifle", id: "I03L" },
+        { chance: 2.50,  solo: 5.00,  item: "Demonic Lava", id: "frgd" },
+        { chance: 2.50,  solo: 5.00,  item: "Crimson Secret Treasure", id: "shdt" },
+        { chance: 1.76,  solo: 3.53,  item: "Legendary Rune Stone: Lava Demon", id: "I093" },
+        { chance: 0.59,  solo: 1.18,  item: "Astral Eternal Tyrant Face Guard", id: "I05J" },
+        { chance: 0.59,  solo: 1.18,  item: "Astral True Soul Gourd", id: "I05P" },
+        { chance: 0.59,  solo: 1.18,  item: "Astral Supreme Wisdom Headscarf", id: "I08F" },
+        { chance: 0.59,  solo: 1.18,  item: "Astral Book of Supremacy", id: "I00K" },
+        { chance: 0.59,  solo: 1.18,  item: "Astral Immortal War Madness Helm", id: "I089" },
+        { chance: 0.59,  solo: 1.18,  item: "Astral Reminiscence White Lotus", id: "I00S" },
+        { chance: 0.29,  solo: 0.59,  item: "Intermediate Divine Rune (+11)", id: "I09N" }
+      ]
+    }]
+  }
+
 };
+
+/* ============================================================
+   Reverse index: itemId → [{ unitId, unitName, level, section, drop }]
+   Built once at load. Used by tooltips and drop cells.
+   ============================================================ */
+
+const OFFICIAL_BY_ITEM = (function () {
+  const idx = {};
+  for (const [unitId, unit] of Object.entries(OFFICIAL_DROPS)) {
+    if (!unit.sections) continue;
+    unit.sections.forEach((section, sectionIdx) => {
+      section.drops.forEach((drop) => {
+        if (!drop.id) return;
+        (idx[drop.id] = idx[drop.id] || []).push({
+          unitId,
+          unitName: unit.name,
+          level: unit.level,
+          sectionIdx,
+          trigger: section.trigger,
+          rolls: section.rolls,
+          drop
+        });
+      });
+    });
+  }
+  for (const id of Object.keys(idx)) {
+    idx[id].sort((a, b) => (b.drop.solo || 0) - (a.drop.solo || 0));
+  }
+  return idx;
+})();
+
+/* ============================================================
+   Material name normalization + alias tables
+   ============================================================ */
+
+const MATERIAL_ALIASES = {
+  "equipment hardening agent": "basic enhancement stone",
+  "superior equipment hardening agent": "superior enhancement stone",
+  "divine card fragments":     "divine card fragment",
+  "relic fragments":           "relic fragment",
+  "low-grade divine rune":     "low-grade divine rune (+8)",
+  "intermediate divine rune":  "intermediate divine rune (+11)",
+  "advanced divine rune":      "advanced divine rune (+13)"
+};
+
+function normalizeMatName(s){
+  return String(s || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u2018\u2019\u02bc\u201b]/g, "'")
+    .replace(/[\u2010\u2011\u2012\u2013\u2014\u2015]/g, "-")
+    .replace(/\s*\([^)]*\)\s*/g, " ")
+    .replace(/[-_]/g, " ")
+    .replace(/[^\w\s']/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/\bfragments\b/g, "fragment")
+    .replace(/\bstones\b/g, "stone")
+    .replace(/\brunes\b/g, "rune");
+}
+
+function getOfficialDropsForItem(itemId) {
+  return OFFICIAL_BY_ITEM[itemId] || [];
+}
 
 const DUNGEONS = [
 ["Wild Zone Blackstone Forest","No core drops in this map","- This was once part of the Holy Forest, but it has now been thoroughly corrupted by evil."],

@@ -711,3 +711,163 @@ html[data-theme="light"] table.compact thead th {
   .cursor-reticle,
   .scroll-progress { display: none; }
 }
+
+/* ============================================================
+   OFFICIAL DROP RATES — tooltip + cell additions
+   ============================================================ */
+
+/* Header of the official block */
+.wc3-drop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(111, 198, 255, 0.25);
+}
+
+.wc3-drop-header-label {
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #a9dcff;
+}
+
+.wc3-drop-header-total {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: #7cff9d;
+  font-variant-numeric: tabular-nums;
+}
+
+/* One unit's drop section in the tooltip */
+.wc3-drop-unit {
+  margin: 8px 0;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 2px solid rgba(111, 198, 255, 0.35);
+}
+
+.wc3-drop-unit-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+
+.wc3-drop-unit-name {
+  font-family: var(--serif);
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #dbe7f4;
+  letter-spacing: .01em;
+}
+
+.wc3-drop-unit-meta {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--muted);
+}
+
+.wc3-drop-unit-trigger {
+  font-size: 10.5px;
+  font-style: italic;
+  color: #8ba0b8;
+  margin-bottom: 5px;
+}
+
+.wc3-drop-unit-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 1.7;
+  font-variant-numeric: tabular-nums;
+}
+
+.wc3-drop-unit-line .rn {
+  color: #cfe4ff;
+}
+
+.wc3-drop-unit-line .rv {
+  color: #7cff9d;
+  font-weight: 700;
+  text-align: right;
+}
+
+.wc3-drop-mult {
+  color: #ffd894;
+  font-weight: 800;
+  margin-right: 2px;
+}
+
+.wc3-drop-group {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: #8ba0b8;
+  margin-top: 3px;
+  padding-left: 2px;
+  border-left: 1px dashed rgba(122, 162, 205, 0.35);
+  padding-left: 8px;
+}
+
+.wc3-cond-mark {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  color: #ffc861;
+  background: rgba(255, 200, 97, 0.12);
+  border: 1px solid rgba(255, 200, 97, 0.35);
+  border-radius: 4px;
+  padding: 0 5px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+/* Legacy block — visually quieter than the official one */
+.wc3-drop-legacy .wc3-drop-header-label {
+  color: #8ba0b8;
+}
+
+.wc3-drop-legacy {
+  opacity: 0.85;
+}
+
+/* ---- Drop cell — solo badge ---- */
+.drop-solo {
+  display: inline-block;
+  margin-left: 6px;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: #7cff9d;
+  background: rgba(124, 255, 157, 0.08);
+  border: 1px solid rgba(124, 255, 157, 0.28);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-variant-numeric: tabular-nums;
+  vertical-align: middle;
+}
+
+/* ---- Breakdown rows — official variant ---- */
+.drop-row-official {
+  grid-template-columns: 1fr auto auto !important;
+}
+
+.drop-row-official .solo-col {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #7cff9d;
+  padding-left: 8px;
+  font-variant-numeric: tabular-nums;
+}

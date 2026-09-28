@@ -2,29 +2,15 @@
 
 const state={q:"",cats:new Set(),statuses:new Set(),lvlMin:0,lvlMax:100,preset:""};
 
-const SORT={key:null,dir:1};
+const SORT={key:"lvl",dir:1};
 
 const PLANNER_KEY = "st:planner4";
 
 let PLANNER = [];
 
-const DROPS = {};
-
 const NAME_TO_ITEM = {};
 
 const USED_IN = {};
-
-function parseDrops(){
-  for (const line of DROP_CSV.trim().split("\n")){
-    const f = line.split(",");
-    if (f.length < 11) continue;
-    const itemId = f[2]; if (!itemId) continue;
-    (DROPS[itemId]=DROPS[itemId]||[]).push({
-      mode:f[0], unit:f[1], maxr:+f[3], rmin:+f[4], rmax:+f[5],
-      inner:+f[6], outer:+f[7], eff:+f[8], cond:f[9], line:f[10]
-    });
-  }
-}
 
 function buildIndexes(){
   for (const entry of EQUIPMENT){
@@ -54,21 +40,6 @@ function parseRecipe(html){
   return out.length ? out : null;
 }
 
-function extractBosses(html){
-  if (!html) return [];
-  const names = [];
-  for (const p of html.split(/<hr\s*\/?>/i)){
-    const m = p.match(/^\s*([A-Za-z][A-Za-z0-9' \-\.]*?)\s*(?:<span|\[|<br|<small|$)/);
-    if (m){
-      const n = m[1].trim();
-      if (n && n.length > 2 && !/^(Craft|Shop|Loot|Special|World Tree)/i.test(n)){
-        if (!names.includes(n)) names.push(n);
-      }
-    }
-  }
-  return names;
-}
-
 function escapeHtml(s){ return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
 
 function wc3ToHtml(str){
@@ -82,8 +53,6 @@ function wc3ToHtml(str){
 
 
 function itemNameColor(id, lvl, cat, status){
-  const override = ITEM_NAME_COLORS[id];
-  if (override) return "#" + override.slice(-6);
   if (cat === "Divine Card") return "#c9baff";
   if (cat === "Runes") return "#5df3c6";
   if (status === "Unresolved") return "#93a4b8";
@@ -110,31 +79,84 @@ function renderStatBlock(stats){
   return html;
 }
 
-function renderDropBlock(id){
-  const rows = DROPS[id];
-  if (!rows || !rows.length){
-    return `<div class="wc3-drop-section"><div class="wc3-drop-note">No drop data in the extraction for this item.</div></div>`;
+/* ============================================================
+   Official drop rendering (from OFFICIAL_DROPS in data-equipment.js)
+   ============================================================ */
+
+function renderOfficialDropBlock(id, sources){
+  const best = sources[0];
+  const totalSolo = sources.reduce((sum, s) => sum + (s.drop.solo || 0), 0);
+
+  function fmtPct(v){
+    if (v === undefined || v === null || !isFinite(v)) return "—";
+    return v.toFixed(2) + "%";
   }
-  const perUnit = {};
-  for (const r of rows){
-    if (r.eff <= 0) continue;
-    if (!perUnit[r.unit] || perUnit[r.unit].eff < r.eff) perUnit[r.unit] = r;
+  function fmtSolo(v){
+    if (v === undefined || v === null || !isFinite(v)) return "—";
+    if (v >= 100) return v.toFixed(0);
+    if (v >= 10)  return v.toFixed(1);
+    return v.toFixed(2);
   }
-  const list = Object.values(perUnit).sort((a,b)=>b.eff-a.eff);
-  if (!list.length){
-    return `<div class="wc3-drop-section"><div class="wc3-drop-note">Only second-tier rolls — no direct per-kill chance.</div></div>`;
+
+  let html = `<div class="wc3-drop-section wc3-drop-official">`;
+  html += `<div class="wc3-drop-header">
+      <span class="wc3-drop-header-label">Official drop rates</span>
+      <span class="wc3-drop-header-total">Σ solo ${fmtSolo(totalSolo)}/kill</span>
+    </div>`;
+
+  // Group by unit
+  const grouped = {};
+  for (const s of sources){
+    const key = s.unitId;
+    (grouped[key] = grouped[key] || { unit: s, sectionList: [] }).sectionList.push(s);
   }
-  const best = list[0];
-  let html = `<div class="wc3-drop-section">`;
-  html += `<div class="wc3-drop-best">Best: ${best.eff.toFixed(3)}% / kill</div>`;
-  for (const r of list.slice(0, 6)){
-    const bname = UNIT_NAMES[r.unit] || ("Unit " + r.unit);
-    const cls = r.eff < 1 ? "low" : r.eff < 10 ? "mid" : "";
-    html += `<div class="wc3-drop-row"><span class="rn">${escapeHtml(bname)}</span><span class="rv ${cls}">${r.eff.toFixed(3)}%</span></div>`;
+
+  const groups = Object.values(grouped).sort((a, b) => {
+    const aMax = Math.max(...a.sectionList.map(s => s.drop.solo || 0));
+    const bMax = Math.max(...b.sectionList.map(s => s.drop.solo || 0));
+    return bMax - aMax;
+  });
+
+  for (const g of groups){
+    const u = g.unit;
+    const levelStr = u.level != null ? `Lv ${u.level}` : "—";
+    const cond  = u.drop.cond ? ` <span class="wc3-cond-mark" title="Requires additional map condition">[cond]</span>` : "";
+    const mult  = u.drop.mult ? `<span class="wc3-drop-mult">×${u.drop.mult}</span>` : "";
+
+    html += `<div class="wc3-drop-unit">`;
+    html += `<div class="wc3-drop-unit-head">
+        <span class="wc3-drop-unit-name">${escapeHtml(u.unitName)}</span>
+        <span class="wc3-drop-unit-meta">${escapeHtml(u.unitId)} · ${escapeHtml(levelStr)}</span>
+      </div>`;
+    html += `<div class="wc3-drop-unit-trigger">${escapeHtml(u.trigger || "On death")}</div>`;
+
+    for (const s of g.sectionList){
+      const rolls = s.rolls || {};
+      const rollsStr = rolls.solo ? `${rolls.solo} roll${rolls.solo>1?"s":""}` : "1 roll";
+      html += `<div class="wc3-drop-unit-line">
+          <span class="rn">${mult}chance ${fmtPct(s.drop.chance)} · solo ${fmtSolo(s.drop.solo)}</span>
+          <span class="rv">${rollsStr}${cond}</span>
+        </div>`;
+      if (rolls.group){
+        html += `<div class="wc3-drop-group">Group: ${escapeHtml(rolls.group)}</div>`;
+      }
+    }
+    html += `</div>`;
   }
-  if (list.length > 6) html += `<div class="wc3-drop-note">+${list.length-6} more sources (see table for full breakdown)</div>`;
+
+  html += `<div class="wc3-drop-note">Chance is per single loot roll. Solo = average per kill when playing alone.</div>`;
   html += `</div>`;
   return html;
+}
+
+function renderDropBlock(id){
+  const official = getOfficialDropsForItem(id);
+
+  if (!official || !official.length){
+    return `<div class="wc3-drop-section"><div class="wc3-drop-note">No drop data recorded for this item. (CRAFT ITEM)</div></div>`;
+  }
+
+  return renderOfficialDropBlock(id, official);
 }
 
 function showItemTip(e, data){
@@ -157,6 +179,12 @@ function showItemTip(e, data){
   if (tip.effects) body += `<p>${wc3ToHtml(tip.effects)}</p>`;
   if (tip.flavor)  body += `<p class="flavor">${wc3ToHtml(tip.flavor)}</p>`;
   if (!tip.effects && !tip.flavor) body += `<p class="flavor">No description available in the extracted source data.</p>`;
+
+  // Add drop block for items present in the official data
+  const official = getOfficialDropsForItem(id);
+  if (official && official.length){
+    body += renderOfficialDropBlock(id, official);
+  }
 
   tipEl.innerHTML = headerHtml + `<div class="wc3-tip-body">${body}</div>`;
   tipEl.classList.add("show");
@@ -184,13 +212,47 @@ function showMaterialTip(e, matName){
       body += `<p style="color:#8ba0b8;font-size:12.5px;margin-top:6px">Used in ${usedIn.length} higher-tier recipe${usedIn.length>1?"s":""}.</p>`;
     }
   } else {
-    headerHtml = `<div class="wc3-tip-header">
-        <div class="wc3-tip-title">${escapeHtml(matName)}</div>
-        <div class="wc3-tip-id">material</div>
-      </div>
-      <div class="wc3-tip-meta"><span class="m">Crafting material</span></div>`;
-    body += `<div class="wc3-drop-section"><div class="wc3-drop-note">This material is not a codex equipment entry — no drop source available in the extraction.</div></div>`;
+  // ---- Material not in the codex — resolve via alias + normalize ----
+  const key      = matName.toLowerCase();
+  const aliased  = MATERIAL_ALIASES[key] || key;
+  const target   = normalizeMatName(aliased);
+
+  const official = [];
+  for (const [unitId, unit] of Object.entries(OFFICIAL_DROPS)){
+    if (!unit.sections) continue;
+    for (const section of unit.sections){
+      for (const drop of section.drops){
+        if (!drop.item) continue;
+        const dn = normalizeMatName(drop.item);
+        if (dn === target || dn === normalizeMatName(key)){
+          official.push({
+            unitId,
+            unitName: unit.name,
+            level: unit.level,
+            trigger: section.trigger,
+            rolls: section.rolls,
+            drop
+          });
+        }
+      }
+    }
   }
+
+  headerHtml = `<div class="wc3-tip-header">
+      <div class="wc3-tip-title">${escapeHtml(matName)}</div>
+      <div class="wc3-tip-id">material</div>
+    </div>
+    <div class="wc3-tip-meta"><span class="m">Crafting material</span></div>`;
+
+  if (official.length){
+    official.sort((a,b) => (b.drop.solo || 0) - (a.drop.solo || 0));
+    body += renderOfficialDropBlock("__material__", official);
+  } else if (MATERIAL_NOTES[key]){
+    body += `<div class="wc3-drop-section"><div class="wc3-drop-note">${escapeHtml(MATERIAL_NOTES[key])}</div></div>`;
+  } else {
+    body += `<div class="wc3-drop-section"><div class="wc3-drop-note">No drop source recorded for this material.</div></div>`;
+  }
+}
 
   tipEl.innerHTML = headerHtml + `<div class="wc3-tip-body">${body}</div>`;
   tipEl.classList.add("show");
@@ -286,45 +348,74 @@ function renderStatus(status){
 function buildDropCell(id){
   const td = document.createElement("td");
   td.className = "drop-cell";
-  const rows = DROPS[id];
-  if (!rows || !rows.length){ td.innerHTML = `<span class="drop-none">No data</span>`; return td; }
-  const perUnit = {};
-  for (const r of rows){
-    if (r.eff <= 0) continue;
-    if (!perUnit[r.unit] || perUnit[r.unit].eff < r.eff) perUnit[r.unit] = r;
+
+  const official = getOfficialDropsForItem(id);
+
+  if (!official || !official.length){
+    td.innerHTML = `<span class="drop-none">No data</span>`;
+    return td;
   }
-  const list = Object.values(perUnit).sort((a,b)=>b.eff-a.eff);
-  if (!list.length){ td.innerHTML = `<span class="drop-none">Only second-tier rolls</span>`; return td; }
-  const best = list[0];
-  td.innerHTML = `<span class="drop-best">${best.eff.toFixed(3)}% <span class="sources">×${list.length} source${list.length>1?"s":""}</span></span>`;
+
+  const best = official[0];
+  const totalSolo = official.reduce((s, x) => s + (x.drop.solo || 0), 0);
+
+  td.innerHTML = `
+    <span class="drop-best" title="Best per-roll chance from any single boss">
+      ${best.drop.chance.toFixed(2)}% <span class="sources">×${official.length} source${official.length>1?"s":""}</span>
+    </span>
+    <span class="drop-solo" title="Total average drops per solo kill across all sources">
+      Σ ${totalSolo.toFixed(2)}/kill
+    </span>`;
+
   const det = document.createElement("details");
   det.innerHTML = `<summary>Breakdown</summary>`;
   const listEl = document.createElement("div");
   listEl.className = "drop-list";
-  for (const r of list){
-    const bname = UNIT_NAMES[r.unit] || "Unknown unit";
+
+  const grouped = {};
+  for (const s of official){
+    (grouped[s.unitId] = grouped[s.unitId] || { unit: s, drops: [] }).drops.push(s);
+  }
+  const groups = Object.values(grouped).sort((a, b) => {
+    const aMax = Math.max(...a.drops.map(d => d.drop.solo || 0));
+    const bMax = Math.max(...b.drops.map(d => d.drop.solo || 0));
+    return bMax - aMax;
+  });
+
+  for (const g of groups){
+    const u = g.unit;
+    const levelStr = u.level != null ? `Lv ${u.level}` : "—";
+    const cond  = u.drop.cond ? ` <span class="wc3-cond-mark">[cond]</span>` : "";
+    const mult  = u.drop.mult ? ` ×${u.drop.mult}` : "";
+
     const row = document.createElement("div");
-    row.className = "drop-row";
-    row.innerHTML = `<span class="bname">${escapeHtml(bname)}<span class="bunit">${r.unit}</span></span>` +
-      `<span class="pct ${r.eff<1?'low':r.eff<10?'mid':''}">${r.eff.toFixed(3)}%</span>` +
-      `<span class="cond">${r.cond?escapeHtml(r.cond)+" · ":""}mode: ${r.mode} · inner ${r.inner.toFixed(2)}% × outer ${r.outer.toFixed(2)}%</span>`;
+    row.className = "drop-row drop-row-official";
+    row.innerHTML =
+      `<span class="bname">${escapeHtml(u.unitName)}<span class="bunit">${escapeHtml(u.unitId)} · ${escapeHtml(levelStr)}</span></span>` +
+      `<span class="pct">${u.drop.chance.toFixed(2)}%</span>` +
+      `<span class="solo-col">Σ ${(u.drop.solo || 0).toFixed(2)}</span>` +
+      `<span class="cond">${escapeHtml(u.trigger || "")}${mult}${cond}` +
+      (u.rolls && u.rolls.group ? ` · group: ${escapeHtml(u.rolls.group)}` : "") +
+      `</span>`;
     listEl.appendChild(row);
   }
-  det.appendChild(listEl); td.appendChild(det);
+
+  det.appendChild(listEl);
+  td.appendChild(det);
   return td;
 }
 
 function buildTable(){
   const tbody = document.querySelector("#gear tbody");
-  tbody.innerHTML = "";  
+  tbody.innerHTML = "";
   const frag = document.createDocumentFragment();
   for (const [name,id,cat,lvl,status,sources] of EQUIPMENT){
     const tr = document.createElement("tr");
     tr.dataset.cat = cat; tr.dataset.status = status; tr.dataset.id = id;
     tr.dataset.level = String(lvl); tr.dataset.name = name;
-	tr.dataset.tier = String(lvl >= 95 ? 5 : lvl >= 75 ? 4 : lvl >= 55 ? 3 : lvl >= 35 ? 2 : lvl >= 15 ? 1 : 0);
-    tr.dataset.bosses = extractBosses(sources).join("|");
-    tr.dataset.recipe = JSON.stringify(parseRecipe(sources)||null);
+    tr.dataset.tier = String(lvl >= 95 ? 5 : lvl >= 75 ? 4 : lvl >= 55 ? 3 : lvl >= 35 ? 2 : lvl >= 15 ? 1 : 0);
+	const recipe = parseRecipe(sources);
+    tr.dataset.recipe = JSON.stringify(recipe || null);
 
     const color = itemNameColor(id, lvl, cat, status);
 
@@ -345,8 +436,7 @@ function buildTable(){
       attachMaterialTip(el, el.dataset.mat);
     });
 
-    const actTd = document.createElement("td"); actTd.className = "actions-cell";
-    const recipe = parseRecipe(sources);
+	const actTd = document.createElement("td"); actTd.className = "actions-cell";
     if (recipe){
       const b = document.createElement("button");
       b.className = "action-btn plan";
@@ -365,157 +455,79 @@ function buildTable(){
   }
   tbody.appendChild(frag);
 
-  
   const dtbody = document.querySelector("#dungeons tbody");
-  if (dtbody) dtbody.innerHTML = ""; 
-  const dfrag = document.createDocumentFragment();
-  for (const [zone, drops, desc] of DUNGEONS){
-    const tr = document.createElement("tr");
-    const td1 = document.createElement("td"); td1.textContent = zone;
-    const td2 = document.createElement("td");
-    drops.split(/,\s*/).forEach((d,i)=>{
-      if (i>0) td2.appendChild(document.createTextNode(", "));
-      const btn = document.createElement("button");
-      btn.className = "dungeon-link"; btn.textContent = d;
-      btn.onclick = ()=>{ state.q = d; document.getElementById("q").value = d; applyFilters();
-        document.querySelector("#gear").scrollIntoView({behavior:"smooth"}); };
-      td2.appendChild(btn);
-    });
-    const td3 = document.createElement("td"); td3.textContent = desc;
-    tr.append(td1,td2,td3);
-    dfrag.appendChild(tr);
+  if (dtbody){
+    dtbody.innerHTML = "";
+    const dfrag = document.createDocumentFragment();
+    for (const [zone, drops, desc] of DUNGEONS){
+      const tr = document.createElement("tr");
+      const td1 = document.createElement("td"); td1.textContent = zone;
+      const td2 = document.createElement("td");
+      drops.split(/,\s*/).forEach((d,i)=>{
+        if (i>0) td2.appendChild(document.createTextNode(", "));
+        const btn = document.createElement("button");
+        btn.className = "dungeon-link"; btn.textContent = d;
+        btn.onclick = ()=>{ state.q = d; document.getElementById("q").value = d; applyFilters();
+          document.querySelector("#gear").scrollIntoView({behavior:"smooth"}); };
+        td2.appendChild(btn);
+      });
+      const td3 = document.createElement("td"); td3.textContent = desc;
+      tr.append(td1,td2,td3);
+      dfrag.appendChild(tr);
+    }
+    dtbody.appendChild(dfrag);
   }
-  dtbody.appendChild(dfrag);
 
-  
-  const heroOrder = {"AGI":0,"AGI/INT":1,"INT":2,"STR/AGI":3,"STR":4};
-  const sortedHeroes = [...HEROES].sort((a,b)=>{
-    const oa = heroOrder[a.primary] ?? 99;
-    const ob = heroOrder[b.primary] ?? 99;
-    if (oa !== ob) return oa - ob;
-    return a.name.localeCompare(b.name);
-  });
   const hg = document.getElementById("hero-grid");
-  if (hg) hg.innerHTML = "";
-  for (const h of sortedHeroes){
-    const card = document.createElement("div");
-    card.className = "hero-card";
-    const colorHex = "#" + h.color.slice(-6);
-    card.innerHTML = `
-      <div class="hero-head">
-        <h3 class="hero-name" style="color:${colorHex}">${escapeHtml(h.name)}</h3>
-        <span class="hero-attr" data-a="${escapeHtml(h.primary)}">${escapeHtml(h.primary)}</span>
-      </div>
-      <div class="hero-stats">
-        <span class="hero-stat">STR <b>${h.str}</b></span>
-        <span class="hero-stat">AGI <b>${h.agi}</b></span>
-        <span class="hero-stat">INT <b>${h.int}</b></span>
-        <span class="hero-stat">HP <b>${h.hp}</b></span>
-        ${h.mana?`<span class="hero-stat">Mana <b>${h.mana}</b></span>`:""}
-        <span class="hero-stat">DMG <b>${h.dmg}</b></span>
-        <span class="hero-stat">MS <b>${h.ms}</b></span>
-        <span class="hero-stat">Range <b>${h.range}</b></span>
-      </div>
-      <div class="spell-list"></div>`;
-    const sl = card.querySelector(".spell-list");
-    for (const sp of h.spells){
-      const spn = document.createElement("div");
-      spn.className = "spell";
-      spn.innerHTML = `
-        <div class="spell-head">
-          <span class="spell-name">${escapeHtml(sp.name)}</span>
-          <span class="spell-key">${escapeHtml(sp.key)}</span>
+  if (hg){
+    hg.innerHTML = "";
+    const heroOrder = {"AGI":0,"AGI/INT":1,"INT":2,"STR/AGI":3,"STR":4};
+    const sortedHeroes = [...HEROES].sort((a,b)=>{
+      const oa = heroOrder[a.primary] ?? 99;
+      const ob = heroOrder[b.primary] ?? 99;
+      if (oa !== ob) return oa - ob;
+      return a.name.localeCompare(b.name);
+    });
+    for (const h of sortedHeroes){
+      const card = document.createElement("div");
+      card.className = "hero-card";
+      const colorHex = "#" + h.color.slice(-6);
+      card.innerHTML = `
+        <div class="hero-head">
+          <h3 class="hero-name" style="color:${colorHex}">${escapeHtml(h.name)}</h3>
+          <span class="hero-attr" data-a="${escapeHtml(h.primary)}">${escapeHtml(h.primary)}</span>
         </div>
-        <div class="spell-body">${wc3ToHtml(sp.tip)}</div>
-        <div class="spell-meta"><span>Lv ${sp.lvl}</span><span>${escapeHtml(sp.id)}</span></div>`;
-      spn.querySelector(".spell-head").onclick = ()=>spn.classList.toggle("open");
-      attachSpellTip(spn.querySelector(".spell-name"), sp.tip);
-      sl.appendChild(spn);
-    }
-    hg.appendChild(card);
-  }
-}
-
-
-
-
-function deriveCategory(id, name){
-  const n = (name||"").toLowerCase();
-  if (/\bcard\b/.test(n)) return "Divine Card";
-  if (/rune stone/.test(n)) return "Runes";
-  if (/(elixir|potion|nectar|cake|cheese|croissant|meal|pumpkin|sausage|bread|combo|lunch|tea|sparkling water|radish|liquor|chocolate|food|gift pack|holy elixir|drop)/.test(n)) return "Consumable";
-  if (/(- materials -|shard|crystal|ore|fragment|whetstone|rag|ember|bone|fossil|crest|atlas|tablet|slab|jade|core|lantern|mushroom|scale|claw|blood|tear|seed|orb|gem|insignia|seal|soul|paper|blaze|rune\b|dried heart|hollow claw|echo)/.test(n)) return "Material";
-  const eq = EQUIPMENT.find(e=>e[1]===id);
-  if (eq) return eq[2];
-  return "Other";
-}
-
-
-function cleanWc3Name(s){
-  if (!s) return "";
-  return String(s)
-    .replace(/\|c[0-9a-fA-F]{8}/g, "")
-    .replace(/\|c[0-9a-fA-F]{6}/g, "")
-    .replace(/\|r/g, "")
-    .replace(/\|n/g, " ")
-    .trim();
-}
-
-
-function parseCsvLine(line){
-  const out = []; let cur = ""; let q = false;
-  for (let i=0;i<line.length;i++){
-    const ch = line[i];
-    if (q){
-      if (ch === '"' && line[i+1] === '"'){ cur += '"'; i++; }
-      else if (ch === '"'){ q = false; }
-      else cur += ch;
-    } else {
-      if (ch === '"'){ q = true; }
-      else if (ch === ','){ out.push(cur); cur = ""; }
-      else cur += ch;
+        <div class="hero-stats">
+          <span class="hero-stat">STR <b>${h.str}</b></span>
+          <span class="hero-stat">AGI <b>${h.agi}</b></span>
+          <span class="hero-stat">INT <b>${h.int}</b></span>
+          <span class="hero-stat">HP <b>${h.hp}</b></span>
+          ${h.mana?`<span class="hero-stat">Mana <b>${h.mana}</b></span>`:""}
+          <span class="hero-stat">DMG <b>${h.dmg}</b></span>
+          <span class="hero-stat">MS <b>${h.ms}</b></span>
+          <span class="hero-stat">Range <b>${h.range}</b></span>
+        </div>
+        <div class="spell-list"></div>`;
+      const sl = card.querySelector(".spell-list");
+      for (const sp of h.spells){
+        const spn = document.createElement("div");
+        spn.className = "spell";
+        spn.innerHTML = `
+          <div class="spell-head">
+            <span class="spell-name">${escapeHtml(sp.name)}</span>
+            <span class="spell-key">${escapeHtml(sp.key)}</span>
+          </div>
+          <div class="spell-body">${wc3ToHtml(sp.tip)}</div>
+          <div class="spell-meta"><span>Lv ${sp.lvl}</span><span>${escapeHtml(sp.id)}</span></div>`;
+        spn.querySelector(".spell-head").onclick = ()=>spn.classList.toggle("open");
+        attachSpellTip(spn.querySelector(".spell-name"), sp.tip);
+        sl.appendChild(spn);
+      }
+      hg.appendChild(card);
     }
   }
-  out.push(cur);
-  return out;
+  applySort();
 }
-
-
-const EXTRA_ITEMS = {};
-
-function ingestCsv(text){
-  if (!text || text.indexOf("__PASTE_") === 0) return;   const lines = text.replace(/\r/g,"").split("\n").filter(Boolean);
-  if (!lines.length) return;
-  const header = parseCsvLine(lines[0]).map(h=>h.trim().toLowerCase());
-  const iId   = header.indexOf("item id");
-  const iName = header.findIndex(h => h === "item name" || h === "name");
-  const iDesc = header.findIndex(h => h === "description");
-  const iTool = header.findIndex(h => h === "tooltip");
-  const iExt  = header.findIndex(h => h === "extended tooltip");
-  if (iId < 0) return;
-  for (let i=1;i<lines.length;i++){
-    const f = parseCsvLine(lines[i]);
-    const id = (f[iId]||"").trim();
-    if (!id) continue;
-    const rawName = iName>=0 ? (f[iName]||"").trim() : "";
-    const tooltip  = iTool>=0 ? (f[iTool]||"").trim() : "";
-    const extTool  = iExt>=0  ? (f[iExt]||"").trim()  : "";
-    const desc     = iDesc>=0 ? (f[iDesc]||"").trim() : "";
-    const plainName = cleanWc3Name(rawName) || id;
-    EXTRA_ITEMS[id] = {
-      id,
-      name: plainName,
-      rawName: rawName,
-      tooltip: tooltip || extTool || desc,
-      description: desc,
-      cat: deriveCategory(id, plainName)
-    };
-  }
-}
-
-ingestCsv(CSV_FULL);
-ingestCsv(CSV_MINI);
-
 
 function buildUnifiedItems(){
   const map = new Map();
@@ -526,25 +538,6 @@ function buildUnifiedItems(){
       flavor: ITEM_TOOLTIPS[id] ? (ITEM_TOOLTIPS[id].flavor || "") : "",
       stats: ITEM_STATS[id] || null
     });
-  }
-  for (const [id, ex] of Object.entries(EXTRA_ITEMS)){
-    if (map.has(id)){
-      const row = map.get(id);
-            if (ex.name && ex.name.length > row.name.length) row.name = ex.name;
-      if (!row.tooltip && ex.tooltip) row.tooltip = ex.tooltip;
-    } else {
-      map.set(id, {
-        id,
-        name: ex.name || id,
-        cat: ex.cat || "Other",
-        lvl: 0,
-        status: "—",
-        sources: "",
-        tooltip: ex.tooltip || "",
-        flavor: "",
-        stats: ITEM_STATS[id] || null
-      });
-    }
   }
   return [...map.values()];
 }
@@ -596,23 +589,23 @@ function buildItemGrid(){
     body.style.display = "block";
     let html = "";
 
-        if (it.stats && it.stats.length){
+    if (it.stats && it.stats.length){
       html += `<div style="color:#9fffbf;font-family:var(--mono);font-size:12.5px;line-height:1.7;margin-bottom:8px">` +
               it.stats.map(s=>"▲ " + escapeHtml(s)).join("<br>") + `</div>`;
     }
 
-        if (it.tooltip){
+    if (it.tooltip){
       html += `<p style="margin:8px 0 0">${wc3ToHtml(it.tooltip)}</p>`;
     }
 
-        if (it.flavor && it.flavor !== it.tooltip){
+    if (it.flavor && it.flavor !== it.tooltip){
       html += `<p style="font-style:italic;color:#a0b2c8;margin:8px 0 0">“${wc3ToHtml(it.flavor)}”</p>`;
     }
 
     if (!html) html = `<p style="color:var(--muted);font-style:italic">No description in extracted data.</p>`;
     body.innerHTML = html;
 
-        const nameEl = head.querySelector(".hero-name");
+    const nameEl = head.querySelector(".hero-name");
     attachItemTip(nameEl, {
       name: it.name, id: it.id, cat: it.cat, lvl: it.lvl,
       status: it.status,
@@ -668,10 +661,11 @@ function applySort(){
       case "cat": av = a.dataset.cat; bv = b.dataset.cat; break;
       case "lvl": av = +a.dataset.level; bv = +b.dataset.level; break;
       case "status": av = a.dataset.status; bv = b.dataset.status; break;
-      case "drop":{
-        const ar = DROPS[a.dataset.id]||[]; const br = DROPS[b.dataset.id]||[];
-        av = ar.length ? Math.max(...ar.map(r=>r.eff)) : -1;
-        bv = br.length ? Math.max(...br.map(r=>r.eff)) : -1;
+		case "drop":{
+        const ar = getOfficialDropsForItem(a.dataset.id) || [];
+        const br = getOfficialDropsForItem(b.dataset.id) || [];
+        av = ar.length ? Math.max(...ar.map(r=>r.drop.chance)) : -1;
+        bv = br.length ? Math.max(...br.map(r=>r.drop.chance)) : -1;
         break;
       }
       default: av = 0; bv = 0;
@@ -799,9 +793,11 @@ function renderPlanner(){
 
 
 function buildChips(){
+  const cw = document.getElementById("cat-chips");
+  const sw = document.getElementById("status-chips");
+  if (cw.children.length || sw.children.length) return;
   const cats = ["Weapon","Armor","Helmet","Accessory","Collectibles","Divine Card","Runes"];
   const statuses = ["Drop","Craft","Shop","Special","Unresolved"];
-  const cw = document.getElementById("cat-chips");
   cats.forEach(c=>{
     const b = document.createElement("button");
     b.className = "chip"; b.textContent = c; b.dataset.cat = c;
@@ -810,8 +806,6 @@ function buildChips(){
       b.setAttribute("aria-pressed", state.cats.has(c) ? "true" : "false"); applyFilters(); };
     cw.appendChild(b);
   });
-  const sw = document.getElementById("status-chips");
-  if (cw.children.length || sw.children.length) return;
   statuses.forEach(s=>{
     const b = document.createElement("button");
     b.className = "chip"; b.dataset.tone = "violet"; b.textContent = s; b.dataset.status = s;
@@ -903,7 +897,6 @@ function attachListeners(){
   window.addEventListener("scroll", ()=>topBtn.classList.toggle("visible", window.scrollY > 500));
   topBtn.onclick = ()=>window.scrollTo({top:0,behavior:"smooth"});
 
-  
   const itemQ = document.getElementById("item-q");
   const itemCat = document.getElementById("item-cat");
   const itemClear = document.getElementById("item-clear");
@@ -916,3 +909,4 @@ function attachListeners(){
   };
 }
 
+/* NOTE: init chain lives in main.js — do not call it here. */

@@ -71,10 +71,14 @@
     <div class="chip-row" id="status-chips" role="group" aria-label="Source type filter"></div>
   </div>
   <div class="controls-row">
-    <div class="range-wrap">
+        <div class="range-wrap">
       <label>Level range <output id="lvl-output">0 – 100</output></label>
-      <input type="range" id="lvl-min" min="0" max="100" value="0" aria-label="Minimum level">
-      <input type="range" id="lvl-max" min="0" max="100" value="100" aria-label="Maximum level">
+      <div class="dual-range" id="lvl-range">
+        <div class="dual-range-track"></div>
+        <div class="dual-range-fill" id="lvl-range-fill"></div>
+        <input type="range" id="lvl-min" min="0" max="100" value="0" aria-label="Minimum level">
+        <input type="range" id="lvl-max" min="0" max="100" value="100" aria-label="Maximum level">
+      </div>
     </div>
     <select id="preset-filter" aria-label="Filter presets">
       <option value="">Presets…</option>
@@ -168,7 +172,6 @@
   <script src="js/data-tooltips.js"></script>
   <script src="js/data-heroes.js"></script>
   <script src="js/data-equipment.js"></script>
-  <script src="js/data-csv.js"></script>
   <script src="js/effects.js"></script>
   <script src="js/equipment.js"></script>
   <script src="js/main.js"></script>

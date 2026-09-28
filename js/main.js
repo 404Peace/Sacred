@@ -11,7 +11,6 @@ function savePlanner(){
 }
 
 /* INIT */
-parseDrops();
 buildIndexes();
 buildTable();
 buildChips();

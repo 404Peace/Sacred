@@ -36,8 +36,6 @@
 
     // Planner
     confetti:         true,
-    celebratePulse:   true,
-    checkPop:         true,
 
     // UI / chrome
     borderGlow:       true,
@@ -48,7 +46,6 @@
     stickyHeaderShrink: true,
     haptic:           true,
     insetGlow:        true,
-    accentFlow:       true,
     pulseBadge:       true,
 
     // Tooltip
@@ -654,9 +651,9 @@
       'Cursor':  ['cursorSpotlight', 'cursorTrail', 'cursorReticle'],
       'Text':    ['heroShimmer', 'nameSweep', 'nameGlowPulse', 'underlineDraw', 'chromatic'],
       'Table':   ['rowSweep', 'rowEntrance', 'rowFlash', 'zebraTint', 'tierGlow', 'dropBars'],
-      'Planner': ['confetti', 'celebratePulse', 'checkPop'],
+	  'Planner': ['confetti'],
       'Chrome':  ['borderGlow', 'cardTilt', 'chipGlow', 'tabPill', 'scrollProgress',
-                  'stickyHeaderShrink', 'haptic', 'insetGlow', 'accentFlow',
+                  'stickyHeaderShrink', 'haptic', 'insetGlow',
                   'pulseBadge', 'tipScale']
     };
 
@@ -680,8 +677,6 @@
       tierGlow: 'High-tier glow',
       dropBars: 'Drop-rate bars',
       confetti: 'Confetti burst',
-      celebratePulse: 'Celebrate pulse',
-      checkPop: 'Checkbox pop',
       borderGlow: 'Card border glow',
       cardTilt: 'Card 3D tilt',
       chipGlow: 'Chip hover glow',
@@ -690,7 +685,6 @@
       stickyHeaderShrink: 'Sticky header shrink',
       haptic: 'Haptic bounce',
       insetGlow: 'Inset glow on focus',
-      accentFlow: 'Info box accent flow',
       pulseBadge: 'Pulsing badges',
       tipScale: 'Tooltip scale-in'
     };

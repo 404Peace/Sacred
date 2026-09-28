@@ -125,9 +125,6 @@ body::after{
   to  { transform: translate3d(3%,2%,0) scale(1.09); }
 }
 
-/* Real SVG noise layer — removes flatness */
-body .noise-layer,
-body::marker { /* keep no-op for safety */ }
 
 /* Lightweight noise via pseudo on main */
 main::before{

@@ -358,7 +358,3 @@ const ITEM_STATS = {
   totw: ["When used: +1,050 Divine Flask capacity"],
   wlsd: ["When used: +2,500 Divine Flask capacity"]
 };
-
-const ITEM_NAME_COLORS = {
-  
-};
